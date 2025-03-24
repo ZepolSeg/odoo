@@ -1,0 +1,1791 @@
+2025-03-12 12:59:59,292 28372 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.request:INFO" 
+2025-03-12 12:59:59,292 28372 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.response:INFO" 
+2025-03-12 12:59:59,292 28372 DEBUG ? odoo.netsvc: logger level set: ":INFO" 
+2025-03-12 12:59:59,292 28372 DEBUG ? odoo.netsvc: logger level set: "odoo:DEBUG" 
+2025-03-12 12:59:59,292 28372 DEBUG ? odoo.netsvc: logger level set: "odoo.sql_db:INFO" 
+2025-03-12 12:59:59,292 28372 DEBUG ? odoo.netsvc: logger level set: ":INFO" 
+2025-03-12 12:59:59,299 28372 INFO ? odoo: Odoo version 18.0 
+2025-03-12 12:59:59,299 28372 INFO ? odoo: Using configuration file at C:\odoo\tutorials\odoo.conf 
+2025-03-12 12:59:59,300 28372 INFO ? odoo: addons paths: ['C:\\odoo\\odoo\\odoo\\addons', 'c:\\users\\georg\\appdata\\local\\openerp s.a\\odoo\\addons\\18.0', 'c:\\odoo\\tutorials\\addons_extra', 'c:\\odoo\\odoo\\addons', 'c:\\odoo\\odoo\\odoo\\addons'] 
+2025-03-12 12:59:59,300 28372 INFO ? odoo: database: odoo@default:default 
+2025-03-12 12:59:59,730 28372 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2025-03-12 12:59:59,738 28372 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltoimage to generate images from html. 
+2025-03-12 13:00:00,349 28372 DEBUG ? odoo.service.server: Setting signal handlers 
+2025-03-12 13:00:00,380 28372 INFO ? odoo.service.server: HTTP service (werkzeug) running on GLO:8069 
+2025-03-12 13:00:00,511 28372 DEBUG odoo odoo.modules.registry: Multiprocess load registry signaling: [Registry: 8] [Cache default: 2] [Cache assets: 1] [Cache templates: 1] [Cache routing: 1] [Cache groups: 1] 
+2025-03-12 13:00:00,533 28372 INFO odoo odoo.modules.loading: loading 1 modules... 
+2025-03-12 13:00:00,533 28372 DEBUG odoo odoo.modules.loading: Loading module base (1/1) 
+2025-03-12 13:00:00,537 28372 DEBUG odoo odoo.modules.loading: Module base loaded in 0.00s, 0 queries 
+2025-03-12 13:00:00,537 28372 INFO odoo odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2025-03-12 13:00:00,578 28372 INFO odoo odoo.modules.loading: updating modules list 
+2025-03-12 13:00:00,589 28372 INFO odoo odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a 
+2025-03-12 13:00:02,868 28372 WARNING odoo odoo.modules.loading: invalid module names, ignored:  estate 
+2025-03-12 13:00:02,889 28372 DEBUG odoo odoo.modules.loading: Updating graph with 11 more modules 
+2025-03-12 13:00:02,889 28372 INFO odoo odoo.modules.loading: loading 12 modules... 
+2025-03-12 13:00:02,889 28372 DEBUG odoo odoo.modules.loading: Loading module web (2/12) 
+2025-03-12 13:00:02,891 28372 DEBUG odoo odoo.modules.loading: Module web loaded in 0.00s, 0 queries 
+2025-03-12 13:00:02,891 28372 DEBUG odoo odoo.modules.loading: Loading module auth_totp (3/12) 
+2025-03-12 13:00:03,190 28372 DEBUG odoo odoo.modules.loading: Module auth_totp loaded in 0.30s, 0 queries 
+2025-03-12 13:00:03,190 28372 DEBUG odoo odoo.modules.loading: Loading module base_import (4/12) 
+2025-03-12 13:00:03,920 28372 DEBUG odoo odoo.modules.loading: Module base_import loaded in 0.73s, 0 queries 
+2025-03-12 13:00:03,920 28372 DEBUG odoo odoo.modules.loading: Loading module base_import_module (5/12) 
+2025-03-12 13:00:03,932 28372 DEBUG odoo odoo.modules.loading: Module base_import_module loaded in 0.01s, 0 queries 
+2025-03-12 13:00:03,932 28372 DEBUG odoo odoo.modules.loading: Loading module base_setup (6/12) 
+2025-03-12 13:00:03,942 28372 DEBUG odoo odoo.modules.loading: Module base_setup loaded in 0.01s, 0 queries 
+2025-03-12 13:00:03,942 28372 DEBUG odoo odoo.modules.loading: Loading module bus (7/12) 
+2025-03-12 13:00:03,962 28372 DEBUG odoo odoo.modules.loading: Module bus loaded in 0.02s, 0 queries 
+2025-03-12 13:00:03,962 28372 DEBUG odoo odoo.modules.loading: Loading module web_tour (8/12) 
+2025-03-12 13:00:03,962 28372 DEBUG odoo odoo.modules.loading: Module web_tour loaded in 0.00s, 0 queries 
+2025-03-12 13:00:03,962 28372 DEBUG odoo odoo.modules.loading: Loading module html_editor (9/12) 
+2025-03-12 13:00:04,137 28372 DEBUG odoo odoo.modules.loading: Module html_editor loaded in 0.17s, 0 queries 
+2025-03-12 13:00:04,137 28372 DEBUG odoo odoo.modules.loading: Loading module iap (10/12) 
+2025-03-12 13:00:04,137 28372 DEBUG odoo odoo.modules.loading: Module iap loaded in 0.00s, 0 queries 
+2025-03-12 13:00:04,137 28372 DEBUG odoo odoo.modules.loading: Loading module web_editor (11/12) 
+2025-03-12 13:00:04,180 28372 DEBUG odoo odoo.modules.loading: Module web_editor loaded in 0.04s, 0 queries 
+2025-03-12 13:00:04,180 28372 DEBUG odoo odoo.modules.loading: Loading module web_unsplash (12/12) 
+2025-03-12 13:00:04,237 28372 DEBUG odoo odoo.modules.loading: Module web_unsplash loaded in 0.06s, 0 queries 
+2025-03-12 13:00:04,237 28372 INFO odoo odoo.modules.loading: 12 modules loaded in 1.35s, 0 queries (+0 extra) 
+2025-03-12 13:00:04,504 28372 DEBUG odoo odoo.modules.registry: Invalidating templates model caches from write C:\odoo\odoo\odoo\addons\base\models\ir_ui_view.py:533 
+2025-03-12 13:00:04,515 28372 DEBUG odoo odoo.modules.registry: Invalidating templates model caches from write C:\odoo\odoo\odoo\addons\base\models\ir_ui_view.py:533 
+2025-03-12 13:00:04,997 28372 INFO odoo odoo.modules.loading: Modules loaded. 
+2025-03-12 13:00:05,007 28372 INFO odoo odoo.modules.registry: Registry changed, signaling through the database 
+2025-03-12 13:00:05,010 28372 INFO odoo odoo.modules.registry: Registry loaded in 4.624s 
+2025-03-12 13:00:05,014 28372 DEBUG odoo odoo.service.server: cron0 started! 
+2025-03-12 13:00:05,015 28372 DEBUG odoo odoo.service.server: cron1 started! 
+2025-03-12 13:00:11,571 28372 DEBUG ? odoo.http: HTTP sessions stored in: c:\users\georg\appdata\local\openerp s.a\odoo\sessions 
+2025-03-12 13:00:11,577 28372 INFO odoo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-03-12 13:00:13,635 28372 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 13:00:13] "GET /odoo/apps?debug=1 HTTP/1.1" 200 - 75 0.175 1.908
+2025-03-12 13:00:14,461 28372 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 13:00:14] "GET /bus/websocket_worker_bundle?v=18.0-3 HTTP/1.1" 304 - 4 0.068 0.083
+2025-03-12 13:00:14,634 28372 DEBUG ? odoo.modules.module: module __init__.py: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 13:00:14,636 28372 DEBUG ? odoo.modules.module: module __pycache__: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 13:00:14,731 28372 DEBUG ? odoo.modules.module: module website_twitter: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 13:00:15,121 28372 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 13:00:15] "POST /web/action/load HTTP/1.1" 200 - 12 0.274 0.225
+2025-03-12 13:00:15,342 28372 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 13:00:15] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 17 0.024 0.342
+2025-03-12 13:00:15,745 28372 DEBUG odoo odoo.api: call ir.module.module().get_views(options={'action_id': 39, 'embedded_action_id': False, 'embedded_parent_res_id': False, 'load_filters': True, 'toolbar': True}, views=[[False, 'kanban'], [False, 'list'], [False, 'form'], [95, 'search']]) 
+2025-03-12 13:00:15,756 28372 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 13:00:15] "GET /websocket?version=18.0-3 HTTP/1.1" 101 - 1 0.002 0.014
+2025-03-12 13:00:15,900 28372 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 13:00:15] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.034 0.017
+2025-03-12 13:00:15,951 28372 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 13:00:15] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 57 0.060 0.154
+2025-03-12 13:00:16,006 28372 DEBUG odoo odoo.api: call ir.module.module().search_panel_select_range('module_type', category_domain=[], enable_counters=False, expand=True, filter_domain=[], hierarchize=True, limit=200, search_domain=[['application', '=', True]]) 
+2025-03-12 13:00:16,007 28372 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 13:00:16] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.005
+2025-03-12 13:00:16,084 28372 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2025-03-12 13:00:16,270 28372 DEBUG odoo odoo.api: call ir.module.module().search_panel_select_range('category_id', category_domain=[], enable_counters=True, expand=False, filter_domain=[], hierarchize=True, limit=200, search_domain=[['application', '=', True]]) 
+2025-03-12 13:00:16,276 28372 DEBUG odoo odoo.api: call ir.module.module().web_search_read(count_limit=10001, domain=[['application', '=', True]], limit=80, offset=0, order='', specification={'to_buy': {}, 'name': {}, 'state': {}, 'summary': {}, 'website': {}, 'application': {}, 'module_type': {}, 'icon': {}, 'icon_flag': {}, 'shortdesc': {}}) 
+2025-03-12 13:00:16,300 28372 DEBUG odoo odoo.modules.module: module mrp_workorder: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 13:00:16,307 28372 DEBUG odoo odoo.modules.module: module accountant: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 13:00:16,311 28372 DEBUG odoo odoo.modules.module: module knowledge: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 13:00:16,324 28372 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 13:00:16] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 54 0.036 0.018
+2025-03-12 13:00:16,332 28372 DEBUG odoo odoo.modules.module: module timesheet_grid: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 13:00:16,335 28372 DEBUG odoo odoo.modules.module: module web_studio: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 13:00:16,340 28372 DEBUG odoo odoo.modules.module: module industry_fsm: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 13:00:16,349 28372 DEBUG odoo odoo.modules.module: module sign: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 13:00:16,350 28372 DEBUG odoo odoo.modules.module: module helpdesk: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 13:00:16,352 28372 DEBUG odoo odoo.modules.module: module sale_subscription: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 13:00:16,353 28372 DEBUG odoo odoo.modules.module: module quality_control: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 13:00:16,353 28372 DEBUG odoo odoo.modules.module: module planning: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 13:00:16,360 28372 DEBUG odoo odoo.modules.module: module mrp_plm: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 13:00:16,360 28372 DEBUG odoo odoo.modules.module: module social: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 13:00:16,360 28372 DEBUG odoo odoo.modules.module: module hr_appraisal: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 13:00:16,367 28372 DEBUG odoo odoo.modules.module: module marketing_automation: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 13:00:16,367 28372 DEBUG odoo odoo.modules.module: module appointment: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 13:00:16,375 28372 DEBUG odoo odoo.modules.module: module web_mobile: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 13:00:16,379 28372 DEBUG odoo odoo.modules.module: module stock_barcode: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 13:00:16,383 28372 DEBUG odoo odoo.modules.module: module voip: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 13:00:16,387 28372 DEBUG odoo odoo.modules.module: module sale_amazon: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 13:00:16,392 28372 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 13:00:16] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.004 0.118
+2025-03-12 13:00:18,401 28372 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 13:00:18] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.100
+2025-03-12 13:00:22,623 28372 DEBUG odoo odoo.api: call ir.module.module().web_search_read(count_limit=10001, domain=[], limit=80, offset=0, order='', specification={'to_buy': {}, 'name': {}, 'state': {}, 'summary': {}, 'website': {}, 'application': {}, 'module_type': {}, 'icon': {}, 'icon_flag': {}, 'shortdesc': {}}) 
+2025-03-12 13:00:22,631 28372 DEBUG odoo odoo.api: call ir.module.module().search_panel_select_range('category_id', category_domain=[], enable_counters=True, expand=False, filter_domain=[], hierarchize=True, limit=200, search_domain=[]) 
+2025-03-12 13:00:22,672 28372 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 13:00:22] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 52 0.021 0.028
+2025-03-12 13:00:22,696 28372 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 13:00:22] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.008 0.070
+2025-03-12 13:00:26,263 28372 DEBUG odoo odoo.api: call ir.module.module().search_panel_select_range('category_id', category_domain=[], enable_counters=True, expand=False, filter_domain=[], hierarchize=True, limit=200, search_domain=['|', '|', ['summary', 'ilike', 'estate'], ['shortdesc', 'ilike', 'estate'], ['name', 'ilike', 'estate']]) 
+2025-03-12 13:00:26,517 28372 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 13:00:26] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 52 0.220 0.038
+2025-03-12 13:00:26,825 28372 DEBUG odoo odoo.api: call ir.module.module().web_search_read(count_limit=10001, domain=['|', '|', ['summary', 'ilike', 'estate'], ['shortdesc', 'ilike', 'estate'], ['name', 'ilike', 'estate']], limit=80, offset=0, order='', specification={'to_buy': {}, 'name': {}, 'state': {}, 'summary': {}, 'website': {}, 'application': {}, 'module_type': {}, 'icon': {}, 'icon_flag': {}, 'shortdesc': {}}) 
+2025-03-12 13:00:26,840 28372 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 13:00:26] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.008 0.006
+2025-03-12 13:00:27,979 28372 DEBUG odoo odoo.api: call ir.module.module(629,).button_immediate_install() 
+2025-03-12 13:00:27,985 28372 INFO odoo odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_install on ['Estate'] to user admin #2 via 127.0.0.1 
+2025-03-12 13:00:27,985 28372 INFO odoo odoo.addons.base.models.ir_module: User #2 triggered module installation 
+2025-03-12 13:00:28,069 28372 INFO odoo odoo.addons.base.models.ir_module: ALLOW access to module.button_install on ['Estate'] to user admin #2 via 127.0.0.1 
+2025-03-12 13:00:28,193 28372 DEBUG odoo odoo.modules.registry: Multiprocess load registry signaling: [Registry: 9] [Cache default: 2] [Cache assets: 1] [Cache templates: 1] [Cache routing: 1] [Cache groups: 1] 
+2025-03-12 13:00:28,202 28372 INFO odoo odoo.modules.loading: loading 1 modules... 
+2025-03-12 13:00:28,202 28372 DEBUG odoo odoo.modules.loading: Loading module base (1/1) 
+2025-03-12 13:00:28,208 28372 DEBUG odoo odoo.modules.loading: Module base loaded in 0.01s, 0 queries 
+2025-03-12 13:00:28,209 28372 INFO odoo odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-03-12 13:00:28,256 28372 INFO odoo odoo.modules.loading: updating modules list 
+2025-03-12 13:00:28,261 28372 INFO odoo odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 127.0.0.1 
+2025-03-12 13:00:29,195 28372 DEBUG odoo odoo.modules.loading: Updating graph with 11 more modules 
+2025-03-12 13:00:29,204 28372 INFO odoo odoo.modules.loading: loading 12 modules... 
+2025-03-12 13:00:29,204 28372 DEBUG odoo odoo.modules.loading: Loading module web (2/12) 
+2025-03-12 13:00:29,204 28372 DEBUG odoo odoo.modules.loading: Module web loaded in 0.00s, 0 queries 
+2025-03-12 13:00:29,204 28372 DEBUG odoo odoo.modules.loading: Loading module auth_totp (3/12) 
+2025-03-12 13:00:29,204 28372 DEBUG odoo odoo.modules.loading: Module auth_totp loaded in 0.00s, 0 queries 
+2025-03-12 13:00:29,204 28372 DEBUG odoo odoo.modules.loading: Loading module base_import (4/12) 
+2025-03-12 13:00:29,212 28372 DEBUG odoo odoo.modules.loading: Module base_import loaded in 0.01s, 0 queries 
+2025-03-12 13:00:29,212 28372 DEBUG odoo odoo.modules.loading: Loading module base_import_module (5/12) 
+2025-03-12 13:00:29,214 28372 DEBUG odoo odoo.modules.loading: Module base_import_module loaded in 0.00s, 0 queries 
+2025-03-12 13:00:29,214 28372 DEBUG odoo odoo.modules.loading: Loading module base_setup (6/12) 
+2025-03-12 13:00:29,215 28372 DEBUG odoo odoo.modules.loading: Module base_setup loaded in 0.00s, 0 queries 
+2025-03-12 13:00:29,215 28372 DEBUG odoo odoo.modules.loading: Loading module bus (7/12) 
+2025-03-12 13:00:29,216 28372 DEBUG odoo odoo.modules.loading: Module bus loaded in 0.00s, 0 queries 
+2025-03-12 13:00:29,216 28372 DEBUG odoo odoo.modules.loading: Loading module web_tour (8/12) 
+2025-03-12 13:00:29,217 28372 DEBUG odoo odoo.modules.loading: Module web_tour loaded in 0.00s, 0 queries 
+2025-03-12 13:00:29,217 28372 DEBUG odoo odoo.modules.loading: Loading module html_editor (9/12) 
+2025-03-12 13:00:29,217 28372 DEBUG odoo odoo.modules.loading: Module html_editor loaded in 0.00s, 0 queries 
+2025-03-12 13:00:29,217 28372 DEBUG odoo odoo.modules.loading: Loading module iap (10/12) 
+2025-03-12 13:00:29,217 28372 DEBUG odoo odoo.modules.loading: Module iap loaded in 0.00s, 0 queries 
+2025-03-12 13:00:29,217 28372 DEBUG odoo odoo.modules.loading: Loading module web_editor (11/12) 
+2025-03-12 13:00:29,220 28372 DEBUG odoo odoo.modules.loading: Module web_editor loaded in 0.00s, 0 queries 
+2025-03-12 13:00:29,220 28372 DEBUG odoo odoo.modules.loading: Loading module web_unsplash (12/12) 
+2025-03-12 13:00:29,220 28372 DEBUG odoo odoo.modules.loading: Module web_unsplash loaded in 0.00s, 0 queries 
+2025-03-12 13:00:29,220 28372 INFO odoo odoo.modules.loading: 12 modules loaded in 0.02s, 0 queries (+0 extra) 
+2025-03-12 13:00:29,221 28372 DEBUG odoo odoo.modules.loading: Updating graph with 1 more modules 
+2025-03-12 13:00:29,221 28372 INFO odoo odoo.modules.loading: loading 13 modules... 
+2025-03-12 13:00:29,221 28372 INFO odoo odoo.modules.loading: Loading module estate (2/13) 
+2025-03-12 13:00:29,599 28372 CRITICAL odoo odoo.modules.module: Couldn't load module estate 
+2025-03-12 13:00:29,605 28372 WARNING odoo odoo.modules.loading: Transient module states were reset 
+2025-03-12 13:00:29,705 28372 ERROR odoo odoo.modules.registry: Failed to load registry 
+2025-03-12 13:00:29,721 28372 DEBUG odoo odoo.modules.registry: Multiprocess load registry signaling: [Registry: 9] [Cache default: 2] [Cache assets: 1] [Cache templates: 1] [Cache routing: 1] [Cache groups: 1] 
+2025-03-12 13:00:29,721 28372 INFO odoo odoo.modules.loading: loading 1 modules... 
+2025-03-12 13:00:29,721 28372 DEBUG odoo odoo.modules.loading: Loading module base (1/1) 
+2025-03-12 13:00:29,730 28372 DEBUG odoo odoo.modules.loading: Module base loaded in 0.01s, 0 queries 
+2025-03-12 13:00:29,732 28372 INFO odoo odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-03-12 13:00:29,734 28372 DEBUG odoo odoo.modules.loading: Updating graph with 11 more modules 
+2025-03-12 13:00:29,734 28372 INFO odoo odoo.modules.loading: loading 12 modules... 
+2025-03-12 13:00:29,734 28372 DEBUG odoo odoo.modules.loading: Loading module web (2/12) 
+2025-03-12 13:00:29,734 28372 DEBUG odoo odoo.modules.loading: Module web loaded in 0.00s, 0 queries 
+2025-03-12 13:00:29,734 28372 DEBUG odoo odoo.modules.loading: Loading module auth_totp (3/12) 
+2025-03-12 13:00:29,734 28372 DEBUG odoo odoo.modules.loading: Module auth_totp loaded in 0.00s, 0 queries 
+2025-03-12 13:00:29,734 28372 DEBUG odoo odoo.modules.loading: Loading module base_import (4/12) 
+2025-03-12 13:00:29,734 28372 DEBUG odoo odoo.modules.loading: Module base_import loaded in 0.00s, 0 queries 
+2025-03-12 13:00:29,734 28372 DEBUG odoo odoo.modules.loading: Loading module base_import_module (5/12) 
+2025-03-12 13:00:29,734 28372 DEBUG odoo odoo.modules.loading: Module base_import_module loaded in 0.00s, 0 queries 
+2025-03-12 13:00:29,734 28372 DEBUG odoo odoo.modules.loading: Loading module base_setup (6/12) 
+2025-03-12 13:00:29,734 28372 DEBUG odoo odoo.modules.loading: Module base_setup loaded in 0.00s, 0 queries 
+2025-03-12 13:00:29,734 28372 DEBUG odoo odoo.modules.loading: Loading module bus (7/12) 
+2025-03-12 13:00:29,734 28372 DEBUG odoo odoo.modules.loading: Module bus loaded in 0.00s, 0 queries 
+2025-03-12 13:00:29,734 28372 DEBUG odoo odoo.modules.loading: Loading module web_tour (8/12) 
+2025-03-12 13:00:29,734 28372 DEBUG odoo odoo.modules.loading: Module web_tour loaded in 0.00s, 0 queries 
+2025-03-12 13:00:29,742 28372 DEBUG odoo odoo.modules.loading: Loading module html_editor (9/12) 
+2025-03-12 13:00:29,742 28372 DEBUG odoo odoo.modules.loading: Module html_editor loaded in 0.00s, 0 queries 
+2025-03-12 13:00:29,742 28372 DEBUG odoo odoo.modules.loading: Loading module iap (10/12) 
+2025-03-12 13:00:29,742 28372 DEBUG odoo odoo.modules.loading: Module iap loaded in 0.00s, 0 queries 
+2025-03-12 13:00:29,742 28372 DEBUG odoo odoo.modules.loading: Loading module web_editor (11/12) 
+2025-03-12 13:00:29,746 28372 DEBUG odoo odoo.modules.loading: Module web_editor loaded in 0.00s, 0 queries 
+2025-03-12 13:00:29,746 28372 DEBUG odoo odoo.modules.loading: Loading module web_unsplash (12/12) 
+2025-03-12 13:00:29,746 28372 DEBUG odoo odoo.modules.loading: Module web_unsplash loaded in 0.00s, 0 queries 
+2025-03-12 13:00:29,746 28372 INFO odoo odoo.modules.loading: 12 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-03-12 13:00:29,791 28372 INFO odoo odoo.modules.loading: Modules loaded. 
+2025-03-12 13:00:29,791 28372 INFO odoo odoo.modules.registry: Registry loaded in 0.078s 
+2025-03-12 13:00:30,360 28372 ERROR odoo odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "C:\odoo\odoo\odoo\http.py", line 2372, in __call__
+    response = request._serve_db()
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\http.py", line 1899, in _serve_db
+    return self._transactioning(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\http.py", line 1962, in _transactioning
+    return service_model.retrying(func, env=self.env)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\service\model.py", line 156, in retrying
+    result = func()
+             ^^^^^^
+  File "C:\odoo\odoo\odoo\http.py", line 1929, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\http.py", line 2177, in dispatch
+    result = self.request.registry['ir.http']._dispatch(endpoint)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\addons\base\models\ir_http.py", line 333, in _dispatch
+    result = endpoint(**request.params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\http.py", line 727, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\odoo\odoo\addons\web\controllers\dataset.py", line 42, in call_button
+    action = call_kw(request.env[model], method, args, kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\api.py", line 533, in call_kw
+    result = getattr(recs, name)(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo_env\Lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\addons\base\models\ir_module.py", line 75, in check_and_log
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\addons\base\models\ir_module.py", line 480, in button_immediate_install
+    return self._button_immediate_function(self.env.registry[self._name].button_install)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\addons\base\models\ir_module.py", line 604, in _button_immediate_function
+    registry = modules.registry.Registry.new(self._cr.dbname, update_module=True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo_env\Lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\tools\func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\modules\registry.py", line 127, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "C:\odoo\odoo\odoo\modules\loading.py", line 480, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\modules\loading.py", line 364, in load_marked_modules
+    loaded, processed = load_module_graph(
+                        ^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\modules\loading.py", line 185, in load_module_graph
+    load_openerp_module(package.name)
+  File "C:\odoo\odoo\odoo\modules\module.py", line 384, in load_openerp_module
+    __import__(qualname)
+  File "c:\odoo\tutorials\addons_extra\estate\__init__.py", line 5, in <module>
+    from . import estate_property
+ImportError: cannot import name 'estate_property' from partially initialized module 'odoo.addons.estate' (most likely due to a circular import) (c:\odoo\tutorials\addons_extra\estate\__init__.py)
+2025-03-12 13:00:30,369 28372 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 13:00:30] "POST /web/dataset/call_button/ir.module.module/button_immediate_install HTTP/1.1" 200 - 1621 0.735 1.664
+2025-03-12 13:01:05,093 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:01:06,164 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:02:05,114 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:02:07,191 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:03:05,120 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:03:08,206 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:04:05,127 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:04:09,218 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:05:05,139 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:05:10,231 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:06:05,149 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:06:11,248 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:07:05,155 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:07:12,262 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:08:05,159 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:08:13,287 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:09:05,162 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:09:14,301 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:10:05,168 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:10:15,328 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:11:05,179 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:11:16,346 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:12:05,182 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:12:17,365 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:13:05,194 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:13:18,387 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:14:05,208 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:14:19,408 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:15:05,215 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:15:20,434 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:16:05,222 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:16:21,456 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:17:05,227 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:17:22,476 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:18:05,234 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:18:23,495 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:19:05,237 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:19:24,509 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:20:05,244 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:20:25,534 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:21:05,254 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:21:26,553 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:22:05,259 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:22:27,569 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:23:05,269 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:23:28,591 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:24:05,275 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:24:29,615 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:25:05,293 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:25:30,638 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:26:05,296 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:26:31,655 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:27:05,300 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:27:32,671 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:28:05,312 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:28:33,687 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:29:05,319 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:29:34,708 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:30:05,324 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:30:35,733 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:31:05,338 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:31:36,747 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:32:05,349 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:32:37,769 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:33:05,363 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:33:38,786 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:34:05,366 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:34:39,802 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:35:05,377 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:35:40,816 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:36:05,387 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:36:41,834 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:37:05,399 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:37:42,847 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:38:05,401 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:38:43,866 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:39:05,404 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:39:44,884 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:40:05,418 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:40:45,906 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:41:05,420 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:41:46,917 28372 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 13:42:05,433 28372 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 13:42:33,450 28372 INFO odoo odoo.service.server: Initiating shutdown 
+2025-03-12 13:42:33,450 28372 INFO odoo odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-03-12 13:42:33,895 28372 DEBUG odoo odoo.service.server: on_close call <bound method Event.set of <threading.Event at 0x21b53fac860: unset>> 
+2025-03-12 13:42:33,900 28372 DEBUG odoo odoo.service.server: on_close call <function _kick_all at 0x0000021B5411F6A0> 
+2025-03-12 13:42:33,900 28372 DEBUG odoo odoo.service.server: current thread: <_MainThread(MainThread, started 21300)> 
+2025-03-12 13:42:33,900 28372 DEBUG odoo odoo.service.server: process <_MainThread(MainThread, started 21300)> (False) 
+2025-03-12 13:42:33,900 28372 DEBUG odoo odoo.service.server: process <Thread(odoo.service.cron.cron0, started daemon 14348)> (True) 
+2025-03-12 13:42:33,900 28372 DEBUG odoo odoo.service.server: process <Thread(odoo.service.cron.cron1, started daemon 28204)> (True) 
+2025-03-12 13:42:33,900 28372 DEBUG odoo odoo.service.server: process <ImDispatch(odoo.addons.bus.models.bus.Bus, started daemon 34736)> (True) 
+2025-03-12 13:42:33,911 28372 INFO odoo odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 4 connections  
+2025-03-12 13:42:33,912 28372 DEBUG odoo odoo.service.server: -- 
+2025-03-12 15:30:25,422 512 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.request:INFO" 
+2025-03-12 15:30:25,423 512 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.response:INFO" 
+2025-03-12 15:30:25,423 512 DEBUG ? odoo.netsvc: logger level set: ":INFO" 
+2025-03-12 15:30:25,423 512 DEBUG ? odoo.netsvc: logger level set: "odoo:DEBUG" 
+2025-03-12 15:30:25,423 512 DEBUG ? odoo.netsvc: logger level set: "odoo.sql_db:INFO" 
+2025-03-12 15:30:25,423 512 DEBUG ? odoo.netsvc: logger level set: ":INFO" 
+2025-03-12 15:30:25,424 512 INFO ? odoo: Odoo version 18.0 
+2025-03-12 15:30:25,424 512 INFO ? odoo: Using configuration file at C:\odoo\tutorials\odoo.conf 
+2025-03-12 15:30:25,424 512 INFO ? odoo: addons paths: ['C:\\odoo\\odoo\\odoo\\addons', 'c:\\users\\georg\\appdata\\local\\openerp s.a\\odoo\\addons\\18.0', 'c:\\odoo\\tutorials\\addons_extra', 'c:\\odoo\\odoo\\addons', 'c:\\odoo\\odoo\\odoo\\addons'] 
+2025-03-12 15:30:25,424 512 INFO ? odoo: database: odoo@default:default 
+2025-03-12 15:30:25,863 512 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2025-03-12 15:30:25,873 512 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltoimage to generate images from html. 
+2025-03-12 15:30:26,419 512 DEBUG ? odoo.service.server: Setting signal handlers 
+2025-03-12 15:30:26,424 512 INFO ? odoo.service.server: HTTP service (werkzeug) running on GLO:8069 
+2025-03-12 15:30:26,493 512 DEBUG odoo odoo.modules.registry: Multiprocess load registry signaling: [Registry: 9] [Cache default: 2] [Cache assets: 1] [Cache templates: 1] [Cache routing: 1] [Cache groups: 1] 
+2025-03-12 15:30:26,511 512 INFO odoo odoo.modules.loading: loading 1 modules... 
+2025-03-12 15:30:26,511 512 DEBUG odoo odoo.modules.loading: Loading module base (1/1) 
+2025-03-12 15:30:26,522 512 DEBUG odoo odoo.modules.loading: Module base loaded in 0.01s, 0 queries 
+2025-03-12 15:30:26,522 512 INFO odoo odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-03-12 15:30:26,576 512 INFO odoo odoo.modules.loading: updating modules list 
+2025-03-12 15:30:26,585 512 INFO odoo odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a 
+2025-03-12 15:30:34,596 512 WARNING odoo odoo.modules.loading: invalid module names, ignored:  estate 
+2025-03-12 15:30:34,626 512 DEBUG odoo odoo.modules.loading: Updating graph with 11 more modules 
+2025-03-12 15:30:34,626 512 INFO odoo odoo.modules.loading: loading 12 modules... 
+2025-03-12 15:30:34,626 512 DEBUG odoo odoo.modules.loading: Loading module web (2/12) 
+2025-03-12 15:30:34,628 512 DEBUG odoo odoo.modules.loading: Module web loaded in 0.00s, 0 queries 
+2025-03-12 15:30:34,628 512 DEBUG odoo odoo.modules.loading: Loading module auth_totp (3/12) 
+2025-03-12 15:30:34,670 512 DEBUG odoo odoo.modules.loading: Module auth_totp loaded in 0.04s, 0 queries 
+2025-03-12 15:30:34,670 512 DEBUG odoo odoo.modules.loading: Loading module base_import (4/12) 
+2025-03-12 15:30:35,126 512 DEBUG odoo odoo.modules.loading: Module base_import loaded in 0.46s, 0 queries 
+2025-03-12 15:30:35,126 512 DEBUG odoo odoo.modules.loading: Loading module base_import_module (5/12) 
+2025-03-12 15:30:35,137 512 DEBUG odoo odoo.modules.loading: Module base_import_module loaded in 0.01s, 0 queries 
+2025-03-12 15:30:35,138 512 DEBUG odoo odoo.modules.loading: Loading module base_setup (6/12) 
+2025-03-12 15:30:35,148 512 DEBUG odoo odoo.modules.loading: Module base_setup loaded in 0.01s, 0 queries 
+2025-03-12 15:30:35,148 512 DEBUG odoo odoo.modules.loading: Loading module bus (7/12) 
+2025-03-12 15:30:35,179 512 DEBUG odoo odoo.modules.loading: Module bus loaded in 0.03s, 0 queries 
+2025-03-12 15:30:35,179 512 DEBUG odoo odoo.modules.loading: Loading module web_tour (8/12) 
+2025-03-12 15:30:35,188 512 DEBUG odoo odoo.modules.loading: Module web_tour loaded in 0.01s, 0 queries 
+2025-03-12 15:30:35,188 512 DEBUG odoo odoo.modules.loading: Loading module html_editor (9/12) 
+2025-03-12 15:30:35,445 512 DEBUG odoo odoo.modules.loading: Module html_editor loaded in 0.26s, 0 queries 
+2025-03-12 15:30:35,445 512 DEBUG odoo odoo.modules.loading: Loading module iap (10/12) 
+2025-03-12 15:30:35,446 512 DEBUG odoo odoo.modules.loading: Module iap loaded in 0.00s, 0 queries 
+2025-03-12 15:30:35,446 512 DEBUG odoo odoo.modules.loading: Loading module web_editor (11/12) 
+2025-03-12 15:30:35,484 512 DEBUG odoo odoo.modules.loading: Module web_editor loaded in 0.04s, 0 queries 
+2025-03-12 15:30:35,484 512 DEBUG odoo odoo.modules.loading: Loading module web_unsplash (12/12) 
+2025-03-12 15:30:35,491 512 DEBUG odoo odoo.modules.loading: Module web_unsplash loaded in 0.01s, 0 queries 
+2025-03-12 15:30:35,491 512 INFO odoo odoo.modules.loading: 12 modules loaded in 0.87s, 0 queries (+0 extra) 
+2025-03-12 15:30:35,657 512 DEBUG odoo odoo.modules.registry: Invalidating templates model caches from write C:\odoo\odoo\odoo\addons\base\models\ir_ui_view.py:533 
+2025-03-12 15:30:35,663 512 DEBUG odoo odoo.modules.registry: Invalidating templates model caches from write C:\odoo\odoo\odoo\addons\base\models\ir_ui_view.py:533 
+2025-03-12 15:30:36,003 512 INFO odoo odoo.modules.loading: Modules loaded. 
+2025-03-12 15:30:36,013 512 INFO odoo odoo.modules.registry: Registry changed, signaling through the database 
+2025-03-12 15:30:36,013 512 INFO odoo odoo.modules.registry: Registry loaded in 9.586s 
+2025-03-12 15:30:36,017 512 DEBUG odoo odoo.service.server: cron0 started! 
+2025-03-12 15:30:36,017 512 DEBUG odoo odoo.service.server: cron1 started! 
+2025-03-12 15:30:46,318 512 DEBUG ? odoo.http: HTTP sessions stored in: c:\users\georg\appdata\local\openerp s.a\odoo\sessions 
+2025-03-12 15:30:46,321 512 INFO odoo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-03-12 15:30:46,335 512 DEBUG odoo odoo.http: Couldn't load Geoip Country file ([Errno 2] No such file or directory: b'c:\\usr\\share\\geoip\\geolite2-country.mmdb'). Fallbacks on Geoip City. 
+2025-03-12 15:30:46,336 512 DEBUG odoo odoo.http: Couldn't load Geoip City file at c:\usr\share\geoip\geolite2-city.mmdb. IP Resolver disabled. 
+Traceback (most recent call last):
+  File "C:\odoo\odoo\odoo\http.py", line 1189, in _country_record
+    return root.geoip_country_db.country(self.ip)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\tools\func.py", line 42, in __get__
+    value = self.fget(obj)
+            ^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\http.py", line 2312, in geoip_country_db
+    return geoip2.database.Reader(config['geoip_country_db'])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo_env\Lib\site-packages\geoip2\database.py", line 86, in __init__
+    self._db_reader = maxminddb.open_database(fileish, mode)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo_env\Lib\site-packages\maxminddb\__init__.py", line 80, in open_database
+    return cast(Reader, _extension.Reader(database, mode))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: b'c:\\usr\\share\\geoip\\geolite2-country.mmdb'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\odoo\odoo\odoo\http.py", line 2301, in geoip_city_db
+    return geoip2.database.Reader(config['geoip_city_db'])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo_env\Lib\site-packages\geoip2\database.py", line 86, in __init__
+    self._db_reader = maxminddb.open_database(fileish, mode)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo_env\Lib\site-packages\maxminddb\__init__.py", line 80, in open_database
+    return cast(Reader, _extension.Reader(database, mode))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: b'c:\\usr\\share\\geoip\\geolite2-city.mmdb'
+2025-03-12 15:30:46,367 512 INFO odoo odoo.addons.base.models.res_device: User 2 inserts device log (0C30Ind4_ELBE0LwFDSQrwP_XU911wTr7e6dwr0ifl) 
+2025-03-12 15:30:47,002 512 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:47] "GET /odoo/apps?debug=1 HTTP/1.1" 200 - 76 0.066 0.619
+2025-03-12 15:30:47,414 512 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:47] "GET /bus/websocket_worker_bundle?v=18.0-3 HTTP/1.1" 304 - 4 0.004 0.090
+2025-03-12 15:30:47,452 512 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:47] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 17 0.013 0.081
+2025-03-12 15:30:47,696 512 DEBUG ? odoo.modules.module: module __init__.py: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 15:30:47,697 512 DEBUG ? odoo.modules.module: module __init__.py: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 15:30:47,698 512 DEBUG ? odoo.modules.module: module __init__.py: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 15:30:47,699 512 DEBUG ? odoo.modules.module: module __pycache__: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 15:30:47,700 512 DEBUG ? odoo.modules.module: module __pycache__: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 15:30:47,700 512 DEBUG ? odoo.modules.module: module __pycache__: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 15:30:47,744 512 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:47] "GET /websocket?version=18.0-3 HTTP/1.1" 101 - 1 0.001 0.011
+2025-03-12 15:30:47,830 512 DEBUG ? odoo.modules.module: module website_twitter: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 15:30:47,850 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:47] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 - 0 0.000 0.181
+2025-03-12 15:30:47,862 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:47] "GET /web/static/lib/odoo_ui_icons/fonts/odoo_ui_icons.woff2 HTTP/1.1" 304 - 0 0.000 0.196
+2025-03-12 15:30:47,869 512 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:47] "POST /web/action/load HTTP/1.1" 200 - 12 0.013 0.183
+2025-03-12 15:30:48,057 512 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2025-03-12 15:30:48,244 512 DEBUG odoo odoo.api: call ir.module.module().get_views(options={'action_id': 39, 'embedded_action_id': False, 'embedded_parent_res_id': False, 'load_filters': True, 'toolbar': True}, views=[[False, 'kanban'], [False, 'list'], [False, 'form'], [95, 'search']]) 
+2025-03-12 15:30:48,255 512 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:48] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.006 0.055
+2025-03-12 15:30:48,370 512 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:48] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 56 0.044 0.147
+2025-03-12 15:30:48,434 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:48] "GET /web/static/img/odoo-icon-192x192.png HTTP/1.1" 304 - 0 0.000 0.000
+2025-03-12 15:30:48,564 512 DEBUG odoo odoo.api: call ir.module.module().search_panel_select_range('module_type', category_domain=[], enable_counters=False, expand=True, filter_domain=[], hierarchize=True, limit=200, search_domain=[['application', '=', True]]) 
+2025-03-12 15:30:48,564 512 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:48] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.000 0.000
+2025-03-12 15:30:48,696 512 DEBUG odoo odoo.api: call ir.module.module().web_search_read(count_limit=10001, domain=[['application', '=', True]], limit=80, offset=0, order='', specification={'to_buy': {}, 'name': {}, 'state': {}, 'summary': {}, 'website': {}, 'application': {}, 'module_type': {}, 'icon': {}, 'icon_flag': {}, 'shortdesc': {}}) 
+2025-03-12 15:30:48,703 512 DEBUG odoo odoo.api: call ir.module.module().search_panel_select_range('category_id', category_domain=[], enable_counters=True, expand=False, filter_domain=[], hierarchize=True, limit=200, search_domain=[['application', '=', True]]) 
+2025-03-12 15:30:48,711 512 DEBUG odoo odoo.modules.module: module mrp_workorder: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 15:30:48,711 512 DEBUG odoo odoo.modules.module: module accountant: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 15:30:48,717 512 DEBUG odoo odoo.modules.module: module knowledge: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 15:30:48,728 512 DEBUG odoo odoo.modules.module: module timesheet_grid: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 15:30:48,733 512 DEBUG odoo odoo.modules.module: module web_studio: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 15:30:48,738 512 DEBUG odoo odoo.modules.module: module industry_fsm: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 15:30:48,745 512 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:48] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 54 0.023 0.026
+2025-03-12 15:30:48,745 512 DEBUG odoo odoo.modules.module: module sign: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 15:30:48,745 512 DEBUG odoo odoo.modules.module: module helpdesk: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 15:30:48,751 512 DEBUG odoo odoo.modules.module: module sale_subscription: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 15:30:48,752 512 DEBUG odoo odoo.modules.module: module quality_control: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 15:30:48,754 512 DEBUG odoo odoo.modules.module: module planning: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 15:30:48,757 512 DEBUG odoo odoo.modules.module: module mrp_plm: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 15:30:48,758 512 DEBUG odoo odoo.modules.module: module social: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 15:30:48,759 512 DEBUG odoo odoo.modules.module: module hr_appraisal: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 15:30:48,759 512 DEBUG odoo odoo.modules.module: module marketing_automation: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 15:30:48,759 512 DEBUG odoo odoo.modules.module: module appointment: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 15:30:48,759 512 DEBUG odoo odoo.modules.module: module web_mobile: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 15:30:48,768 512 DEBUG odoo odoo.modules.module: module stock_barcode: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 15:30:48,770 512 DEBUG odoo odoo.modules.module: module voip: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 15:30:48,773 512 DEBUG odoo odoo.modules.module: module sale_amazon: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 15:30:48,777 512 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:48] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.008 0.074
+2025-03-12 15:30:48,966 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:48] "GET /sale_management/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2025-03-12 15:30:49,268 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:49] "GET /base/static/img/icons/industry_fsm.png HTTP/1.1" 304 - 0 0.000 0.000
+2025-03-12 15:30:49,273 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:49] "GET /stock/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.009
+2025-03-12 15:30:49,280 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:49] "GET /base/static/img/icons/account_accountant.png HTTP/1.1" 304 - 0 0.000 0.012
+2025-03-12 15:30:49,284 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:49] "GET /base/static/img/icons/timesheet_grid.png HTTP/1.1" 304 - 0 0.000 0.016
+2025-03-12 15:30:49,296 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:49] "GET /hr_holidays/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.009
+2025-03-12 15:30:49,296 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:49] "GET /hr/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.015
+2025-03-12 15:30:49,583 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:49] "GET /base/static/img/icons/web_studio.png HTTP/1.1" 304 - 0 0.000 0.000
+2025-03-12 15:30:49,592 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:49] "GET /purchase/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.009
+2025-03-12 15:30:49,596 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:49] "GET /project/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.014
+2025-03-12 15:30:49,596 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:49] "GET /website_sale/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.008
+2025-03-12 15:30:49,609 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:49] "GET /mass_mailing/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.006
+2025-03-12 15:30:49,612 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:49] "GET /base/static/img/icons/knowledge.png HTTP/1.1" 304 - 0 0.000 0.005
+2025-03-12 15:30:49,908 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:49] "GET /hr_recruitment/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.005
+2025-03-12 15:30:49,909 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:49] "GET /data_recycle/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.005
+2025-03-12 15:30:49,911 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:49] "GET /mrp/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.009
+2025-03-12 15:30:49,914 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:49] "GET /point_of_sale/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.009
+2025-03-12 15:30:49,923 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:49] "GET /pos_restaurant/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2025-03-12 15:30:49,925 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:49] "GET /hr_expense/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.008
+2025-03-12 15:30:50,218 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:50] "GET /base/static/img/icons/mrp_workorder.png HTTP/1.1" 304 - 0 0.000 0.005
+2025-03-12 15:30:50,221 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:50] "GET /crm/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.006
+2025-03-12 15:30:50,229 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:50] "GET /account/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.006
+2025-03-12 15:30:50,230 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:50] "GET /website/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2025-03-12 15:30:50,238 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:50] "GET /maintenance/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.006
+2025-03-12 15:30:50,240 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:50] "GET /marketing_card/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2025-03-12 15:30:50,530 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:50] "GET /base/static/img/icons/helpdesk.png HTTP/1.1" 304 - 0 0.000 0.003
+2025-03-12 15:30:50,531 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:50] "GET /base/static/img/icons/sign.png HTTP/1.1" 304 - 0 0.000 0.005
+2025-03-12 15:30:50,539 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:50] "GET /base/static/img/icons/sale_subscription.png HTTP/1.1" 304 - 0 0.000 0.003
+2025-03-12 15:30:50,539 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:50] "GET /base/static/img/icons/quality_control.png HTTP/1.1" 304 - 0 0.000 0.002
+2025-03-12 15:30:50,550 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:50] "GET /website_slides/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.005
+2025-03-12 15:30:50,551 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:50] "GET /base/static/img/icons/planning.png HTTP/1.1" 304 - 0 0.000 0.004
+2025-03-12 15:30:50,843 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:50] "GET /website_event/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2025-03-12 15:30:50,845 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:50] "GET /mail/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.006
+2025-03-12 15:30:50,855 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:50] "GET /contacts/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.007
+2025-03-12 15:30:50,858 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:50] "GET /base/static/img/icons/mrp_plm.png HTTP/1.1" 304 - 0 0.000 0.008
+2025-03-12 15:30:50,873 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:50] "GET /calendar/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.010
+2025-03-12 15:30:50,876 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:50] "GET /base/static/img/icons/social.png HTTP/1.1" 304 - 0 0.000 0.007
+2025-03-12 15:30:51,160 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:51] "GET /base/static/img/icons/hr_appraisal.png HTTP/1.1" 304 - 0 0.000 0.005
+2025-03-12 15:30:51,161 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:51] "GET /fleet/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2025-03-12 15:30:51,170 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:51] "GET /base/static/img/icons/marketing_automation.png HTTP/1.1" 304 - 0 0.000 0.009
+2025-03-12 15:30:51,171 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:51] "GET /im_livechat/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.005
+2025-03-12 15:30:51,186 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:51] "GET /survey/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.005
+2025-03-12 15:30:51,187 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:51] "GET /base/static/img/icons/appointment.png HTTP/1.1" 304 - 0 0.000 0.006
+2025-03-12 15:30:51,474 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:51] "GET /repair/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2025-03-12 15:30:51,474 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:51] "GET /base/static/img/icons/web_mobile.png HTTP/1.1" 304 - 0 0.000 0.002
+2025-03-12 15:30:51,486 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:51] "GET /hr_attendance/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.007
+2025-03-12 15:30:51,488 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:51] "GET /mass_mailing_sms/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.006
+2025-03-12 15:30:51,496 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:51] "GET /base/static/img/icons/stock_barcode.png HTTP/1.1" 304 - 0 0.000 0.004
+2025-03-12 15:30:51,499 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:51] "GET /project_todo/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.006
+2025-03-12 15:30:51,788 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:51] "GET /hr_skills/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2025-03-12 15:30:51,790 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:51] "GET /base/static/img/icons/voip.png HTTP/1.1" 304 - 0 0.000 0.004
+2025-03-12 15:30:51,794 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:51] "GET /lunch/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2025-03-12 15:30:51,799 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:51] "GET /website_hr_recruitment/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2025-03-12 15:30:51,808 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:51] "GET /base/static/img/icons/sale_amazon.png HTTP/1.1" 304 - 0 0.000 0.002
+2025-03-12 15:30:51,811 512 INFO ? werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:51] "GET /hr_contract/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2025-03-12 15:30:53,663 512 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:53] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.020
+2025-03-12 15:30:57,335 512 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:57] "POST /web/action/load HTTP/1.1" 200 - 9 0.003 0.017
+2025-03-12 15:30:57,658 512 DEBUG odoo odoo.api: call base.module.update().get_views(options={'action_id': 43, 'embedded_action_id': False, 'embedded_parent_res_id': False, 'load_filters': False, 'toolbar': False}, views=[[False, 'form']]) 
+2025-03-12 15:30:57,679 512 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:57] "POST /web/dataset/call_kw/base.module.update/get_views HTTP/1.1" 200 - 12 0.004 0.021
+2025-03-12 15:30:57,901 512 DEBUG odoo odoo.api: call base.module.update().onchange({}, [], {'updated': {}, 'added': {}, 'state': {}}) 
+2025-03-12 15:30:57,901 512 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:57] "POST /web/dataset/call_kw/base.module.update/onchange HTTP/1.1" 200 - 2 0.000 0.000
+2025-03-12 15:30:59,355 512 DEBUG odoo odoo.api: call base.module.update().web_save({}, specification={'updated': {}, 'added': {}, 'state': {}}) 
+2025-03-12 15:30:59,362 512 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 15:30:59] "POST /web/dataset/call_kw/base.module.update/web_save HTTP/1.1" 200 - 5 0.006 0.005
+2025-03-12 15:30:59,676 512 DEBUG odoo odoo.api: call base.module.update(4,).update_module() 
+2025-03-12 15:30:59,681 512 INFO odoo odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user admin #2 via 127.0.0.1 
+2025-03-12 15:31:00,487 512 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 15:31:00] "POST /web/dataset/call_button/base.module.update/update_module HTTP/1.1" 200 - 1564 0.439 0.374
+2025-03-12 15:31:04,315 512 DEBUG odoo odoo.api: call ir.module.module().search_panel_select_range('category_id', category_domain=[], enable_counters=True, expand=False, filter_domain=[], hierarchize=True, limit=200, search_domain=[]) 
+2025-03-12 15:31:04,352 512 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 15:31:04] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 52 0.021 0.019
+2025-03-12 15:31:04,617 512 DEBUG odoo odoo.api: call ir.module.module().web_search_read(count_limit=10001, domain=[], limit=80, offset=0, order='', specification={'to_buy': {}, 'name': {}, 'state': {}, 'summary': {}, 'website': {}, 'application': {}, 'module_type': {}, 'icon': {}, 'icon_flag': {}, 'shortdesc': {}}) 
+2025-03-12 15:31:04,693 512 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 15:31:04] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.005 0.072
+2025-03-12 15:31:11,148 512 DEBUG odoo odoo.api: call ir.module.module().search_panel_select_range('category_id', category_domain=[], enable_counters=True, expand=False, filter_domain=[], hierarchize=True, limit=200, search_domain=['|', '|', ['summary', 'ilike', 'estate'], ['shortdesc', 'ilike', 'estate'], ['name', 'ilike', 'estate']]) 
+2025-03-12 15:31:11,206 512 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 15:31:11] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 52 0.027 0.035
+2025-03-12 15:31:11,398 512 DEBUG odoo odoo.api: call ir.module.module().web_search_read(count_limit=10001, domain=['|', '|', ['summary', 'ilike', 'estate'], ['shortdesc', 'ilike', 'estate'], ['name', 'ilike', 'estate']], limit=80, offset=0, order='', specification={'to_buy': {}, 'name': {}, 'state': {}, 'summary': {}, 'website': {}, 'application': {}, 'module_type': {}, 'icon': {}, 'icon_flag': {}, 'shortdesc': {}}) 
+2025-03-12 15:31:11,405 512 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 15:31:11] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.005 0.006
+2025-03-12 15:41:42,692 31708 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.request:INFO" 
+2025-03-12 15:41:42,693 31708 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.response:INFO" 
+2025-03-12 15:41:42,693 31708 DEBUG ? odoo.netsvc: logger level set: ":INFO" 
+2025-03-12 15:41:42,693 31708 DEBUG ? odoo.netsvc: logger level set: "odoo:DEBUG" 
+2025-03-12 15:41:42,693 31708 DEBUG ? odoo.netsvc: logger level set: "odoo.sql_db:INFO" 
+2025-03-12 15:41:42,693 31708 DEBUG ? odoo.netsvc: logger level set: ":INFO" 
+2025-03-12 15:41:42,693 31708 INFO ? odoo: Odoo version 18.0 
+2025-03-12 15:41:42,693 31708 INFO ? odoo: Using configuration file at C:\odoo\tutorials\odoo.conf 
+2025-03-12 15:41:42,693 31708 INFO ? odoo: addons paths: ['C:\\odoo\\odoo\\odoo\\addons', 'c:\\users\\georg\\appdata\\local\\openerp s.a\\odoo\\addons\\18.0', 'c:\\odoo\\tutorials\\addons_extra', 'c:\\odoo\\odoo\\addons', 'c:\\odoo\\odoo\\odoo\\addons'] 
+2025-03-12 15:41:42,693 31708 INFO ? odoo: database: odoo@default:default 
+2025-03-12 15:41:42,987 31708 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2025-03-12 15:41:42,995 31708 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltoimage to generate images from html. 
+2025-03-12 15:41:43,355 31708 DEBUG ? odoo.service.server: Setting signal handlers 
+2025-03-12 15:41:43,358 31708 INFO ? odoo.service.server: HTTP service (werkzeug) running on GLO:8069 
+2025-03-12 15:41:43,422 31708 DEBUG odoo odoo.modules.registry: Multiprocess load registry signaling: [Registry: 10] [Cache default: 2] [Cache assets: 1] [Cache templates: 1] [Cache routing: 1] [Cache groups: 1] 
+2025-03-12 15:41:43,432 31708 INFO odoo odoo.modules.loading: loading 1 modules... 
+2025-03-12 15:41:43,432 31708 DEBUG odoo odoo.modules.loading: Loading module base (1/1) 
+2025-03-12 15:41:43,437 31708 DEBUG odoo odoo.modules.loading: Module base loaded in 0.00s, 0 queries 
+2025-03-12 15:41:43,438 31708 INFO odoo odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2025-03-12 15:41:43,470 31708 INFO odoo odoo.modules.loading: updating modules list 
+2025-03-12 15:41:43,476 31708 INFO odoo odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a 
+2025-03-12 15:41:44,853 31708 WARNING odoo odoo.modules.loading: invalid module names, ignored:  estate 
+2025-03-12 15:41:44,871 31708 DEBUG odoo odoo.modules.loading: Updating graph with 11 more modules 
+2025-03-12 15:41:44,871 31708 INFO odoo odoo.modules.loading: loading 12 modules... 
+2025-03-12 15:41:44,871 31708 DEBUG odoo odoo.modules.loading: Loading module web (2/12) 
+2025-03-12 15:41:44,873 31708 DEBUG odoo odoo.modules.loading: Module web loaded in 0.00s, 0 queries 
+2025-03-12 15:41:44,873 31708 DEBUG odoo odoo.modules.loading: Loading module auth_totp (3/12) 
+2025-03-12 15:41:44,905 31708 DEBUG odoo odoo.modules.loading: Module auth_totp loaded in 0.03s, 0 queries 
+2025-03-12 15:41:44,905 31708 DEBUG odoo odoo.modules.loading: Loading module base_import (4/12) 
+2025-03-12 15:41:45,235 31708 DEBUG odoo odoo.modules.loading: Module base_import loaded in 0.33s, 0 queries 
+2025-03-12 15:41:45,235 31708 DEBUG odoo odoo.modules.loading: Loading module base_import_module (5/12) 
+2025-03-12 15:41:45,244 31708 DEBUG odoo odoo.modules.loading: Module base_import_module loaded in 0.01s, 0 queries 
+2025-03-12 15:41:45,244 31708 DEBUG odoo odoo.modules.loading: Loading module base_setup (6/12) 
+2025-03-12 15:41:45,250 31708 DEBUG odoo odoo.modules.loading: Module base_setup loaded in 0.01s, 0 queries 
+2025-03-12 15:41:45,251 31708 DEBUG odoo odoo.modules.loading: Loading module bus (7/12) 
+2025-03-12 15:41:45,267 31708 DEBUG odoo odoo.modules.loading: Module bus loaded in 0.02s, 0 queries 
+2025-03-12 15:41:45,267 31708 DEBUG odoo odoo.modules.loading: Loading module web_tour (8/12) 
+2025-03-12 15:41:45,277 31708 DEBUG odoo odoo.modules.loading: Module web_tour loaded in 0.01s, 0 queries 
+2025-03-12 15:41:45,277 31708 DEBUG odoo odoo.modules.loading: Loading module html_editor (9/12) 
+2025-03-12 15:41:45,419 31708 DEBUG odoo odoo.modules.loading: Module html_editor loaded in 0.14s, 0 queries 
+2025-03-12 15:41:45,419 31708 DEBUG odoo odoo.modules.loading: Loading module iap (10/12) 
+2025-03-12 15:41:45,419 31708 DEBUG odoo odoo.modules.loading: Module iap loaded in 0.00s, 0 queries 
+2025-03-12 15:41:45,419 31708 DEBUG odoo odoo.modules.loading: Loading module web_editor (11/12) 
+2025-03-12 15:41:45,444 31708 DEBUG odoo odoo.modules.loading: Module web_editor loaded in 0.02s, 0 queries 
+2025-03-12 15:41:45,444 31708 DEBUG odoo odoo.modules.loading: Loading module web_unsplash (12/12) 
+2025-03-12 15:41:45,495 31708 DEBUG odoo odoo.modules.loading: Module web_unsplash loaded in 0.05s, 0 queries 
+2025-03-12 15:41:45,496 31708 INFO odoo odoo.modules.loading: 12 modules loaded in 0.62s, 0 queries (+0 extra) 
+2025-03-12 15:41:45,572 31708 DEBUG odoo odoo.modules.registry: Invalidating templates model caches from write C:\odoo\odoo\odoo\addons\base\models\ir_ui_view.py:533 
+2025-03-12 15:41:45,588 31708 DEBUG odoo odoo.modules.registry: Invalidating templates model caches from write C:\odoo\odoo\odoo\addons\base\models\ir_ui_view.py:533 
+2025-03-12 15:41:45,816 31708 INFO odoo odoo.modules.loading: Modules loaded. 
+2025-03-12 15:41:45,829 31708 INFO odoo odoo.modules.registry: Registry changed, signaling through the database 
+2025-03-12 15:41:45,832 31708 INFO odoo odoo.modules.registry: Registry loaded in 2.472s 
+2025-03-12 15:41:45,832 31708 DEBUG odoo odoo.service.server: cron0 started! 
+2025-03-12 15:41:45,832 31708 DEBUG odoo odoo.service.server: cron1 started! 
+2025-03-12 15:42:09,011 31708 DEBUG ? odoo.http: HTTP sessions stored in: c:\users\georg\appdata\local\openerp s.a\odoo\sessions 
+2025-03-12 15:42:09,011 31708 INFO odoo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-03-12 15:42:09,060 31708 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 15:42:09] "GET /websocket?version=18.0-3 HTTP/1.1" 101 - 6 0.017 0.031
+2025-03-12 15:42:09,392 31708 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2025-03-12 15:42:09,623 31708 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 15:42:09] "POST /bus/get_autovacuum_info HTTP/1.1" 200 - 4 0.008 0.220
+2025-03-12 15:42:45,888 31708 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 15:42:45,894 31708 DEBUG odoo odoo.addons.base.models.ir_cron: job 1 acquired 
+2025-03-12 15:42:45,952 31708 DEBUG odoo odoo.addons.base.models.ir_cron: cron.object.execute('odoo', 1, '*', 'Base: Auto-vacuum internal data', 35) 
+2025-03-12 15:42:45,952 31708 INFO odoo odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) starting 
+2025-03-12 15:42:45,984 31708 DEBUG odoo odoo.addons.base.models.ir_autovacuum: Calling wizard.ir.model.menu.create()._transient_vacuum() 
+2025-03-12 15:42:45,984 31708 DEBUG odoo odoo.addons.base.models.ir_autovacuum: Calling reset.view.arch.wizard()._transient_vacuum() 
+2025-03-12 15:42:45,984 31708 DEBUG odoo odoo.addons.base.models.ir_autovacuum: Calling ir.attachment()._gc_file_store() 
+2025-03-12 15:42:46,000 31708 INFO odoo odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed 
+2025-03-12 15:42:46,000 31708 DEBUG odoo odoo.addons.base.models.ir_autovacuum: Calling ir.cron.trigger()._gc_cron_triggers() 
+2025-03-12 15:42:46,016 31708 DEBUG odoo odoo.addons.base.models.ir_autovacuum: Calling ir.cron.progress()._gc_cron_progress() 
+2025-03-12 15:42:46,016 31708 INFO odoo odoo.models.unlink: User #1 deleted ir.cron.progress records with IDs: [1, 2] 
+2025-03-12 15:42:46,032 31708 DEBUG odoo odoo.addons.base.models.ir_autovacuum: Calling ir.http()._gc_sessions() 
+2025-03-12 15:42:46,032 31708 DEBUG odoo odoo.addons.base.models.ir_autovacuum: Calling ir.demo()._transient_vacuum() 
+2025-03-12 15:42:46,032 31708 DEBUG odoo odoo.addons.base.models.ir_autovacuum: Calling ir.demo_failure()._transient_vacuum() 
+2025-03-12 15:42:46,032 31708 DEBUG odoo odoo.addons.base.models.ir_autovacuum: Calling ir.demo_failure.wizard()._transient_vacuum() 
+2025-03-12 15:42:46,048 31708 DEBUG odoo odoo.addons.base.models.ir_autovacuum: Calling ir.profile()._gc_profile() 
+2025-03-12 15:42:46,048 31708 DEBUG odoo odoo.addons.base.models.ir_autovacuum: Calling base.enable.profiling.wizard()._transient_vacuum() 
+2025-03-12 15:42:46,048 31708 DEBUG odoo odoo.addons.base.models.ir_autovacuum: Calling res.config()._transient_vacuum() 
+2025-03-12 15:42:46,048 31708 DEBUG odoo odoo.addons.base.models.ir_autovacuum: Calling res.config.settings()._transient_vacuum() 
+2025-03-12 15:42:46,063 31708 DEBUG odoo odoo.addons.base.models.ir_autovacuum: Calling res.users.log()._gc_user_logs() 
+2025-03-12 15:42:46,063 31708 INFO odoo odoo.addons.base.models.res_users: GC'd 0 user log entries 
+2025-03-12 15:42:46,063 31708 DEBUG odoo odoo.addons.base.models.ir_autovacuum: Calling res.users.identitycheck()._transient_vacuum() 
+2025-03-12 15:42:46,063 31708 DEBUG odoo odoo.addons.base.models.ir_autovacuum: Calling change.password.wizard()._transient_vacuum() 
+2025-03-12 15:42:46,063 31708 DEBUG odoo odoo.addons.base.models.ir_autovacuum: Calling change.password.user()._transient_vacuum() 
+2025-03-12 15:42:46,063 31708 DEBUG odoo odoo.addons.base.models.ir_autovacuum: Calling change.password.own()._transient_vacuum() 
+2025-03-12 15:42:46,063 31708 DEBUG odoo odoo.addons.base.models.ir_autovacuum: Calling res.users.apikeys()._gc_user_apikeys() 
+2025-03-12 15:42:46,063 31708 INFO odoo odoo.addons.base.models.res_users: GC 'res.users.apikeys' delete 0 entries 
+2025-03-12 15:42:46,063 31708 DEBUG odoo odoo.addons.base.models.ir_autovacuum: Calling res.users.apikeys.description()._transient_vacuum() 
+2025-03-12 15:42:46,082 31708 DEBUG odoo odoo.addons.base.models.ir_autovacuum: Calling res.device.log()._gc_device_log() 
+2025-03-12 15:42:46,082 31708 INFO odoo odoo.addons.base.models.res_device: GC device logs delete 2 entries 
+2025-03-12 15:42:46,082 31708 DEBUG odoo odoo.addons.base.models.ir_autovacuum: Calling res.device()._gc_device_log() 
+2025-03-12 15:42:46,082 31708 INFO odoo odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-03-12 15:42:46,082 31708 DEBUG odoo odoo.addons.base.models.ir_autovacuum: Calling base.module.update()._transient_vacuum() 
+2025-03-12 15:42:46,082 31708 INFO odoo odoo.models.unlink: User #1 deleted base.module.update records with IDs: [2, 3] 
+2025-03-12 15:42:46,082 31708 DEBUG odoo odoo.addons.base.models.ir_autovacuum: Calling base.language.install()._transient_vacuum() 
+2025-03-12 15:42:46,095 31708 DEBUG odoo odoo.addons.base.models.ir_autovacuum: Calling base.language.import()._transient_vacuum() 
+2025-03-12 15:42:46,095 31708 DEBUG odoo odoo.addons.base.models.ir_autovacuum: Calling base.module.upgrade()._transient_vacuum() 
+2025-03-12 15:42:46,095 31708 DEBUG odoo odoo.addons.base.models.ir_autovacuum: Calling base.module.uninstall()._transient_vacuum() 
+2025-03-12 15:42:46,095 31708 DEBUG odoo odoo.addons.base.models.ir_autovacuum: Calling base.language.export()._transient_vacuum() 
+2025-03-12 15:42:46,095 31708 DEBUG odoo odoo.addons.base.models.ir_autovacuum: Calling base.partner.merge.line()._transient_vacuum() 
+2025-03-12 15:42:46,105 31708 DEBUG odoo odoo.addons.base.models.ir_autovacuum: Calling base.partner.merge.automatic.wizard()._transient_vacuum() 
+2025-03-12 15:42:46,105 31708 DEBUG odoo odoo.addons.base.models.ir_autovacuum: Calling base.document.layout()._transient_vacuum() 
+2025-03-12 15:42:46,105 31708 DEBUG odoo odoo.addons.base.models.ir_autovacuum: Calling auth_totp.device()._gc_user_apikeys() 
+2025-03-12 15:42:46,111 31708 INFO odoo odoo.addons.base.models.res_users: GC 'auth_totp.device' delete 0 entries 
+2025-03-12 15:42:46,113 31708 DEBUG odoo odoo.addons.base.models.ir_autovacuum: Calling auth_totp.wizard()._transient_vacuum() 
+2025-03-12 15:42:46,116 31708 DEBUG odoo odoo.addons.base.models.ir_autovacuum: Calling base_import.import()._transient_vacuum() 
+2025-03-12 15:42:46,119 31708 DEBUG odoo odoo.addons.base.models.ir_autovacuum: Calling base.import.module()._transient_vacuum() 
+2025-03-12 15:42:46,121 31708 DEBUG odoo odoo.addons.base.models.ir_autovacuum: Calling bus.bus()._gc_messages() 
+2025-03-12 15:42:46,124 31708 INFO odoo odoo.models.unlink: User #1 deleted bus.bus records with IDs: [22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35] 
+2025-03-12 15:42:46,124 31708 DEBUG odoo odoo.addons.base.models.ir_autovacuum: Calling bus.presence()._gc_bus_presence() 
+2025-03-12 15:42:46,126 31708 INFO odoo odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) done in 0.174s 
+2025-03-12 15:42:46,126 31708 DEBUG odoo odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) server action #35 with uid 1 executed in 0.174s 
+2025-03-12 15:42:46,126 31708 INFO odoo odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) processed 0 records, 0 records remaining 
+2025-03-12 15:42:46,150 31708 INFO odoo odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) completed 
+2025-03-12 15:42:46,158 31708 DEBUG odoo odoo.addons.base.models.ir_cron: job 1 updated and released 
+2025-03-12 15:42:46,158 31708 DEBUG odoo odoo.addons.base.models.ir_cron: job 2 acquired 
+2025-03-12 15:42:46,158 31708 DEBUG odoo odoo.addons.base.models.ir_cron: cron.object.execute('odoo', 1, '*', 'Base: Portal Users Deletion', 36) 
+2025-03-12 15:42:46,158 31708 INFO odoo odoo.addons.base.models.ir_cron: Job 'Base: Portal Users Deletion' (2) starting 
+2025-03-12 15:42:46,158 31708 INFO odoo odoo.addons.base.models.ir_cron: Job 'Base: Portal Users Deletion' (2) done in 0.000s 
+2025-03-12 15:42:46,158 31708 DEBUG odoo odoo.addons.base.models.ir_cron: Job 'Base: Portal Users Deletion' (2) server action #36 with uid 1 executed in 0.000s 
+2025-03-12 15:42:46,173 31708 INFO odoo odoo.addons.base.models.ir_cron: Job 'Base: Portal Users Deletion' (2) processed 0 records, 0 records remaining 
+2025-03-12 15:42:46,184 31708 INFO odoo odoo.addons.base.models.ir_cron: Job 'Base: Portal Users Deletion' (2) completed 
+2025-03-12 15:42:46,186 31708 DEBUG odoo odoo.addons.base.models.ir_cron: job 2 updated and released 
+2025-03-12 15:42:47,043 31708 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 15:43:46,193 31708 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 15:43:48,056 31708 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 15:44:46,194 31708 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 15:44:49,068 31708 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 15:45:46,200 31708 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 15:45:50,082 31708 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 15:46:46,206 31708 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 15:46:51,102 31708 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 15:47:46,213 31708 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 15:47:52,122 31708 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 15:48:33,945 3396 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.request:INFO" 
+2025-03-12 15:48:33,945 3396 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.response:INFO" 
+2025-03-12 15:48:33,945 3396 DEBUG ? odoo.netsvc: logger level set: ":INFO" 
+2025-03-12 15:48:33,945 3396 DEBUG ? odoo.netsvc: logger level set: "odoo:DEBUG" 
+2025-03-12 15:48:33,945 3396 DEBUG ? odoo.netsvc: logger level set: "odoo.sql_db:INFO" 
+2025-03-12 15:48:33,945 3396 DEBUG ? odoo.netsvc: logger level set: ":INFO" 
+2025-03-12 15:48:33,945 3396 INFO ? odoo: Odoo version 18.0 
+2025-03-12 15:48:33,945 3396 INFO ? odoo: Using configuration file at C:\odoo\tutorials\odoo.conf 
+2025-03-12 15:48:33,945 3396 INFO ? odoo: addons paths: ['C:\\odoo\\odoo\\odoo\\addons', 'c:\\users\\georg\\appdata\\local\\openerp s.a\\odoo\\addons\\18.0', 'c:\\odoo\\tutorials\\addons_extra', 'c:\\odoo\\odoo\\addons', 'c:\\odoo\\odoo\\odoo\\addons'] 
+2025-03-12 15:48:33,947 3396 INFO ? odoo: database: odoo@default:default 
+2025-03-12 15:48:34,180 3396 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2025-03-12 15:48:34,190 3396 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltoimage to generate images from html. 
+2025-03-12 15:48:34,525 3396 DEBUG ? odoo.service.server: Setting signal handlers 
+2025-03-12 15:48:34,525 3396 INFO ? odoo.service.server: HTTP service (werkzeug) running on GLO:8069 
+2025-03-12 15:48:34,590 3396 DEBUG odoo odoo.modules.registry: Multiprocess load registry signaling: [Registry: 11] [Cache default: 2] [Cache assets: 1] [Cache templates: 1] [Cache routing: 1] [Cache groups: 1] 
+2025-03-12 15:48:34,604 3396 INFO odoo odoo.modules.loading: loading 1 modules... 
+2025-03-12 15:48:34,604 3396 DEBUG odoo odoo.modules.loading: Loading module base (1/1) 
+2025-03-12 15:48:34,609 3396 DEBUG odoo odoo.modules.loading: Module base loaded in 0.01s, 0 queries 
+2025-03-12 15:48:34,609 3396 INFO odoo odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-03-12 15:48:34,636 3396 INFO odoo odoo.modules.loading: updating modules list 
+2025-03-12 15:48:34,645 3396 INFO odoo odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a 
+2025-03-12 15:48:34,908 3396 DEBUG ? odoo.http: HTTP sessions stored in: c:\users\georg\appdata\local\openerp s.a\odoo\sessions 
+2025-03-12 15:48:35,970 3396 WARNING odoo odoo.modules.loading: invalid module names, ignored:  estate 
+2025-03-12 15:48:35,987 3396 DEBUG odoo odoo.modules.loading: Updating graph with 11 more modules 
+2025-03-12 15:48:35,987 3396 INFO odoo odoo.modules.loading: loading 12 modules... 
+2025-03-12 15:48:35,987 3396 DEBUG odoo odoo.modules.loading: Loading module web (2/12) 
+2025-03-12 15:48:35,987 3396 DEBUG odoo odoo.modules.loading: Module web loaded in 0.00s, 0 queries 
+2025-03-12 15:48:35,987 3396 DEBUG odoo odoo.modules.loading: Loading module auth_totp (3/12) 
+2025-03-12 15:48:36,027 3396 DEBUG odoo odoo.modules.loading: Module auth_totp loaded in 0.04s, 0 queries 
+2025-03-12 15:48:36,027 3396 DEBUG odoo odoo.modules.loading: Loading module base_import (4/12) 
+2025-03-12 15:48:36,356 3396 DEBUG odoo odoo.modules.loading: Module base_import loaded in 0.33s, 0 queries 
+2025-03-12 15:48:36,356 3396 DEBUG odoo odoo.modules.loading: Loading module base_import_module (5/12) 
+2025-03-12 15:48:36,366 3396 DEBUG odoo odoo.modules.loading: Module base_import_module loaded in 0.01s, 0 queries 
+2025-03-12 15:48:36,366 3396 DEBUG odoo odoo.modules.loading: Loading module base_setup (6/12) 
+2025-03-12 15:48:36,373 3396 DEBUG odoo odoo.modules.loading: Module base_setup loaded in 0.01s, 0 queries 
+2025-03-12 15:48:36,373 3396 DEBUG odoo odoo.modules.loading: Loading module bus (7/12) 
+2025-03-12 15:48:36,390 3396 DEBUG odoo odoo.modules.loading: Module bus loaded in 0.02s, 0 queries 
+2025-03-12 15:48:36,390 3396 DEBUG odoo odoo.modules.loading: Loading module web_tour (8/12) 
+2025-03-12 15:48:36,401 3396 DEBUG odoo odoo.modules.loading: Module web_tour loaded in 0.01s, 0 queries 
+2025-03-12 15:48:36,401 3396 DEBUG odoo odoo.modules.loading: Loading module html_editor (9/12) 
+2025-03-12 15:48:36,552 3396 DEBUG odoo odoo.modules.loading: Module html_editor loaded in 0.15s, 0 queries 
+2025-03-12 15:48:36,552 3396 DEBUG odoo odoo.modules.loading: Loading module iap (10/12) 
+2025-03-12 15:48:36,552 3396 DEBUG odoo odoo.modules.loading: Module iap loaded in 0.00s, 0 queries 
+2025-03-12 15:48:36,552 3396 DEBUG odoo odoo.modules.loading: Loading module web_editor (11/12) 
+2025-03-12 15:48:36,617 3396 DEBUG odoo odoo.modules.loading: Module web_editor loaded in 0.07s, 0 queries 
+2025-03-12 15:48:36,617 3396 DEBUG odoo odoo.modules.loading: Loading module web_unsplash (12/12) 
+2025-03-12 15:48:36,621 3396 DEBUG odoo odoo.modules.loading: Module web_unsplash loaded in 0.00s, 0 queries 
+2025-03-12 15:48:36,621 3396 INFO odoo odoo.modules.loading: 12 modules loaded in 0.63s, 0 queries (+0 extra) 
+2025-03-12 15:48:36,709 3396 DEBUG odoo odoo.modules.registry: Invalidating templates model caches from write C:\odoo\odoo\odoo\addons\base\models\ir_ui_view.py:533 
+2025-03-12 15:48:36,713 3396 DEBUG odoo odoo.modules.registry: Invalidating templates model caches from write C:\odoo\odoo\odoo\addons\base\models\ir_ui_view.py:533 
+2025-03-12 15:48:36,942 3396 INFO odoo odoo.modules.loading: Modules loaded. 
+2025-03-12 15:48:36,942 3396 INFO odoo odoo.modules.registry: Registry changed, signaling through the database 
+2025-03-12 15:48:36,942 3396 INFO odoo odoo.modules.registry: Registry loaded in 2.417s 
+2025-03-12 15:48:36,950 3396 DEBUG odoo odoo.service.server: cron0 started! 
+2025-03-12 15:48:36,950 3396 DEBUG odoo odoo.service.server: cron1 started! 
+2025-03-12 15:48:36,950 3396 INFO odoo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-03-12 15:48:37,053 3396 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 15:48:37] "GET /websocket?version=18.0-3 HTTP/1.1" 101 - 6 0.000 2.147
+2025-03-12 15:48:37,377 3396 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2025-03-12 15:48:37,478 3396 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 15:48:37] "POST /bus/get_autovacuum_info HTTP/1.1" 200 - 4 0.002 0.096
+2025-03-12 15:49:36,994 3396 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 15:49:38,064 3396 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 15:50:37,001 3396 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 15:50:39,081 3396 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 16:50:38,410 33036 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.request:INFO" 
+2025-03-12 16:50:38,410 33036 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.response:INFO" 
+2025-03-12 16:50:38,410 33036 DEBUG ? odoo.netsvc: logger level set: ":INFO" 
+2025-03-12 16:50:38,410 33036 DEBUG ? odoo.netsvc: logger level set: "odoo:DEBUG" 
+2025-03-12 16:50:38,410 33036 DEBUG ? odoo.netsvc: logger level set: "odoo.sql_db:INFO" 
+2025-03-12 16:50:38,410 33036 DEBUG ? odoo.netsvc: logger level set: ":INFO" 
+2025-03-12 16:50:38,410 33036 INFO ? odoo: Odoo version 18.0 
+2025-03-12 16:50:38,410 33036 INFO ? odoo: Using configuration file at C:\odoo\odoo\odoo.conf 
+2025-03-12 16:50:38,410 33036 INFO ? odoo: addons paths: ['C:\\odoo\\odoo\\odoo\\addons', 'c:\\users\\georg\\appdata\\local\\openerp s.a\\odoo\\addons\\18.0', 'c:\\odoo\\tutorials\\addons_extra', 'c:\\odoo\\odoo\\addons', 'c:\\odoo\\odoo\\odoo\\addons'] 
+2025-03-12 16:50:38,410 33036 INFO ? odoo: database: odoo@default:default 
+2025-03-12 16:50:38,987 33036 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2025-03-12 16:50:39,003 33036 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltoimage to generate images from html. 
+2025-03-12 16:50:39,383 33036 DEBUG ? odoo.service.server: Setting signal handlers 
+2025-03-12 16:50:39,383 33036 INFO ? odoo.service.server: HTTP service (werkzeug) running on GLO:8069 
+2025-03-12 16:50:39,493 33036 DEBUG odoo odoo.modules.registry: Multiprocess load registry signaling: [Registry: 23] [Cache default: 2] [Cache assets: 1] [Cache templates: 1] [Cache routing: 1] [Cache groups: 1] 
+2025-03-12 16:50:39,506 33036 INFO odoo odoo.modules.loading: loading 1 modules... 
+2025-03-12 16:50:39,506 33036 DEBUG odoo odoo.modules.loading: Loading module base (1/1) 
+2025-03-12 16:50:39,512 33036 DEBUG odoo odoo.modules.loading: Module base loaded in 0.01s, 0 queries 
+2025-03-12 16:50:39,512 33036 INFO odoo odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-03-12 16:50:39,531 33036 INFO odoo odoo.modules.loading: updating modules list 
+2025-03-12 16:50:39,534 33036 INFO odoo odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a 
+2025-03-12 16:50:39,662 33036 WARNING odoo odoo.modules.module: Missing `license` key in manifest for 'estate', defaulting to LGPL-3 
+2025-03-12 16:50:40,664 33036 INFO odoo odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['estate'] to user __system__ #1 via n/a 
+2025-03-12 16:50:40,664 33036 INFO odoo odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['estate'] to user __system__ #1 via n/a 
+2025-03-12 16:50:41,235 33036 INFO odoo odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user __system__ #1 via n/a 
+2025-03-12 16:50:41,266 33036 DEBUG odoo odoo.modules.loading: Updating graph with 12 more modules 
+2025-03-12 16:50:41,266 33036 INFO odoo odoo.modules.loading: loading 13 modules... 
+2025-03-12 16:50:41,266 33036 INFO odoo odoo.modules.loading: Loading module estate (2/13) 
+2025-03-12 16:50:41,326 33036 INFO odoo odoo.modules.loading: loading estate/views/views.xml 
+2025-03-12 16:50:41,332 33036 INFO odoo odoo.modules.loading: loading estate/views/templates.xml 
+2025-03-12 16:50:41,332 33036 INFO odoo odoo.modules.loading: Module estate: loading demo 
+2025-03-12 16:50:41,332 33036 INFO odoo odoo.modules.loading: loading estate/demo/demo.xml 
+2025-03-12 16:50:41,342 33036 INFO odoo odoo.modules.loading: Module estate loaded in 0.08s, 16 queries (+16 other) 
+2025-03-12 16:50:41,342 33036 DEBUG odoo odoo.modules.loading: Loading module web (3/13) 
+2025-03-12 16:50:41,342 33036 DEBUG odoo odoo.modules.loading: Module web loaded in 0.00s, 0 queries 
+2025-03-12 16:50:41,342 33036 DEBUG odoo odoo.modules.loading: Loading module auth_totp (4/13) 
+2025-03-12 16:50:41,374 33036 DEBUG odoo odoo.modules.loading: Module auth_totp loaded in 0.03s, 0 queries 
+2025-03-12 16:50:41,374 33036 DEBUG odoo odoo.modules.loading: Loading module base_import (5/13) 
+2025-03-12 16:50:41,613 33036 DEBUG odoo odoo.modules.loading: Module base_import loaded in 0.24s, 0 queries 
+2025-03-12 16:50:41,613 33036 DEBUG odoo odoo.modules.loading: Loading module base_import_module (6/13) 
+2025-03-12 16:50:41,623 33036 DEBUG odoo odoo.modules.loading: Module base_import_module loaded in 0.01s, 0 queries 
+2025-03-12 16:50:41,623 33036 DEBUG odoo odoo.modules.loading: Loading module base_setup (7/13) 
+2025-03-12 16:50:41,628 33036 DEBUG odoo odoo.modules.loading: Module base_setup loaded in 0.01s, 0 queries 
+2025-03-12 16:50:41,628 33036 DEBUG odoo odoo.modules.loading: Loading module bus (8/13) 
+2025-03-12 16:50:41,644 33036 DEBUG odoo odoo.modules.loading: Module bus loaded in 0.02s, 0 queries 
+2025-03-12 16:50:41,644 33036 DEBUG odoo odoo.modules.loading: Loading module web_tour (9/13) 
+2025-03-12 16:50:41,644 33036 DEBUG odoo odoo.modules.loading: Module web_tour loaded in 0.00s, 0 queries 
+2025-03-12 16:50:41,644 33036 DEBUG odoo odoo.modules.loading: Loading module html_editor (10/13) 
+2025-03-12 16:50:41,774 33036 DEBUG odoo odoo.modules.loading: Module html_editor loaded in 0.13s, 0 queries 
+2025-03-12 16:50:41,775 33036 DEBUG odoo odoo.modules.loading: Loading module iap (11/13) 
+2025-03-12 16:50:41,775 33036 DEBUG odoo odoo.modules.loading: Module iap loaded in 0.00s, 0 queries 
+2025-03-12 16:50:41,775 33036 DEBUG odoo odoo.modules.loading: Loading module web_editor (12/13) 
+2025-03-12 16:50:41,828 33036 DEBUG odoo odoo.modules.loading: Module web_editor loaded in 0.05s, 0 queries 
+2025-03-12 16:50:41,828 33036 DEBUG odoo odoo.modules.loading: Loading module web_unsplash (13/13) 
+2025-03-12 16:50:41,828 33036 DEBUG odoo odoo.modules.loading: Module web_unsplash loaded in 0.00s, 0 queries 
+2025-03-12 16:50:41,828 33036 INFO odoo odoo.modules.loading: 13 modules loaded in 0.56s, 16 queries (+16 extra) 
+2025-03-12 16:50:41,892 33036 DEBUG odoo odoo.models: column web is in the table ir_module_module but not in the corresponding object ir.module.module 
+2025-03-12 16:50:41,908 33036 DEBUG odoo odoo.models: column password is in the table res_users but not in the corresponding object res.users 
+2025-03-12 16:50:41,908 33036 DEBUG odoo odoo.models: column totp_secret is in the table res_users but not in the corresponding object res.users 
+2025-03-12 16:50:41,908 33036 DEBUG odoo odoo.models: column index is in the table res_users_apikeys but not in the corresponding object res.users.apikeys 
+2025-03-12 16:50:41,908 33036 DEBUG odoo odoo.models: column key is in the table res_users_apikeys but not in the corresponding object res.users.apikeys 
+2025-03-12 16:50:41,908 33036 DEBUG odoo odoo.models: column index is in the table auth_totp_device but not in the corresponding object auth_totp.device 
+2025-03-12 16:50:41,908 33036 DEBUG odoo odoo.models: column key is in the table auth_totp_device but not in the corresponding object auth_totp.device 
+2025-03-12 16:50:41,939 33036 DEBUG odoo odoo.modules.registry: Invalidating templates model caches from write C:\odoo\odoo\odoo\addons\base\models\ir_ui_view.py:533 
+2025-03-12 16:50:41,939 33036 DEBUG odoo odoo.modules.registry: Invalidating templates model caches from write C:\odoo\odoo\odoo\addons\base\models\ir_ui_view.py:533 
+2025-03-12 16:50:42,099 33036 INFO odoo odoo.modules.loading: Modules loaded. 
+2025-03-12 16:50:42,099 33036 INFO odoo odoo.modules.registry: Registry changed, signaling through the database 
+2025-03-12 16:50:42,099 33036 INFO odoo odoo.modules.registry: Registry loaded in 2.716s 
+2025-03-12 16:50:42,099 33036 DEBUG odoo odoo.service.server: cron0 started! 
+2025-03-12 16:50:42,099 33036 DEBUG odoo odoo.service.server: cron1 started! 
+2025-03-12 16:50:56,740 33036 DEBUG ? odoo.http: HTTP sessions stored in: c:\users\georg\appdata\local\openerp s.a\odoo\sessions 
+2025-03-12 16:50:56,742 33036 INFO odoo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-03-12 16:50:56,843 33036 WARNING odoo odoo.modules.module: Missing `license` key in manifest for 'estate', defaulting to LGPL-3 
+2025-03-12 16:50:57,238 33036 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 16:50:57] "GET /odoo/apps HTTP/1.1" 200 - 75 0.082 0.419
+2025-03-12 16:50:57,446 33036 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 16:50:57] "GET /bus/websocket_worker_bundle?v=18.0-3 HTTP/1.1" 304 - 4 0.000 0.009
+2025-03-12 16:50:57,482 33036 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 16:50:57] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 17 0.013 0.014
+2025-03-12 16:50:57,767 33036 DEBUG ? odoo.modules.module: module __init__.py: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:50:57,767 33036 DEBUG ? odoo.modules.module: module __pycache__: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:50:57,782 33036 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 16:50:57] "GET /websocket?version=18.0-3 HTTP/1.1" 101 - 1 0.001 0.003
+2025-03-12 16:50:57,805 33036 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 16:50:57] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.000 0.011
+2025-03-12 16:50:57,812 33036 DEBUG ? odoo.modules.module: module website_twitter: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:50:57,826 33036 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 16:50:57] "POST /web/action/load HTTP/1.1" 200 - 12 0.013 0.048
+2025-03-12 16:50:58,100 33036 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2025-03-12 16:50:58,228 33036 DEBUG odoo odoo.api: call ir.module.module().get_views(options={'action_id': 39, 'embedded_action_id': False, 'embedded_parent_res_id': False, 'load_filters': True, 'toolbar': True}, views=[[False, 'kanban'], [False, 'list'], [False, 'form'], [95, 'search']]) 
+2025-03-12 16:50:58,284 33036 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 16:50:58] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 57 0.022 0.094
+2025-03-12 16:50:58,423 33036 DEBUG odoo odoo.api: call ir.module.module().search_panel_select_range('module_type', category_domain=[], enable_counters=False, expand=True, filter_domain=[], hierarchize=True, limit=200, search_domain=[['application', '=', True]]) 
+2025-03-12 16:50:58,423 33036 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 16:50:58] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.000 0.004
+2025-03-12 16:50:58,597 33036 DEBUG odoo odoo.api: call ir.module.module().search_panel_select_range('category_id', category_domain=[], enable_counters=True, expand=False, filter_domain=[], hierarchize=True, limit=200, search_domain=[['application', '=', True]]) 
+2025-03-12 16:50:58,597 33036 DEBUG odoo odoo.api: call ir.module.module().web_search_read(count_limit=10001, domain=[['application', '=', True]], limit=80, offset=0, order='', specification={'to_buy': {}, 'name': {}, 'state': {}, 'summary': {}, 'website': {}, 'application': {}, 'module_type': {}, 'icon': {}, 'icon_flag': {}, 'shortdesc': {}}) 
+2025-03-12 16:50:58,611 33036 DEBUG odoo odoo.modules.module: module mrp_workorder: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:50:58,618 33036 DEBUG odoo odoo.modules.module: module accountant: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:50:58,618 33036 DEBUG odoo odoo.modules.module: module knowledge: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:50:58,624 33036 DEBUG odoo odoo.modules.module: module timesheet_grid: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:50:58,632 33036 DEBUG odoo odoo.modules.module: module web_studio: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:50:58,633 33036 DEBUG odoo odoo.modules.module: module industry_fsm: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:50:58,633 33036 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 16:50:58] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 52 0.028 0.009
+2025-03-12 16:50:58,639 33036 DEBUG odoo odoo.modules.module: module sign: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:50:58,640 33036 DEBUG odoo odoo.modules.module: module helpdesk: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:50:58,640 33036 DEBUG odoo odoo.modules.module: module sale_subscription: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:50:58,640 33036 DEBUG odoo odoo.modules.module: module quality_control: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:50:58,640 33036 DEBUG odoo odoo.modules.module: module planning: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:50:58,640 33036 DEBUG odoo odoo.modules.module: module mrp_plm: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:50:58,645 33036 DEBUG odoo odoo.modules.module: module social: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:50:58,646 33036 DEBUG odoo odoo.modules.module: module hr_appraisal: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:50:58,646 33036 DEBUG odoo odoo.modules.module: module marketing_automation: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:50:58,646 33036 DEBUG odoo odoo.modules.module: module appointment: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:50:58,646 33036 DEBUG odoo odoo.modules.module: module web_mobile: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:50:58,646 33036 DEBUG odoo odoo.modules.module: module stock_barcode: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:50:58,652 33036 DEBUG odoo odoo.modules.module: module voip: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:50:58,654 33036 DEBUG odoo odoo.modules.module: module sale_amazon: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:50:58,655 33036 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 16:50:58] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.001 0.058
+2025-03-12 16:50:59,162 33036 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 16:50:59] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.015
+2025-03-12 16:51:03,144 33036 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 16:51:03] "GET /odoo/apps HTTP/1.1" 200 - 7 0.004 0.018
+2025-03-12 16:51:03,342 33036 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 16:51:03] "GET /bus/websocket_worker_bundle?v=18.0-3 HTTP/1.1" 304 - 3 0.002 0.008
+2025-03-12 16:51:03,386 33036 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 16:51:03] "POST /web/action/load HTTP/1.1" 200 - 11 0.007 0.007
+2025-03-12 16:51:03,666 33036 DEBUG odoo odoo.api: call ir.module.module().get_views(options={'action_id': 39, 'embedded_action_id': False, 'embedded_parent_res_id': False, 'load_filters': True, 'toolbar': True}, views=[[False, 'kanban'], [False, 'list'], [False, 'form'], [95, 'search']]) 
+2025-03-12 16:51:03,671 33036 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 16:51:03] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 2 0.001 0.006
+2025-03-12 16:51:03,680 33036 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 16:51:03] "GET /websocket?version=18.0-3 HTTP/1.1" 101 - 1 0.000 0.007
+2025-03-12 16:51:03,703 33036 DEBUG odoo odoo.api: call ir.module.module().search_panel_select_range('module_type', category_domain=[], enable_counters=False, expand=True, filter_domain=[], hierarchize=True, limit=200, search_domain=[['application', '=', True]]) 
+2025-03-12 16:51:03,704 33036 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 16:51:03] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.000 0.007
+2025-03-12 16:51:04,253 33036 DEBUG odoo odoo.api: call ir.module.module().web_search_read(count_limit=10001, domain=[['application', '=', True]], limit=80, offset=0, order='', specification={'to_buy': {}, 'name': {}, 'state': {}, 'summary': {}, 'website': {}, 'application': {}, 'module_type': {}, 'icon': {}, 'icon_flag': {}, 'shortdesc': {}}) 
+2025-03-12 16:51:04,262 33036 DEBUG odoo odoo.api: call ir.module.module().search_panel_select_range('category_id', category_domain=[], enable_counters=True, expand=False, filter_domain=[], hierarchize=True, limit=200, search_domain=[['application', '=', True]]) 
+2025-03-12 16:51:04,335 33036 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 16:51:04] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.023 0.325
+2025-03-12 16:51:04,335 33036 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 16:51:04] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 50 0.044 0.304
+2025-03-12 16:51:04,335 33036 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 16:51:04] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.011 0.337
+2025-03-12 16:51:04,822 33036 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 16:51:04] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 5 0.003 0.000
+2025-03-12 16:51:06,081 33036 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 16:51:06] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.005
+2025-03-12 16:51:42,153 33036 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 16:51:43,207 33036 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 16:52:42,155 33036 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 16:52:44,227 33036 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 16:53:42,157 33036 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 16:53:45,246 33036 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 16:54:27,035 33036 INFO odoo odoo.service.server: Initiating shutdown 
+2025-03-12 16:54:27,035 33036 INFO odoo odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-03-12 16:54:27,418 33036 DEBUG odoo odoo.service.server: on_close call <bound method Event.set of <threading.Event at 0x1f3514838f0: unset>> 
+2025-03-12 16:54:27,418 33036 DEBUG odoo odoo.service.server: on_close call <function _kick_all at 0x000001F3514B7240> 
+2025-03-12 16:54:27,418 33036 DEBUG odoo odoo.service.server: current thread: <_MainThread(MainThread, started 14092)> 
+2025-03-12 16:54:27,418 33036 DEBUG odoo odoo.service.server: process <_MainThread(MainThread, started 14092)> (False) 
+2025-03-12 16:54:27,420 33036 DEBUG odoo odoo.service.server: process <Thread(odoo.service.cron.cron0, started daemon 30904)> (True) 
+2025-03-12 16:54:27,420 33036 DEBUG odoo odoo.service.server: process <Thread(odoo.service.cron.cron1, started daemon 12840)> (True) 
+2025-03-12 16:54:27,420 33036 DEBUG odoo odoo.service.server: process <ImDispatch(odoo.addons.bus.models.bus.Bus, started daemon 6732)> (True) 
+2025-03-12 16:54:27,420 33036 DEBUG odoo odoo.service.server: process <Thread(odoo.service.http.request.17952, started 17952)> (False) 
+2025-03-12 16:54:27,420 33036 DEBUG odoo odoo.service.server: join and sleep 
+2025-03-12 16:54:27,532 33036 INFO odoo odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 6 connections  
+2025-03-12 16:54:27,532 33036 DEBUG odoo odoo.service.server: -- 
+2025-03-12 16:54:34,313 13308 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.request:INFO" 
+2025-03-12 16:54:34,313 13308 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.response:INFO" 
+2025-03-12 16:54:34,313 13308 DEBUG ? odoo.netsvc: logger level set: ":INFO" 
+2025-03-12 16:54:34,313 13308 DEBUG ? odoo.netsvc: logger level set: "odoo:DEBUG" 
+2025-03-12 16:54:34,313 13308 DEBUG ? odoo.netsvc: logger level set: "odoo.sql_db:INFO" 
+2025-03-12 16:54:34,313 13308 DEBUG ? odoo.netsvc: logger level set: ":INFO" 
+2025-03-12 16:54:34,315 13308 INFO ? odoo: Odoo version 18.0 
+2025-03-12 16:54:34,315 13308 INFO ? odoo: Using configuration file at C:\odoo\odoo\odoo.conf 
+2025-03-12 16:54:34,315 13308 INFO ? odoo: addons paths: ['C:\\odoo\\odoo\\odoo\\addons', 'c:\\users\\georg\\appdata\\local\\openerp s.a\\odoo\\addons\\18.0', 'c:\\odoo\\tutorials\\addons_extra', 'c:\\odoo\\odoo\\addons', 'c:\\odoo\\odoo\\odoo\\addons'] 
+2025-03-12 16:54:34,315 13308 INFO ? odoo: database: odoo@default:default 
+2025-03-12 16:54:34,478 13308 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2025-03-12 16:54:34,494 13308 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltoimage to generate images from html. 
+2025-03-12 16:54:34,772 13308 DEBUG ? odoo.service.server: Setting signal handlers 
+2025-03-12 16:54:34,790 13308 INFO ? odoo.service.server: HTTP service (werkzeug) running on GLO:8069 
+2025-03-12 16:54:34,868 13308 DEBUG odoo odoo.modules.registry: Multiprocess load registry signaling: [Registry: 24] [Cache default: 2] [Cache assets: 1] [Cache templates: 1] [Cache routing: 1] [Cache groups: 1] 
+2025-03-12 16:54:34,868 13308 INFO odoo odoo.modules.loading: loading 1 modules... 
+2025-03-12 16:54:34,868 13308 DEBUG odoo odoo.modules.loading: Loading module base (1/1) 
+2025-03-12 16:54:34,884 13308 DEBUG odoo odoo.modules.loading: Module base loaded in 0.02s, 0 queries 
+2025-03-12 16:54:34,884 13308 INFO odoo odoo.modules.loading: 1 modules loaded in 0.02s, 0 queries (+0 extra) 
+2025-03-12 16:54:34,902 13308 INFO odoo odoo.modules.loading: updating modules list 
+2025-03-12 16:54:34,904 13308 INFO odoo odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a 
+2025-03-12 16:54:35,055 13308 WARNING odoo odoo.modules.module: Missing `license` key in manifest for 'estate', defaulting to LGPL-3 
+2025-03-12 16:54:36,038 13308 INFO odoo odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['estate'] to user __system__ #1 via n/a 
+2025-03-12 16:54:36,038 13308 INFO odoo odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['estate'] to user __system__ #1 via n/a 
+2025-03-12 16:54:36,075 13308 DEBUG ? odoo.http: HTTP sessions stored in: c:\users\georg\appdata\local\openerp s.a\odoo\sessions 
+2025-03-12 16:54:36,743 13308 INFO odoo odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user __system__ #1 via n/a 
+2025-03-12 16:54:36,770 13308 DEBUG odoo odoo.modules.loading: Updating graph with 12 more modules 
+2025-03-12 16:54:36,771 13308 INFO odoo odoo.modules.loading: loading 13 modules... 
+2025-03-12 16:54:36,771 13308 INFO odoo odoo.modules.loading: Loading module estate (2/13) 
+2025-03-12 16:54:36,821 13308 INFO odoo odoo.modules.registry: module estate: creating or updating database tables 
+2025-03-12 16:54:36,836 13308 DEBUG odoo odoo.schema: Table 'estate_property': created 
+2025-03-12 16:54:36,879 13308 DEBUG odoo odoo.schema: Table 'estate_property': added foreign key 'create_uid' references 'res_users'('id') ON DELETE set null 
+2025-03-12 16:54:36,885 13308 DEBUG odoo odoo.schema: Table 'estate_property': added foreign key 'write_uid' references 'res_users'('id') ON DELETE set null 
+2025-03-12 16:54:36,913 13308 INFO odoo odoo.modules.loading: loading estate/views/views.xml 
+2025-03-12 16:54:36,913 13308 INFO odoo odoo.modules.loading: loading estate/views/templates.xml 
+2025-03-12 16:54:36,913 13308 INFO odoo odoo.modules.loading: Module estate: loading demo 
+2025-03-12 16:54:36,913 13308 INFO odoo odoo.modules.loading: loading estate/demo/demo.xml 
+2025-03-12 16:54:36,930 13308 WARNING odoo odoo.modules.loading: The models ['estate.property'] have no access rules in module estate, consider adding some, like:
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+estate.access_estate_property,access_estate_property,estate.model_estate_property,base.group_user,1,0,0,0 
+2025-03-12 16:54:36,933 13308 INFO odoo odoo.modules.loading: Module estate loaded in 0.16s, 46 queries (+46 other) 
+2025-03-12 16:54:36,933 13308 DEBUG odoo odoo.modules.loading: Loading module web (3/13) 
+2025-03-12 16:54:36,933 13308 DEBUG odoo odoo.modules.loading: Module web loaded in 0.00s, 0 queries 
+2025-03-12 16:54:36,933 13308 DEBUG odoo odoo.modules.loading: Loading module auth_totp (4/13) 
+2025-03-12 16:54:36,959 13308 DEBUG odoo odoo.modules.loading: Module auth_totp loaded in 0.03s, 0 queries 
+2025-03-12 16:54:36,959 13308 DEBUG odoo odoo.modules.loading: Loading module base_import (5/13) 
+2025-03-12 16:54:37,179 13308 DEBUG odoo odoo.modules.loading: Module base_import loaded in 0.22s, 0 queries 
+2025-03-12 16:54:37,179 13308 DEBUG odoo odoo.modules.loading: Loading module base_import_module (6/13) 
+2025-03-12 16:54:37,191 13308 DEBUG odoo odoo.modules.loading: Module base_import_module loaded in 0.01s, 0 queries 
+2025-03-12 16:54:37,193 13308 DEBUG odoo odoo.modules.loading: Loading module base_setup (7/13) 
+2025-03-12 16:54:37,198 13308 DEBUG odoo odoo.modules.loading: Module base_setup loaded in 0.01s, 0 queries 
+2025-03-12 16:54:37,198 13308 DEBUG odoo odoo.modules.loading: Loading module bus (8/13) 
+2025-03-12 16:54:37,216 13308 DEBUG odoo odoo.modules.loading: Module bus loaded in 0.02s, 0 queries 
+2025-03-12 16:54:37,216 13308 DEBUG odoo odoo.modules.loading: Loading module web_tour (9/13) 
+2025-03-12 16:54:37,222 13308 DEBUG odoo odoo.modules.loading: Module web_tour loaded in 0.01s, 0 queries 
+2025-03-12 16:54:37,222 13308 DEBUG odoo odoo.modules.loading: Loading module html_editor (10/13) 
+2025-03-12 16:54:37,370 13308 DEBUG odoo odoo.modules.loading: Module html_editor loaded in 0.15s, 0 queries 
+2025-03-12 16:54:37,370 13308 DEBUG odoo odoo.modules.loading: Loading module iap (11/13) 
+2025-03-12 16:54:37,370 13308 DEBUG odoo odoo.modules.loading: Module iap loaded in 0.00s, 0 queries 
+2025-03-12 16:54:37,370 13308 DEBUG odoo odoo.modules.loading: Loading module web_editor (12/13) 
+2025-03-12 16:54:37,390 13308 DEBUG odoo odoo.modules.loading: Module web_editor loaded in 0.02s, 0 queries 
+2025-03-12 16:54:37,390 13308 DEBUG odoo odoo.modules.loading: Loading module web_unsplash (13/13) 
+2025-03-12 16:54:37,397 13308 DEBUG odoo odoo.modules.loading: Module web_unsplash loaded in 0.01s, 0 queries 
+2025-03-12 16:54:37,397 13308 INFO odoo odoo.modules.loading: 13 modules loaded in 0.63s, 46 queries (+46 extra) 
+2025-03-12 16:54:37,460 13308 DEBUG odoo odoo.models: column web is in the table ir_module_module but not in the corresponding object ir.module.module 
+2025-03-12 16:54:37,468 13308 DEBUG odoo odoo.models: column password is in the table res_users but not in the corresponding object res.users 
+2025-03-12 16:54:37,468 13308 DEBUG odoo odoo.models: column totp_secret is in the table res_users but not in the corresponding object res.users 
+2025-03-12 16:54:37,476 13308 DEBUG odoo odoo.models: column index is in the table res_users_apikeys but not in the corresponding object res.users.apikeys 
+2025-03-12 16:54:37,476 13308 DEBUG odoo odoo.models: column key is in the table res_users_apikeys but not in the corresponding object res.users.apikeys 
+2025-03-12 16:54:37,487 13308 DEBUG odoo odoo.models: column index is in the table auth_totp_device but not in the corresponding object auth_totp.device 
+2025-03-12 16:54:37,487 13308 DEBUG odoo odoo.models: column key is in the table auth_totp_device but not in the corresponding object auth_totp.device 
+2025-03-12 16:54:37,488 13308 INFO odoo odoo.modules.registry: verifying fields for every extended model 
+2025-03-12 16:54:37,519 13308 DEBUG odoo odoo.modules.registry: Invalidating templates model caches from write C:\odoo\odoo\odoo\addons\base\models\ir_ui_view.py:533 
+2025-03-12 16:54:37,522 13308 DEBUG odoo odoo.modules.registry: Invalidating templates model caches from write C:\odoo\odoo\odoo\addons\base\models\ir_ui_view.py:533 
+2025-03-12 16:54:37,720 13308 INFO odoo odoo.modules.loading: Modules loaded. 
+2025-03-12 16:54:37,723 13308 INFO odoo odoo.modules.registry: Registry changed, signaling through the database 
+2025-03-12 16:54:37,724 13308 INFO odoo odoo.modules.registry: Registry loaded in 2.932s 
+2025-03-12 16:54:37,725 13308 DEBUG odoo odoo.service.server: cron0 started! 
+2025-03-12 16:54:37,725 13308 DEBUG odoo odoo.service.server: cron1 started! 
+2025-03-12 16:54:37,726 13308 INFO odoo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-03-12 16:54:37,829 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 16:54:37] "GET /websocket?version=18.0-3 HTTP/1.1" 101 - 6 0.003 1.754
+2025-03-12 16:54:38,142 13308 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2025-03-12 16:54:38,970 13308 WARNING odoo odoo.modules.module: Missing `license` key in manifest for 'estate', defaulting to LGPL-3 
+2025-03-12 16:54:39,344 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 16:54:39] "GET /odoo/apps HTTP/1.1" 200 - 69 0.057 0.376
+2025-03-12 16:54:39,484 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 16:54:39] "GET /bus/websocket_worker_bundle?v=18.0-3 HTTP/1.1" 304 - 4 0.003 0.007
+2025-03-12 16:54:39,520 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 16:54:39] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 17 0.009 0.014
+2025-03-12 16:54:39,804 13308 DEBUG ? odoo.modules.module: module __init__.py: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:54:39,804 13308 DEBUG ? odoo.modules.module: module __pycache__: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:54:39,818 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 16:54:39] "GET /websocket?version=18.0-3 HTTP/1.1" 101 - 1 0.000 0.000
+2025-03-12 16:54:39,856 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 16:54:39] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.005 0.005
+2025-03-12 16:54:39,860 13308 DEBUG ? odoo.modules.module: module website_twitter: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:54:39,873 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 16:54:39] "POST /web/action/load HTTP/1.1" 200 - 12 0.013 0.057
+2025-03-12 16:54:40,276 13308 DEBUG odoo odoo.api: call ir.module.module().get_views(options={'action_id': 39, 'embedded_action_id': False, 'embedded_parent_res_id': False, 'load_filters': True, 'toolbar': True}, views=[[False, 'kanban'], [False, 'list'], [False, 'form'], [95, 'search']]) 
+2025-03-12 16:54:40,338 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 16:54:40] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 56 0.021 0.130
+2025-03-12 16:54:40,442 13308 DEBUG odoo odoo.api: call ir.module.module().search_panel_select_range('module_type', category_domain=[], enable_counters=False, expand=True, filter_domain=[], hierarchize=True, limit=200, search_domain=[['application', '=', True]]) 
+2025-03-12 16:54:40,443 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 16:54:40] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.000 0.006
+2025-03-12 16:54:40,656 13308 DEBUG odoo odoo.api: call ir.module.module().web_search_read(count_limit=10001, domain=[['application', '=', True]], limit=80, offset=0, order='', specification={'to_buy': {}, 'name': {}, 'state': {}, 'summary': {}, 'website': {}, 'application': {}, 'module_type': {}, 'icon': {}, 'icon_flag': {}, 'shortdesc': {}}) 
+2025-03-12 16:54:40,657 13308 DEBUG odoo odoo.api: call ir.module.module().search_panel_select_range('category_id', category_domain=[], enable_counters=True, expand=False, filter_domain=[], hierarchize=True, limit=200, search_domain=[['application', '=', True]]) 
+2025-03-12 16:54:40,663 13308 DEBUG odoo odoo.modules.module: module mrp_workorder: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:54:40,665 13308 DEBUG odoo odoo.modules.module: module accountant: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:54:40,665 13308 DEBUG odoo odoo.modules.module: module knowledge: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:54:40,672 13308 DEBUG odoo odoo.modules.module: module timesheet_grid: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:54:40,672 13308 DEBUG odoo odoo.modules.module: module web_studio: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:54:40,672 13308 DEBUG odoo odoo.modules.module: module industry_fsm: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:54:40,678 13308 DEBUG odoo odoo.modules.module: module sign: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:54:40,685 13308 DEBUG odoo odoo.modules.module: module helpdesk: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:54:40,685 13308 DEBUG odoo odoo.modules.module: module sale_subscription: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:54:40,685 13308 DEBUG odoo odoo.modules.module: module quality_control: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:54:40,692 13308 DEBUG odoo odoo.modules.module: module planning: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:54:40,699 13308 DEBUG odoo odoo.modules.module: module mrp_plm: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:54:40,699 13308 DEBUG odoo odoo.modules.module: module social: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:54:40,699 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 16:54:40] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 52 0.034 0.015
+2025-03-12 16:54:40,699 13308 DEBUG odoo odoo.modules.module: module hr_appraisal: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:54:40,706 13308 DEBUG odoo odoo.modules.module: module marketing_automation: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:54:40,706 13308 DEBUG odoo odoo.modules.module: module appointment: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:54:40,706 13308 DEBUG odoo odoo.modules.module: module web_mobile: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:54:40,706 13308 DEBUG odoo odoo.modules.module: module stock_barcode: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:54:40,713 13308 DEBUG odoo odoo.modules.module: module voip: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:54:40,713 13308 DEBUG odoo odoo.modules.module: module sale_amazon: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-03-12 16:54:40,717 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 16:54:40] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.006 0.061
+2025-03-12 16:54:41,139 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 16:54:41] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.002
+2025-03-12 16:55:37,788 13308 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 16:55:38,837 13308 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 16:56:37,793 13308 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 16:56:39,852 13308 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 16:57:37,806 13308 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 16:57:40,864 13308 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 16:58:37,812 13308 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 16:58:41,877 13308 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 16:59:37,814 13308 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 16:59:42,898 13308 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 17:00:37,817 13308 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 17:00:43,925 13308 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 17:01:37,824 13308 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 17:01:44,937 13308 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 17:02:37,829 13308 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 17:02:45,957 13308 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 17:03:37,836 13308 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 17:03:46,970 13308 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 17:04:37,842 13308 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 17:04:47,983 13308 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 17:05:37,848 13308 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 17:05:49,004 13308 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 17:06:37,864 13308 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 17:06:50,027 13308 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 17:07:37,871 13308 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 17:07:51,046 13308 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 18:16:53,328 13308 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 18:16:53,338 13308 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 18:16:54,400 13308 DEBUG odoo odoo.http: Couldn't load Geoip Country file ([Errno 2] No such file or directory: b'c:\\usr\\share\\geoip\\geolite2-country.mmdb'). Fallbacks on Geoip City. 
+2025-03-12 18:16:54,400 13308 DEBUG odoo odoo.http: Couldn't load Geoip City file at c:\usr\share\geoip\geolite2-city.mmdb. IP Resolver disabled. 
+Traceback (most recent call last):
+  File "C:\odoo\odoo\odoo\http.py", line 1189, in _country_record
+    return root.geoip_country_db.country(self.ip)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\tools\func.py", line 42, in __get__
+    value = self.fget(obj)
+            ^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\http.py", line 2312, in geoip_country_db
+    return geoip2.database.Reader(config['geoip_country_db'])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\tutorials\odoo_env\Lib\site-packages\geoip2\database.py", line 86, in __init__
+    self._db_reader = maxminddb.open_database(fileish, mode)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\tutorials\odoo_env\Lib\site-packages\maxminddb\__init__.py", line 80, in open_database
+    return cast(Reader, _extension.Reader(database, mode))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: b'c:\\usr\\share\\geoip\\geolite2-country.mmdb'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\odoo\odoo\odoo\http.py", line 2301, in geoip_city_db
+    return geoip2.database.Reader(config['geoip_city_db'])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\tutorials\odoo_env\Lib\site-packages\geoip2\database.py", line 86, in __init__
+    self._db_reader = maxminddb.open_database(fileish, mode)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\tutorials\odoo_env\Lib\site-packages\maxminddb\__init__.py", line 80, in open_database
+    return cast(Reader, _extension.Reader(database, mode))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: b'c:\\usr\\share\\geoip\\geolite2-city.mmdb'
+2025-03-12 18:16:54,451 13308 INFO odoo odoo.addons.base.models.res_device: User 2 inserts device log (0C30Ind4_ELBE0LwFDSQrwP_XU911wTr7e6dwr0ifl) 
+2025-03-12 18:16:54,455 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:16:54] "GET /websocket?version=18.0-3 HTTP/1.1" 101 - 2 0.007 0.058
+2025-03-12 18:17:53,524 13308 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 18:17:54,537 13308 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 18:18:53,535 13308 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 18:18:55,555 13308 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 18:19:53,549 13308 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 18:19:56,575 13308 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 18:20:53,561 13308 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 18:20:57,597 13308 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 18:21:53,572 13308 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 18:21:58,611 13308 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-12 18:22:04,101 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:04] "GET /odoo/apps HTTP/1.1" 200 - 7 0.006 0.011
+2025-03-12 18:22:04,447 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:04] "GET /bus/websocket_worker_bundle?v=18.0-3 HTTP/1.1" 304 - 3 0.004 0.036
+2025-03-12 18:22:04,473 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:04] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.025 0.013
+2025-03-12 18:22:04,772 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:04] "POST /web/action/load HTTP/1.1" 200 - 11 0.021 0.007
+2025-03-12 18:22:04,782 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:04] "GET /websocket?version=18.0-3 HTTP/1.1" 101 - 1 0.001 0.007
+2025-03-12 18:22:04,786 13308 DEBUG odoo odoo.api: call ir.module.module().get_views(options={'action_id': 39, 'embedded_action_id': False, 'embedded_parent_res_id': False, 'load_filters': True, 'toolbar': True}, views=[[False, 'kanban'], [False, 'list'], [False, 'form'], [95, 'search']]) 
+2025-03-12 18:22:04,792 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:04] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 2 0.003 0.007
+2025-03-12 18:22:05,096 13308 DEBUG odoo odoo.api: call ir.module.module().search_panel_select_range('module_type', category_domain=[], enable_counters=False, expand=True, filter_domain=[], hierarchize=True, limit=200, search_domain=[['application', '=', True]]) 
+2025-03-12 18:22:05,098 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:05] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.003 0.008
+2025-03-12 18:22:05,218 13308 DEBUG odoo odoo.api: call ir.module.module().web_search_read(count_limit=10001, domain=[['application', '=', True]], limit=80, offset=0, order='', specification={'to_buy': {}, 'name': {}, 'state': {}, 'summary': {}, 'website': {}, 'application': {}, 'module_type': {}, 'icon': {}, 'icon_flag': {}, 'shortdesc': {}}) 
+2025-03-12 18:22:05,220 13308 DEBUG odoo odoo.api: call ir.module.module().search_panel_select_range('category_id', category_domain=[], enable_counters=True, expand=False, filter_domain=[], hierarchize=True, limit=200, search_domain=[['application', '=', True]]) 
+2025-03-12 18:22:05,234 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:05] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 5 0.017 0.111
+2025-03-12 18:22:05,431 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:05] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 50 0.030 0.295
+2025-03-12 18:22:05,432 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:05] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.004 0.321
+2025-03-12 18:22:07,563 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:07] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.043
+2025-03-12 18:22:20,945 13308 DEBUG odoo odoo.api: call ir.module.module().search_panel_select_range('category_id', category_domain=[], enable_counters=True, expand=False, filter_domain=[], hierarchize=True, limit=200, search_domain=['&', ['application', '=', True], ['category_id', 'ilike', 'estate']]) 
+2025-03-12 18:22:21,014 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:21] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 50 0.043 0.031
+2025-03-12 18:22:21,325 13308 DEBUG odoo odoo.api: call ir.module.module().web_search_read(count_limit=10001, domain=['&', ['application', '=', True], ['category_id', 'ilike', 'estate']], limit=80, offset=0, order='', specification={'to_buy': {}, 'name': {}, 'state': {}, 'summary': {}, 'website': {}, 'application': {}, 'module_type': {}, 'icon': {}, 'icon_flag': {}, 'shortdesc': {}}) 
+2025-03-12 18:22:21,328 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:21] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 2 0.001 0.007
+2025-03-12 18:22:28,258 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:28] "POST /web/action/load HTTP/1.1" 200 - 9 0.004 0.015
+2025-03-12 18:22:28,573 13308 DEBUG odoo odoo.api: call base.module.update().get_views(options={'action_id': 43, 'embedded_action_id': False, 'embedded_parent_res_id': False, 'load_filters': False, 'toolbar': False}, views=[[False, 'form']]) 
+2025-03-12 18:22:28,597 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:28] "POST /web/dataset/call_kw/base.module.update/get_views HTTP/1.1" 200 - 12 0.018 0.010
+2025-03-12 18:22:28,831 13308 DEBUG odoo odoo.api: call base.module.update().onchange({}, [], {'updated': {}, 'added': {}, 'state': {}}) 
+2025-03-12 18:22:28,835 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:28] "POST /web/dataset/call_kw/base.module.update/onchange HTTP/1.1" 200 - 2 0.004 0.004
+2025-03-12 18:22:30,389 13308 DEBUG odoo odoo.api: call base.module.update().web_save({}, specification={'updated': {}, 'added': {}, 'state': {}}) 
+2025-03-12 18:22:30,400 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:30] "POST /web/dataset/call_kw/base.module.update/web_save HTTP/1.1" 200 - 5 0.008 0.005
+2025-03-12 18:22:30,723 13308 DEBUG odoo odoo.api: call base.module.update(5,).update_module() 
+2025-03-12 18:22:30,724 13308 INFO odoo odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user admin #2 via 127.0.0.1 
+2025-03-12 18:22:31,420 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:31] "POST /web/dataset/call_button/base.module.update/update_module HTTP/1.1" 200 - 1564 0.410 0.291
+2025-03-12 18:22:39,791 13308 DEBUG odoo odoo.api: call ir.module.module().search_panel_select_range('category_id', category_domain=[], enable_counters=True, expand=False, filter_domain=[], hierarchize=True, limit=200, search_domain=[['application', '=', True]]) 
+2025-03-12 18:22:39,848 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:39] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 50 0.032 0.030
+2025-03-12 18:22:40,167 13308 DEBUG odoo odoo.api: call ir.module.module().web_search_read(count_limit=10001, domain=[['application', '=', True]], limit=80, offset=0, order='', specification={'to_buy': {}, 'name': {}, 'state': {}, 'summary': {}, 'website': {}, 'application': {}, 'module_type': {}, 'icon': {}, 'icon_flag': {}, 'shortdesc': {}}) 
+2025-03-12 18:22:40,192 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:40] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.002 0.028
+2025-03-12 18:22:41,522 13308 DEBUG odoo odoo.api: call ir.module.module().search_panel_select_range('category_id', category_domain=[], enable_counters=True, expand=False, filter_domain=[], hierarchize=True, limit=200, search_domain=[]) 
+2025-03-12 18:22:41,562 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:41] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 50 0.022 0.023
+2025-03-12 18:22:41,838 13308 DEBUG odoo odoo.api: call ir.module.module().web_search_read(count_limit=10001, domain=[], limit=80, offset=0, order='', specification={'to_buy': {}, 'name': {}, 'state': {}, 'summary': {}, 'website': {}, 'application': {}, 'module_type': {}, 'icon': {}, 'icon_flag': {}, 'shortdesc': {}}) 
+2025-03-12 18:22:41,875 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:41] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.007 0.035
+2025-03-12 18:22:48,392 13308 DEBUG odoo odoo.api: call ir.module.module().search_panel_select_range('category_id', category_domain=[], enable_counters=True, expand=False, filter_domain=[], hierarchize=True, limit=200, search_domain=[['category_id', 'ilike', 'estate']]) 
+2025-03-12 18:22:48,461 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:48] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 50 0.041 0.034
+2025-03-12 18:22:48,652 13308 DEBUG odoo odoo.api: call ir.module.module().web_search_read(count_limit=10001, domain=[['category_id', 'ilike', 'estate']], limit=80, offset=0, order='', specification={'to_buy': {}, 'name': {}, 'state': {}, 'summary': {}, 'website': {}, 'application': {}, 'module_type': {}, 'icon': {}, 'icon_flag': {}, 'shortdesc': {}}) 
+2025-03-12 18:22:48,653 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:48] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 2 0.002 0.002
+2025-03-12 18:22:52,020 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:52] "POST /web/action/load HTTP/1.1" 200 - 10 0.006 0.006
+2025-03-12 18:22:52,354 13308 DEBUG odoo odoo.api: call ir.module.module().search_panel_select_range('module_type', category_domain=[], enable_counters=False, expand=True, filter_domain=[], hierarchize=True, limit=200, search_domain=[['application', '=', True]]) 
+2025-03-12 18:22:52,355 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:52] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.006
+2025-03-12 18:22:52,365 13308 DEBUG odoo odoo.api: call ir.module.module().web_search_read(count_limit=10001, domain=[['application', '=', True]], limit=80, offset=0, order='', specification={'to_buy': {}, 'name': {}, 'state': {}, 'summary': {}, 'website': {}, 'application': {}, 'module_type': {}, 'icon': {}, 'icon_flag': {}, 'shortdesc': {}}) 
+2025-03-12 18:22:52,366 13308 DEBUG odoo odoo.api: call ir.module.module().search_panel_select_range('category_id', category_domain=[], enable_counters=True, expand=False, filter_domain=[], hierarchize=True, limit=200, search_domain=[['application', '=', True]]) 
+2025-03-12 18:22:52,444 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:52] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 50 0.052 0.035
+2025-03-12 18:22:52,458 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:52] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.004 0.096
+2025-03-12 18:22:53,580 13308 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-12 18:22:54,437 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:54] "GET /odoo/apps HTTP/1.1" 200 - 7 0.005 0.014
+2025-03-12 18:22:54,736 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:54] "GET /bus/websocket_worker_bundle?v=18.0-3 HTTP/1.1" 304 - 3 0.002 0.007
+2025-03-12 18:22:55,077 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:55] "POST /web/action/load HTTP/1.1" 200 - 11 0.007 0.010
+2025-03-12 18:22:55,081 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:55] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.010 0.012
+2025-03-12 18:22:55,082 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:55] "GET /websocket?version=18.0-3 HTTP/1.1" 101 - 1 0.001 0.013
+2025-03-12 18:22:55,318 13308 DEBUG odoo odoo.api: call ir.module.module().get_views(options={'action_id': 39, 'embedded_action_id': False, 'embedded_parent_res_id': False, 'load_filters': True, 'toolbar': True}, views=[[False, 'kanban'], [False, 'list'], [False, 'form'], [95, 'search']]) 
+2025-03-12 18:22:55,324 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:55] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 2 0.001 0.014
+2025-03-12 18:22:55,393 13308 DEBUG odoo odoo.api: call ir.module.module().search_panel_select_range('module_type', category_domain=[], enable_counters=False, expand=True, filter_domain=[], hierarchize=True, limit=200, search_domain=[['application', '=', True]]) 
+2025-03-12 18:22:55,393 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:55] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.003
+2025-03-12 18:22:55,400 13308 DEBUG odoo odoo.api: call ir.module.module().search_panel_select_range('category_id', category_domain=[], enable_counters=True, expand=False, filter_domain=[], hierarchize=True, limit=200, search_domain=[['application', '=', True]]) 
+2025-03-12 18:22:55,465 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:55] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 50 0.018 0.051
+2025-03-12 18:22:55,645 13308 DEBUG odoo odoo.api: call ir.module.module().web_search_read(count_limit=10001, domain=[['application', '=', True]], limit=80, offset=0, order='', specification={'to_buy': {}, 'name': {}, 'state': {}, 'summary': {}, 'website': {}, 'application': {}, 'module_type': {}, 'icon': {}, 'icon_flag': {}, 'shortdesc': {}}) 
+2025-03-12 18:22:55,654 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:55] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 5 0.006 0.008
+2025-03-12 18:22:55,687 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:55] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.004 0.044
+2025-03-12 18:22:57,436 13308 INFO odoo werkzeug: 127.0.0.1 - - [12/Mar/2025 18:22:57] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.005
+2025-03-12 18:22:59,625 13308 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-18 16:09:48,811 37340 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.request:INFO" 
+2025-03-18 16:09:48,811 37340 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.response:INFO" 
+2025-03-18 16:09:48,811 37340 DEBUG ? odoo.netsvc: logger level set: ":INFO" 
+2025-03-18 16:09:48,811 37340 DEBUG ? odoo.netsvc: logger level set: "odoo:DEBUG" 
+2025-03-18 16:09:48,811 37340 DEBUG ? odoo.netsvc: logger level set: "odoo.sql_db:INFO" 
+2025-03-18 16:09:48,811 37340 DEBUG ? odoo.netsvc: logger level set: ":INFO" 
+2025-03-18 16:09:48,821 37340 INFO ? odoo: Odoo version 18.0 
+2025-03-18 16:09:48,821 37340 INFO ? odoo: Using configuration file at C:\odoo\odoo\odoo.conf 
+2025-03-18 16:09:48,821 37340 INFO ? odoo: addons paths: ['C:\\odoo\\odoo\\odoo\\addons', 'c:\\users\\georg\\appdata\\local\\openerp s.a\\odoo\\addons\\18.0', 'c:\\odoo\\tutorials\\addons_extra', 'c:\\odoo\\odoo\\addons', 'c:\\odoo\\odoo\\odoo\\addons'] 
+2025-03-18 16:09:48,821 37340 INFO ? odoo: database: odoo@default:default 
+2025-03-18 16:09:49,088 37340 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2025-03-18 16:09:49,088 37340 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltoimage to generate images from html. 
+2025-03-18 16:09:49,442 37340 DEBUG ? odoo.service.server: Setting signal handlers 
+2025-03-18 16:09:49,454 37340 INFO ? odoo.service.server: HTTP service (werkzeug) running on GLO:8069 
+2025-03-18 16:09:49,514 37340 DEBUG odoo odoo.modules.registry: Multiprocess load registry signaling: [Registry: 48] [Cache default: 2] [Cache assets: 1] [Cache templates: 1] [Cache routing: 1] [Cache groups: 1] 
+2025-03-18 16:09:49,522 37340 INFO odoo odoo.modules.loading: loading 1 modules... 
+2025-03-18 16:09:49,523 37340 DEBUG odoo odoo.modules.loading: Loading module base (1/1) 
+2025-03-18 16:09:49,527 37340 DEBUG odoo odoo.modules.loading: Module base loaded in 0.00s, 0 queries 
+2025-03-18 16:09:49,527 37340 INFO odoo odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2025-03-18 16:09:49,562 37340 INFO odoo odoo.modules.loading: updating modules list 
+2025-03-18 16:09:49,566 37340 INFO odoo odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a 
+2025-03-18 16:09:50,394 37340 WARNING odoo odoo.modules.module: Missing `license` key in manifest for 'nursery', defaulting to LGPL-3 
+2025-03-18 16:09:50,885 37340 WARNING odoo odoo.modules.loading: invalid module names, ignored:  nursery 
+2025-03-18 16:09:50,901 37340 DEBUG odoo odoo.modules.loading: Updating graph with 36 more modules 
+2025-03-18 16:09:50,901 37340 INFO odoo odoo.modules.loading: loading 37 modules... 
+2025-03-18 16:09:50,901 37340 DEBUG odoo odoo.modules.loading: Loading module estate (2/37) 
+2025-03-18 16:09:50,922 37340 DEBUG odoo odoo.modules.loading: Module estate loaded in 0.02s, 0 queries 
+2025-03-18 16:09:50,922 37340 DEBUG odoo odoo.modules.loading: Loading module web (3/37) 
+2025-03-18 16:09:50,925 37340 DEBUG odoo odoo.modules.loading: Module web loaded in 0.00s, 0 queries 
+2025-03-18 16:09:50,925 37340 DEBUG odoo odoo.modules.loading: Loading module auth_totp (4/37) 
+2025-03-18 16:09:50,957 37340 DEBUG odoo odoo.modules.loading: Module auth_totp loaded in 0.03s, 0 queries 
+2025-03-18 16:09:50,958 37340 DEBUG odoo odoo.modules.loading: Loading module base_import (5/37) 
+2025-03-18 16:09:51,320 37340 DEBUG odoo odoo.modules.loading: Module base_import loaded in 0.36s, 0 queries 
+2025-03-18 16:09:51,320 37340 DEBUG odoo odoo.modules.loading: Loading module base_import_module (6/37) 
+2025-03-18 16:09:51,320 37340 DEBUG odoo odoo.modules.loading: Module base_import_module loaded in 0.00s, 0 queries 
+2025-03-18 16:09:51,320 37340 DEBUG odoo odoo.modules.loading: Loading module base_setup (7/37) 
+2025-03-18 16:09:51,333 37340 DEBUG odoo odoo.modules.loading: Module base_setup loaded in 0.01s, 0 queries 
+2025-03-18 16:09:51,333 37340 DEBUG odoo odoo.modules.loading: Loading module bus (8/37) 
+2025-03-18 16:09:51,355 37340 DEBUG odoo odoo.modules.loading: Module bus loaded in 0.02s, 0 queries 
+2025-03-18 16:09:51,355 37340 DEBUG odoo odoo.modules.loading: Loading module http_routing (9/37) 
+2025-03-18 16:09:51,369 37340 DEBUG odoo odoo.modules.loading: Module http_routing loaded in 0.01s, 0 queries 
+2025-03-18 16:09:51,370 37340 DEBUG odoo odoo.modules.loading: Loading module nursery (10/37) 
+2025-03-18 16:09:51,374 37340 CRITICAL odoo odoo.modules.module: Couldn't load module nursery 
+2025-03-18 16:09:51,376 37340 WARNING odoo odoo.modules.loading: Transient module states were reset 
+2025-03-18 16:09:51,376 37340 ERROR odoo odoo.modules.registry: Failed to load registry 
+2025-03-18 16:09:51,376 37340 CRITICAL odoo odoo.service.server: Failed to initialize database `odoo`. 
+Traceback (most recent call last):
+  File "C:\odoo\odoo\odoo\service\server.py", line 1318, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo_env\Lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\tools\func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\modules\registry.py", line 127, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "C:\odoo\odoo\odoo\modules\loading.py", line 476, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\modules\loading.py", line 364, in load_marked_modules
+    loaded, processed = load_module_graph(
+                        ^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\modules\loading.py", line 185, in load_module_graph
+    load_openerp_module(package.name)
+  File "C:\odoo\odoo\odoo\modules\module.py", line 384, in load_openerp_module
+    __import__(qualname)
+  File "c:\odoo\tutorials\addons_extra\nursery\__init__.py", line 4, in <module>
+    from . import models
+  File "c:\odoo\tutorials\addons_extra\nursery\models\__init__.py", line 3, in <module>
+    from . import models
+ImportError: cannot import name 'models' from partially initialized module 'odoo.addons.nursery.models' (most likely due to a circular import) (c:\odoo\tutorials\addons_extra\nursery\models\__init__.py)
+2025-03-18 16:09:51,376 37340 DEBUG odoo odoo.service.server: cron0 started! 
+2025-03-18 16:09:51,376 37340 DEBUG odoo odoo.service.server: cron1 started! 
+2025-03-18 16:09:58,217 37340 DEBUG ? odoo.http: HTTP sessions stored in: c:\users\georg\appdata\local\openerp s.a\odoo\sessions 
+2025-03-18 16:09:58,225 37340 DEBUG ? odoo.modules.registry: Multiprocess load registry signaling: [Registry: 48] [Cache default: 2] [Cache assets: 1] [Cache templates: 1] [Cache routing: 1] [Cache groups: 1] 
+2025-03-18 16:09:58,226 37340 INFO ? odoo.modules.loading: loading 1 modules... 
+2025-03-18 16:09:58,226 37340 DEBUG ? odoo.modules.loading: Loading module base (1/1) 
+2025-03-18 16:09:58,233 37340 DEBUG ? odoo.modules.loading: Module base loaded in 0.01s, 0 queries 
+2025-03-18 16:09:58,233 37340 INFO ? odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-03-18 16:09:58,240 37340 DEBUG ? odoo.modules.loading: Updating graph with 36 more modules 
+2025-03-18 16:09:58,240 37340 INFO ? odoo.modules.loading: loading 37 modules... 
+2025-03-18 16:09:58,240 37340 DEBUG ? odoo.modules.loading: Loading module estate (2/37) 
+2025-03-18 16:09:58,240 37340 DEBUG ? odoo.modules.loading: Module estate loaded in 0.00s, 0 queries 
+2025-03-18 16:09:58,240 37340 DEBUG ? odoo.modules.loading: Loading module web (3/37) 
+2025-03-18 16:09:58,241 37340 DEBUG ? odoo.modules.loading: Module web loaded in 0.00s, 0 queries 
+2025-03-18 16:09:58,241 37340 DEBUG ? odoo.modules.loading: Loading module auth_totp (4/37) 
+2025-03-18 16:09:58,242 37340 DEBUG ? odoo.modules.loading: Module auth_totp loaded in 0.00s, 0 queries 
+2025-03-18 16:09:58,242 37340 DEBUG ? odoo.modules.loading: Loading module base_import (5/37) 
+2025-03-18 16:09:58,243 37340 DEBUG ? odoo.modules.loading: Module base_import loaded in 0.00s, 0 queries 
+2025-03-18 16:09:58,243 37340 DEBUG ? odoo.modules.loading: Loading module base_import_module (6/37) 
+2025-03-18 16:09:58,243 37340 DEBUG ? odoo.modules.loading: Module base_import_module loaded in 0.00s, 0 queries 
+2025-03-18 16:09:58,243 37340 DEBUG ? odoo.modules.loading: Loading module base_setup (7/37) 
+2025-03-18 16:09:58,243 37340 DEBUG ? odoo.modules.loading: Module base_setup loaded in 0.00s, 0 queries 
+2025-03-18 16:09:58,243 37340 DEBUG ? odoo.modules.loading: Loading module bus (8/37) 
+2025-03-18 16:09:58,244 37340 DEBUG ? odoo.modules.loading: Module bus loaded in 0.00s, 0 queries 
+2025-03-18 16:09:58,244 37340 DEBUG ? odoo.modules.loading: Loading module http_routing (9/37) 
+2025-03-18 16:09:58,244 37340 DEBUG ? odoo.modules.loading: Module http_routing loaded in 0.00s, 0 queries 
+2025-03-18 16:09:58,244 37340 DEBUG ? odoo.modules.loading: Loading module nursery (10/37) 
+2025-03-18 16:09:58,247 37340 CRITICAL ? odoo.modules.module: Couldn't load module nursery 
+2025-03-18 16:09:58,249 37340 WARNING ? odoo.modules.loading: Transient module states were reset 
+2025-03-18 16:09:58,249 37340 ERROR ? odoo.modules.registry: Failed to load registry 
+2025-03-18 16:09:58,250 37340 ERROR ? odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "C:\odoo\odoo\odoo\modules\registry.py", line 104, in __new__
+    return cls.registries[db_name]
+           ~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\odoo\odoo\odoo_env\Lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\tools\func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\tools\lru.py", line 33, in __getitem__
+    a = self.d[obj]
+        ~~~~~~^^^^^
+KeyError: 'odoo'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\odoo\odoo\odoo\http.py", line 2372, in __call__
+    response = request._serve_db()
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\http.py", line 1876, in _serve_db
+    self.registry, cr_readwrite = self._open_registry()
+                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\http.py", line 1486, in _open_registry
+    registry = Registry(self.db)
+               ^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\modules\registry.py", line 106, in __new__
+    return cls.new(db_name)
+           ^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo_env\Lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\tools\func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\modules\registry.py", line 127, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "C:\odoo\odoo\odoo\modules\loading.py", line 476, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\modules\loading.py", line 364, in load_marked_modules
+    loaded, processed = load_module_graph(
+                        ^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\modules\loading.py", line 185, in load_module_graph
+    load_openerp_module(package.name)
+  File "C:\odoo\odoo\odoo\modules\module.py", line 384, in load_openerp_module
+    __import__(qualname)
+  File "c:\odoo\tutorials\addons_extra\nursery\__init__.py", line 4, in <module>
+    from . import models
+  File "c:\odoo\tutorials\addons_extra\nursery\models\__init__.py", line 3, in <module>
+    from . import models
+ImportError: cannot import name 'models' from partially initialized module 'odoo.addons.nursery.models' (most likely due to a circular import) (c:\odoo\tutorials\addons_extra\nursery\models\__init__.py)
+2025-03-18 16:09:58,254 37340 INFO ? werkzeug: 127.0.0.1 - - [18/Mar/2025 16:09:58] "GET / HTTP/1.1" 500 - 12 0.006 0.034
+2025-03-18 16:09:58,351 37340 DEBUG ? odoo.modules.registry: Multiprocess load registry signaling: [Registry: 48] [Cache default: 2] [Cache assets: 1] [Cache templates: 1] [Cache routing: 1] [Cache groups: 1] 
+2025-03-18 16:09:58,353 37340 INFO ? odoo.modules.loading: loading 1 modules... 
+2025-03-18 16:09:58,353 37340 DEBUG ? odoo.modules.loading: Loading module base (1/1) 
+2025-03-18 16:09:58,359 37340 DEBUG ? odoo.modules.loading: Module base loaded in 0.01s, 0 queries 
+2025-03-18 16:09:58,359 37340 INFO ? odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-03-18 16:09:58,366 37340 DEBUG ? odoo.modules.loading: Updating graph with 36 more modules 
+2025-03-18 16:09:58,367 37340 INFO ? odoo.modules.loading: loading 37 modules... 
+2025-03-18 16:09:58,367 37340 DEBUG ? odoo.modules.loading: Loading module estate (2/37) 
+2025-03-18 16:09:58,367 37340 DEBUG ? odoo.modules.loading: Module estate loaded in 0.00s, 0 queries 
+2025-03-18 16:09:58,367 37340 DEBUG ? odoo.modules.loading: Loading module web (3/37) 
+2025-03-18 16:09:58,368 37340 DEBUG ? odoo.modules.loading: Module web loaded in 0.00s, 0 queries 
+2025-03-18 16:09:58,369 37340 DEBUG ? odoo.modules.loading: Loading module auth_totp (4/37) 
+2025-03-18 16:09:58,369 37340 DEBUG ? odoo.modules.loading: Module auth_totp loaded in 0.00s, 0 queries 
+2025-03-18 16:09:58,369 37340 DEBUG ? odoo.modules.loading: Loading module base_import (5/37) 
+2025-03-18 16:09:58,370 37340 DEBUG ? odoo.modules.loading: Module base_import loaded in 0.00s, 0 queries 
+2025-03-18 16:09:58,370 37340 DEBUG ? odoo.modules.loading: Loading module base_import_module (6/37) 
+2025-03-18 16:09:58,370 37340 DEBUG ? odoo.modules.loading: Module base_import_module loaded in 0.00s, 0 queries 
+2025-03-18 16:09:58,370 37340 DEBUG ? odoo.modules.loading: Loading module base_setup (7/37) 
+2025-03-18 16:09:58,370 37340 DEBUG ? odoo.modules.loading: Module base_setup loaded in 0.00s, 0 queries 
+2025-03-18 16:09:58,370 37340 DEBUG ? odoo.modules.loading: Loading module bus (8/37) 
+2025-03-18 16:09:58,371 37340 DEBUG ? odoo.modules.loading: Module bus loaded in 0.00s, 0 queries 
+2025-03-18 16:09:58,371 37340 DEBUG ? odoo.modules.loading: Loading module http_routing (9/37) 
+2025-03-18 16:09:58,371 37340 DEBUG ? odoo.modules.loading: Module http_routing loaded in 0.00s, 0 queries 
+2025-03-18 16:09:58,371 37340 DEBUG ? odoo.modules.loading: Loading module nursery (10/37) 
+2025-03-18 16:09:58,373 37340 CRITICAL ? odoo.modules.module: Couldn't load module nursery 
+2025-03-18 16:09:58,376 37340 WARNING ? odoo.modules.loading: Transient module states were reset 
+2025-03-18 16:09:58,376 37340 ERROR ? odoo.modules.registry: Failed to load registry 
+2025-03-18 16:09:58,376 37340 ERROR ? odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "C:\odoo\odoo\odoo\modules\registry.py", line 104, in __new__
+    return cls.registries[db_name]
+           ~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\odoo\odoo\odoo_env\Lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\tools\func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\tools\lru.py", line 33, in __getitem__
+    a = self.d[obj]
+        ~~~~~~^^^^^
+KeyError: 'odoo'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\odoo\odoo\odoo\http.py", line 2372, in __call__
+    response = request._serve_db()
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\http.py", line 1876, in _serve_db
+    self.registry, cr_readwrite = self._open_registry()
+                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\http.py", line 1486, in _open_registry
+    registry = Registry(self.db)
+               ^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\modules\registry.py", line 106, in __new__
+    return cls.new(db_name)
+           ^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo_env\Lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\tools\func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\modules\registry.py", line 127, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "C:\odoo\odoo\odoo\modules\loading.py", line 476, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\modules\loading.py", line 364, in load_marked_modules
+    loaded, processed = load_module_graph(
+                        ^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\modules\loading.py", line 185, in load_module_graph
+    load_openerp_module(package.name)
+  File "C:\odoo\odoo\odoo\modules\module.py", line 384, in load_openerp_module
+    __import__(qualname)
+  File "c:\odoo\tutorials\addons_extra\nursery\__init__.py", line 4, in <module>
+    from . import models
+  File "c:\odoo\tutorials\addons_extra\nursery\models\__init__.py", line 3, in <module>
+    from . import models
+ImportError: cannot import name 'models' from partially initialized module 'odoo.addons.nursery.models' (most likely due to a circular import) (c:\odoo\tutorials\addons_extra\nursery\models\__init__.py)
+2025-03-18 16:09:58,380 37340 INFO ? werkzeug: 127.0.0.1 - - [18/Mar/2025 16:09:58] "GET /favicon.ico HTTP/1.1" 500 - 12 0.007 0.027
+2025-03-18 16:10:01,018 37340 DEBUG ? odoo.modules.registry: Multiprocess load registry signaling: [Registry: 48] [Cache default: 2] [Cache assets: 1] [Cache templates: 1] [Cache routing: 1] [Cache groups: 1] 
+2025-03-18 16:10:01,023 37340 INFO ? odoo.modules.loading: loading 1 modules... 
+2025-03-18 16:10:01,023 37340 DEBUG ? odoo.modules.loading: Loading module base (1/1) 
+2025-03-18 16:10:01,031 37340 DEBUG ? odoo.modules.loading: Module base loaded in 0.01s, 0 queries 
+2025-03-18 16:10:01,031 37340 INFO ? odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-03-18 16:10:01,042 37340 DEBUG ? odoo.modules.loading: Updating graph with 36 more modules 
+2025-03-18 16:10:01,042 37340 INFO ? odoo.modules.loading: loading 37 modules... 
+2025-03-18 16:10:01,042 37340 DEBUG ? odoo.modules.loading: Loading module estate (2/37) 
+2025-03-18 16:10:01,042 37340 DEBUG ? odoo.modules.loading: Module estate loaded in 0.00s, 0 queries 
+2025-03-18 16:10:01,043 37340 DEBUG ? odoo.modules.loading: Loading module web (3/37) 
+2025-03-18 16:10:01,045 37340 DEBUG ? odoo.modules.loading: Module web loaded in 0.00s, 0 queries 
+2025-03-18 16:10:01,046 37340 DEBUG ? odoo.modules.loading: Loading module auth_totp (4/37) 
+2025-03-18 16:10:01,046 37340 DEBUG ? odoo.modules.loading: Module auth_totp loaded in 0.00s, 0 queries 
+2025-03-18 16:10:01,046 37340 DEBUG ? odoo.modules.loading: Loading module base_import (5/37) 
+2025-03-18 16:10:01,049 37340 DEBUG ? odoo.modules.loading: Module base_import loaded in 0.00s, 0 queries 
+2025-03-18 16:10:01,049 37340 DEBUG ? odoo.modules.loading: Loading module base_import_module (6/37) 
+2025-03-18 16:10:01,050 37340 DEBUG ? odoo.modules.loading: Module base_import_module loaded in 0.00s, 0 queries 
+2025-03-18 16:10:01,050 37340 DEBUG ? odoo.modules.loading: Loading module base_setup (7/37) 
+2025-03-18 16:10:01,050 37340 DEBUG ? odoo.modules.loading: Module base_setup loaded in 0.00s, 0 queries 
+2025-03-18 16:10:01,050 37340 DEBUG ? odoo.modules.loading: Loading module bus (8/37) 
+2025-03-18 16:10:01,052 37340 DEBUG ? odoo.modules.loading: Module bus loaded in 0.00s, 0 queries 
+2025-03-18 16:10:01,052 37340 DEBUG ? odoo.modules.loading: Loading module http_routing (9/37) 
+2025-03-18 16:10:01,052 37340 DEBUG ? odoo.modules.loading: Module http_routing loaded in 0.00s, 0 queries 
+2025-03-18 16:10:01,052 37340 DEBUG ? odoo.modules.loading: Loading module nursery (10/37) 
+2025-03-18 16:10:01,057 37340 CRITICAL ? odoo.modules.module: Couldn't load module nursery 
+2025-03-18 16:10:01,060 37340 WARNING ? odoo.modules.loading: Transient module states were reset 
+2025-03-18 16:10:01,060 37340 ERROR ? odoo.modules.registry: Failed to load registry 
+2025-03-18 16:10:01,060 37340 ERROR ? odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "C:\odoo\odoo\odoo\modules\registry.py", line 104, in __new__
+    return cls.registries[db_name]
+           ~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\odoo\odoo\odoo_env\Lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\tools\func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\tools\lru.py", line 33, in __getitem__
+    a = self.d[obj]
+        ~~~~~~^^^^^
+KeyError: 'odoo'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\odoo\odoo\odoo\http.py", line 2372, in __call__
+    response = request._serve_db()
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\http.py", line 1876, in _serve_db
+    self.registry, cr_readwrite = self._open_registry()
+                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\http.py", line 1486, in _open_registry
+    registry = Registry(self.db)
+               ^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\modules\registry.py", line 106, in __new__
+    return cls.new(db_name)
+           ^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo_env\Lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\tools\func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\modules\registry.py", line 127, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "C:\odoo\odoo\odoo\modules\loading.py", line 476, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\modules\loading.py", line 364, in load_marked_modules
+    loaded, processed = load_module_graph(
+                        ^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\modules\loading.py", line 185, in load_module_graph
+    load_openerp_module(package.name)
+  File "C:\odoo\odoo\odoo\modules\module.py", line 384, in load_openerp_module
+    __import__(qualname)
+  File "c:\odoo\tutorials\addons_extra\nursery\__init__.py", line 4, in <module>
+    from . import models
+  File "c:\odoo\tutorials\addons_extra\nursery\models\__init__.py", line 3, in <module>
+    from . import models
+ImportError: cannot import name 'models' from partially initialized module 'odoo.addons.nursery.models' (most likely due to a circular import) (c:\odoo\tutorials\addons_extra\nursery\models\__init__.py)
+2025-03-18 16:10:01,062 37340 INFO ? werkzeug: 127.0.0.1 - - [18/Mar/2025 16:10:01] "GET / HTTP/1.1" 500 - 12 0.021 0.039
+2025-03-18 16:10:01,338 37340 DEBUG ? odoo.modules.registry: Multiprocess load registry signaling: [Registry: 48] [Cache default: 2] [Cache assets: 1] [Cache templates: 1] [Cache routing: 1] [Cache groups: 1] 
+2025-03-18 16:10:01,340 37340 INFO ? odoo.modules.loading: loading 1 modules... 
+2025-03-18 16:10:01,340 37340 DEBUG ? odoo.modules.loading: Loading module base (1/1) 
+2025-03-18 16:10:01,340 37340 DEBUG ? odoo.modules.loading: Module base loaded in 0.00s, 0 queries 
+2025-03-18 16:10:01,340 37340 INFO ? odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2025-03-18 16:10:01,357 37340 DEBUG ? odoo.modules.loading: Updating graph with 36 more modules 
+2025-03-18 16:10:01,357 37340 INFO ? odoo.modules.loading: loading 37 modules... 
+2025-03-18 16:10:01,357 37340 DEBUG ? odoo.modules.loading: Loading module estate (2/37) 
+2025-03-18 16:10:01,357 37340 DEBUG ? odoo.modules.loading: Module estate loaded in 0.00s, 0 queries 
+2025-03-18 16:10:01,357 37340 DEBUG ? odoo.modules.loading: Loading module web (3/37) 
+2025-03-18 16:10:01,357 37340 DEBUG ? odoo.modules.loading: Module web loaded in 0.00s, 0 queries 
+2025-03-18 16:10:01,357 37340 DEBUG ? odoo.modules.loading: Loading module auth_totp (4/37) 
+2025-03-18 16:10:01,357 37340 DEBUG ? odoo.modules.loading: Module auth_totp loaded in 0.00s, 0 queries 
+2025-03-18 16:10:01,357 37340 DEBUG ? odoo.modules.loading: Loading module base_import (5/37) 
+2025-03-18 16:10:01,357 37340 DEBUG ? odoo.modules.loading: Module base_import loaded in 0.00s, 0 queries 
+2025-03-18 16:10:01,357 37340 DEBUG ? odoo.modules.loading: Loading module base_import_module (6/37) 
+2025-03-18 16:10:01,357 37340 DEBUG ? odoo.modules.loading: Module base_import_module loaded in 0.00s, 0 queries 
+2025-03-18 16:10:01,357 37340 DEBUG ? odoo.modules.loading: Loading module base_setup (7/37) 
+2025-03-18 16:10:01,357 37340 DEBUG ? odoo.modules.loading: Module base_setup loaded in 0.00s, 0 queries 
+2025-03-18 16:10:01,357 37340 DEBUG ? odoo.modules.loading: Loading module bus (8/37) 
+2025-03-18 16:10:01,357 37340 DEBUG ? odoo.modules.loading: Module bus loaded in 0.00s, 0 queries 
+2025-03-18 16:10:01,357 37340 DEBUG ? odoo.modules.loading: Loading module http_routing (9/37) 
+2025-03-18 16:10:01,357 37340 DEBUG ? odoo.modules.loading: Module http_routing loaded in 0.00s, 0 queries 
+2025-03-18 16:10:01,357 37340 DEBUG ? odoo.modules.loading: Loading module nursery (10/37) 
+2025-03-18 16:10:01,372 37340 CRITICAL ? odoo.modules.module: Couldn't load module nursery 
+2025-03-18 16:10:01,376 37340 WARNING ? odoo.modules.loading: Transient module states were reset 
+2025-03-18 16:10:01,376 37340 ERROR ? odoo.modules.registry: Failed to load registry 
+2025-03-18 16:10:01,376 37340 ERROR ? odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "C:\odoo\odoo\odoo\modules\registry.py", line 104, in __new__
+    return cls.registries[db_name]
+           ~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\odoo\odoo\odoo_env\Lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\tools\func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\tools\lru.py", line 33, in __getitem__
+    a = self.d[obj]
+        ~~~~~~^^^^^
+KeyError: 'odoo'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\odoo\odoo\odoo\http.py", line 2372, in __call__
+    response = request._serve_db()
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\http.py", line 1876, in _serve_db
+    self.registry, cr_readwrite = self._open_registry()
+                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\http.py", line 1486, in _open_registry
+    registry = Registry(self.db)
+               ^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\modules\registry.py", line 106, in __new__
+    return cls.new(db_name)
+           ^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo_env\Lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\tools\func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\modules\registry.py", line 127, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "C:\odoo\odoo\odoo\modules\loading.py", line 476, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\modules\loading.py", line 364, in load_marked_modules
+    loaded, processed = load_module_graph(
+                        ^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\modules\loading.py", line 185, in load_module_graph
+    load_openerp_module(package.name)
+  File "C:\odoo\odoo\odoo\modules\module.py", line 384, in load_openerp_module
+    __import__(qualname)
+  File "c:\odoo\tutorials\addons_extra\nursery\__init__.py", line 4, in <module>
+    from . import models
+  File "c:\odoo\tutorials\addons_extra\nursery\models\__init__.py", line 3, in <module>
+    from . import models
+ImportError: cannot import name 'models' from partially initialized module 'odoo.addons.nursery.models' (most likely due to a circular import) (c:\odoo\tutorials\addons_extra\nursery\models\__init__.py)
+2025-03-18 16:10:01,376 37340 INFO ? werkzeug: 127.0.0.1 - - [18/Mar/2025 16:10:01] "GET /favicon.ico HTTP/1.1" 500 - 12 0.006 0.040
+2025-03-18 16:10:37,134 27084 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.request:INFO" 
+2025-03-18 16:10:37,135 27084 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.response:INFO" 
+2025-03-18 16:10:37,135 27084 DEBUG ? odoo.netsvc: logger level set: ":INFO" 
+2025-03-18 16:10:37,135 27084 DEBUG ? odoo.netsvc: logger level set: "odoo:DEBUG" 
+2025-03-18 16:10:37,135 27084 DEBUG ? odoo.netsvc: logger level set: "odoo.sql_db:INFO" 
+2025-03-18 16:10:37,135 27084 DEBUG ? odoo.netsvc: logger level set: ":INFO" 
+2025-03-18 16:10:37,135 27084 INFO ? odoo: Odoo version 18.0 
+2025-03-18 16:10:37,135 27084 INFO ? odoo: Using configuration file at C:\odoo\odoo\odoo.conf 
+2025-03-18 16:10:37,135 27084 INFO ? odoo: addons paths: ['C:\\odoo\\odoo\\odoo\\addons', 'c:\\users\\georg\\appdata\\local\\openerp s.a\\odoo\\addons\\18.0', 'c:\\odoo\\tutorials\\addons_extra', 'c:\\odoo\\odoo\\addons', 'c:\\odoo\\odoo\\odoo\\addons'] 
+2025-03-18 16:10:37,136 27084 INFO ? odoo: database: odoo@default:default 
+2025-03-18 16:10:37,412 27084 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2025-03-18 16:10:37,422 27084 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltoimage to generate images from html. 
+2025-03-18 16:10:37,750 27084 DEBUG ? odoo.service.server: Setting signal handlers 
+2025-03-18 16:10:37,754 27084 INFO ? odoo.service.server: HTTP service (werkzeug) running on GLO:8069 
+2025-03-18 16:10:37,811 27084 DEBUG odoo odoo.modules.registry: Multiprocess load registry signaling: [Registry: 48] [Cache default: 2] [Cache assets: 1] [Cache templates: 1] [Cache routing: 1] [Cache groups: 1] 
+2025-03-18 16:10:37,815 27084 INFO odoo odoo.modules.loading: loading 1 modules... 
+2025-03-18 16:10:37,815 27084 DEBUG odoo odoo.modules.loading: Loading module base (1/1) 
+2025-03-18 16:10:37,824 27084 DEBUG odoo odoo.modules.loading: Module base loaded in 0.01s, 0 queries 
+2025-03-18 16:10:37,824 27084 INFO odoo odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-03-18 16:10:37,846 27084 INFO odoo odoo.modules.loading: updating modules list 
+2025-03-18 16:10:37,865 27084 INFO odoo odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a 
+2025-03-18 16:10:38,694 27084 WARNING odoo odoo.modules.module: Missing `license` key in manifest for 'nursery', defaulting to LGPL-3 
+2025-03-18 16:10:39,124 27084 WARNING odoo odoo.modules.loading: invalid module names, ignored:  nursery 
+2025-03-18 16:10:39,141 27084 DEBUG odoo odoo.modules.loading: Updating graph with 36 more modules 
+2025-03-18 16:10:39,142 27084 INFO odoo odoo.modules.loading: loading 37 modules... 
+2025-03-18 16:10:39,142 27084 DEBUG odoo odoo.modules.loading: Loading module estate (2/37) 
+2025-03-18 16:10:39,146 27084 DEBUG odoo odoo.modules.loading: Module estate loaded in 0.00s, 0 queries 
+2025-03-18 16:10:39,146 27084 DEBUG odoo odoo.modules.loading: Loading module web (3/37) 
+2025-03-18 16:10:39,148 27084 DEBUG odoo odoo.modules.loading: Module web loaded in 0.00s, 0 queries 
+2025-03-18 16:10:39,148 27084 DEBUG odoo odoo.modules.loading: Loading module auth_totp (4/37) 
+2025-03-18 16:10:39,180 27084 DEBUG odoo odoo.modules.loading: Module auth_totp loaded in 0.03s, 0 queries 
+2025-03-18 16:10:39,180 27084 DEBUG odoo odoo.modules.loading: Loading module base_import (5/37) 
+2025-03-18 16:10:39,473 27084 DEBUG odoo odoo.modules.loading: Module base_import loaded in 0.29s, 0 queries 
+2025-03-18 16:10:39,473 27084 DEBUG odoo odoo.modules.loading: Loading module base_import_module (6/37) 
+2025-03-18 16:10:39,484 27084 DEBUG odoo odoo.modules.loading: Module base_import_module loaded in 0.01s, 0 queries 
+2025-03-18 16:10:39,484 27084 DEBUG odoo odoo.modules.loading: Loading module base_setup (7/37) 
+2025-03-18 16:10:39,491 27084 DEBUG odoo odoo.modules.loading: Module base_setup loaded in 0.01s, 0 queries 
+2025-03-18 16:10:39,491 27084 DEBUG odoo odoo.modules.loading: Loading module bus (8/37) 
+2025-03-18 16:10:39,513 27084 DEBUG odoo odoo.modules.loading: Module bus loaded in 0.02s, 0 queries 
+2025-03-18 16:10:39,513 27084 DEBUG odoo odoo.modules.loading: Loading module http_routing (9/37) 
+2025-03-18 16:10:39,521 27084 DEBUG odoo odoo.modules.loading: Module http_routing loaded in 0.01s, 0 queries 
+2025-03-18 16:10:39,521 27084 DEBUG odoo odoo.modules.loading: Loading module nursery (10/37) 
+2025-03-18 16:10:39,526 27084 CRITICAL odoo odoo.modules.module: Couldn't load module nursery 
+2025-03-18 16:10:39,532 27084 WARNING odoo odoo.modules.loading: Transient module states were reset 
+2025-03-18 16:10:39,532 27084 ERROR odoo odoo.modules.registry: Failed to load registry 
+2025-03-18 16:10:39,533 27084 CRITICAL odoo odoo.service.server: Failed to initialize database `odoo`. 
+Traceback (most recent call last):
+  File "C:\odoo\odoo\odoo\service\server.py", line 1318, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo_env\Lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\tools\func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\modules\registry.py", line 127, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "C:\odoo\odoo\odoo\modules\loading.py", line 476, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\modules\loading.py", line 364, in load_marked_modules
+    loaded, processed = load_module_graph(
+                        ^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\modules\loading.py", line 185, in load_module_graph
+    load_openerp_module(package.name)
+  File "C:\odoo\odoo\odoo\modules\module.py", line 384, in load_openerp_module
+    __import__(qualname)
+  File "c:\odoo\tutorials\addons_extra\nursery\__init__.py", line 4, in <module>
+    from . import models
+  File "c:\odoo\tutorials\addons_extra\nursery\models\__init__.py", line 3, in <module>
+    from . import models
+ImportError: cannot import name 'models' from partially initialized module 'odoo.addons.nursery.models' (most likely due to a circular import) (c:\odoo\tutorials\addons_extra\nursery\models\__init__.py)
+2025-03-18 16:10:39,539 27084 DEBUG odoo odoo.service.server: cron0 started! 
+2025-03-18 16:10:39,539 27084 DEBUG odoo odoo.service.server: cron1 started! 
+2025-03-18 16:10:43,335 27084 DEBUG ? odoo.http: HTTP sessions stored in: c:\users\georg\appdata\local\openerp s.a\odoo\sessions 
+2025-03-18 16:10:43,337 27084 DEBUG ? odoo.modules.registry: Multiprocess load registry signaling: [Registry: 48] [Cache default: 2] [Cache assets: 1] [Cache templates: 1] [Cache routing: 1] [Cache groups: 1] 
+2025-03-18 16:10:43,337 27084 INFO ? odoo.modules.loading: loading 1 modules... 
+2025-03-18 16:10:43,337 27084 DEBUG ? odoo.modules.loading: Loading module base (1/1) 
+2025-03-18 16:10:43,345 27084 DEBUG ? odoo.modules.loading: Module base loaded in 0.01s, 0 queries 
+2025-03-18 16:10:43,346 27084 INFO ? odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-03-18 16:10:43,352 27084 DEBUG ? odoo.modules.loading: Updating graph with 36 more modules 
+2025-03-18 16:10:43,352 27084 INFO ? odoo.modules.loading: loading 37 modules... 
+2025-03-18 16:10:43,352 27084 DEBUG ? odoo.modules.loading: Loading module estate (2/37) 
+2025-03-18 16:10:43,352 27084 DEBUG ? odoo.modules.loading: Module estate loaded in 0.00s, 0 queries 
+2025-03-18 16:10:43,352 27084 DEBUG ? odoo.modules.loading: Loading module web (3/37) 
+2025-03-18 16:10:43,353 27084 DEBUG ? odoo.modules.loading: Module web loaded in 0.00s, 0 queries 
+2025-03-18 16:10:43,353 27084 DEBUG ? odoo.modules.loading: Loading module auth_totp (4/37) 
+2025-03-18 16:10:43,353 27084 DEBUG ? odoo.modules.loading: Module auth_totp loaded in 0.00s, 0 queries 
+2025-03-18 16:10:43,353 27084 DEBUG ? odoo.modules.loading: Loading module base_import (5/37) 
+2025-03-18 16:10:43,354 27084 DEBUG ? odoo.modules.loading: Module base_import loaded in 0.00s, 0 queries 
+2025-03-18 16:10:43,354 27084 DEBUG ? odoo.modules.loading: Loading module base_import_module (6/37) 
+2025-03-18 16:10:43,355 27084 DEBUG ? odoo.modules.loading: Module base_import_module loaded in 0.00s, 0 queries 
+2025-03-18 16:10:43,355 27084 DEBUG ? odoo.modules.loading: Loading module base_setup (7/37) 
+2025-03-18 16:10:43,355 27084 DEBUG ? odoo.modules.loading: Module base_setup loaded in 0.00s, 0 queries 
+2025-03-18 16:10:43,355 27084 DEBUG ? odoo.modules.loading: Loading module bus (8/37) 
+2025-03-18 16:10:43,355 27084 DEBUG ? odoo.modules.loading: Module bus loaded in 0.00s, 0 queries 
+2025-03-18 16:10:43,355 27084 DEBUG ? odoo.modules.loading: Loading module http_routing (9/37) 
+2025-03-18 16:10:43,355 27084 DEBUG ? odoo.modules.loading: Module http_routing loaded in 0.00s, 0 queries 
+2025-03-18 16:10:43,355 27084 DEBUG ? odoo.modules.loading: Loading module nursery (10/37) 
+2025-03-18 16:10:43,357 27084 CRITICAL ? odoo.modules.module: Couldn't load module nursery 
+2025-03-18 16:10:43,360 27084 WARNING ? odoo.modules.loading: Transient module states were reset 
+2025-03-18 16:10:43,360 27084 ERROR ? odoo.modules.registry: Failed to load registry 
+2025-03-18 16:10:43,361 27084 ERROR ? odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "C:\odoo\odoo\odoo\modules\registry.py", line 104, in __new__
+    return cls.registries[db_name]
+           ~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\odoo\odoo\odoo_env\Lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\tools\func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\tools\lru.py", line 33, in __getitem__
+    a = self.d[obj]
+        ~~~~~~^^^^^
+KeyError: 'odoo'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\odoo\odoo\odoo\http.py", line 2372, in __call__
+    response = request._serve_db()
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\http.py", line 1876, in _serve_db
+    self.registry, cr_readwrite = self._open_registry()
+                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\http.py", line 1486, in _open_registry
+    registry = Registry(self.db)
+               ^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\modules\registry.py", line 106, in __new__
+    return cls.new(db_name)
+           ^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo_env\Lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\tools\func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\modules\registry.py", line 127, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "C:\odoo\odoo\odoo\modules\loading.py", line 476, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\modules\loading.py", line 364, in load_marked_modules
+    loaded, processed = load_module_graph(
+                        ^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\modules\loading.py", line 185, in load_module_graph
+    load_openerp_module(package.name)
+  File "C:\odoo\odoo\odoo\modules\module.py", line 384, in load_openerp_module
+    __import__(qualname)
+  File "c:\odoo\tutorials\addons_extra\nursery\__init__.py", line 4, in <module>
+    from . import models
+  File "c:\odoo\tutorials\addons_extra\nursery\models\__init__.py", line 3, in <module>
+    from . import models
+ImportError: cannot import name 'models' from partially initialized module 'odoo.addons.nursery.models' (most likely due to a circular import) (c:\odoo\tutorials\addons_extra\nursery\models\__init__.py)
+2025-03-18 16:10:43,365 27084 INFO ? werkzeug: 127.0.0.1 - - [18/Mar/2025 16:10:43] "GET / HTTP/1.1" 500 - 12 0.002 0.033
+2025-03-18 16:10:43,450 27084 DEBUG ? odoo.modules.registry: Multiprocess load registry signaling: [Registry: 48] [Cache default: 2] [Cache assets: 1] [Cache templates: 1] [Cache routing: 1] [Cache groups: 1] 
+2025-03-18 16:10:43,452 27084 INFO ? odoo.modules.loading: loading 1 modules... 
+2025-03-18 16:10:43,452 27084 DEBUG ? odoo.modules.loading: Loading module base (1/1) 
+2025-03-18 16:10:43,458 27084 DEBUG ? odoo.modules.loading: Module base loaded in 0.01s, 0 queries 
+2025-03-18 16:10:43,459 27084 INFO ? odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-03-18 16:10:43,467 27084 DEBUG ? odoo.modules.loading: Updating graph with 36 more modules 
+2025-03-18 16:10:43,467 27084 INFO ? odoo.modules.loading: loading 37 modules... 
+2025-03-18 16:10:43,467 27084 DEBUG ? odoo.modules.loading: Loading module estate (2/37) 
+2025-03-18 16:10:43,467 27084 DEBUG ? odoo.modules.loading: Module estate loaded in 0.00s, 0 queries 
+2025-03-18 16:10:43,467 27084 DEBUG ? odoo.modules.loading: Loading module web (3/37) 
+2025-03-18 16:10:43,468 27084 DEBUG ? odoo.modules.loading: Module web loaded in 0.00s, 0 queries 
+2025-03-18 16:10:43,468 27084 DEBUG ? odoo.modules.loading: Loading module auth_totp (4/37) 
+2025-03-18 16:10:43,469 27084 DEBUG ? odoo.modules.loading: Module auth_totp loaded in 0.00s, 0 queries 
+2025-03-18 16:10:43,469 27084 DEBUG ? odoo.modules.loading: Loading module base_import (5/37) 
+2025-03-18 16:10:43,470 27084 DEBUG ? odoo.modules.loading: Module base_import loaded in 0.00s, 0 queries 
+2025-03-18 16:10:43,470 27084 DEBUG ? odoo.modules.loading: Loading module base_import_module (6/37) 
+2025-03-18 16:10:43,470 27084 DEBUG ? odoo.modules.loading: Module base_import_module loaded in 0.00s, 0 queries 
+2025-03-18 16:10:43,470 27084 DEBUG ? odoo.modules.loading: Loading module base_setup (7/37) 
+2025-03-18 16:10:43,470 27084 DEBUG ? odoo.modules.loading: Module base_setup loaded in 0.00s, 0 queries 
+2025-03-18 16:10:43,470 27084 DEBUG ? odoo.modules.loading: Loading module bus (8/37) 
+2025-03-18 16:10:43,471 27084 DEBUG ? odoo.modules.loading: Module bus loaded in 0.00s, 0 queries 
+2025-03-18 16:10:43,471 27084 DEBUG ? odoo.modules.loading: Loading module http_routing (9/37) 
+2025-03-18 16:10:43,471 27084 DEBUG ? odoo.modules.loading: Module http_routing loaded in 0.00s, 0 queries 
+2025-03-18 16:10:43,471 27084 DEBUG ? odoo.modules.loading: Loading module nursery (10/37) 
+2025-03-18 16:10:43,473 27084 CRITICAL ? odoo.modules.module: Couldn't load module nursery 
+2025-03-18 16:10:43,477 27084 WARNING ? odoo.modules.loading: Transient module states were reset 
+2025-03-18 16:10:43,477 27084 ERROR ? odoo.modules.registry: Failed to load registry 
+2025-03-18 16:10:43,477 27084 ERROR ? odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "C:\odoo\odoo\odoo\modules\registry.py", line 104, in __new__
+    return cls.registries[db_name]
+           ~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\odoo\odoo\odoo_env\Lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\tools\func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\tools\lru.py", line 33, in __getitem__
+    a = self.d[obj]
+        ~~~~~~^^^^^
+KeyError: 'odoo'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\odoo\odoo\odoo\http.py", line 2372, in __call__
+    response = request._serve_db()
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\http.py", line 1876, in _serve_db
+    self.registry, cr_readwrite = self._open_registry()
+                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\http.py", line 1486, in _open_registry
+    registry = Registry(self.db)
+               ^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\modules\registry.py", line 106, in __new__
+    return cls.new(db_name)
+           ^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo_env\Lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\tools\func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\modules\registry.py", line 127, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "C:\odoo\odoo\odoo\modules\loading.py", line 476, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\modules\loading.py", line 364, in load_marked_modules
+    loaded, processed = load_module_graph(
+                        ^^^^^^^^^^^^^^^^^^
+  File "C:\odoo\odoo\odoo\modules\loading.py", line 185, in load_module_graph
+    load_openerp_module(package.name)
+  File "C:\odoo\odoo\odoo\modules\module.py", line 384, in load_openerp_module
+    __import__(qualname)
+  File "c:\odoo\tutorials\addons_extra\nursery\__init__.py", line 4, in <module>
+    from . import models
+  File "c:\odoo\tutorials\addons_extra\nursery\models\__init__.py", line 3, in <module>
+    from . import models
+ImportError: cannot import name 'models' from partially initialized module 'odoo.addons.nursery.models' (most likely due to a circular import) (c:\odoo\tutorials\addons_extra\nursery\models\__init__.py)
+2025-03-18 16:10:43,480 27084 INFO ? werkzeug: 127.0.0.1 - - [18/Mar/2025 16:10:43] "GET /favicon.ico HTTP/1.1" 500 - 12 0.006 0.028

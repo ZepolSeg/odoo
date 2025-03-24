@@ -1,0 +1,4 @@
+PS C:\odoo\tutorials> c:\odoo\tutorials\odoo_env\Scripts\python.exe C:\odoo\odoo\odoo-bin -u estate
+c:\odoo\tutorials\odoo_env\Scripts\python.exe C:\odoo\odoo\odoo-bin scaffold nursery C:\odoo\tutorials\addons_extra
+odoo-bin scaffold <module_name> <addons_path>
+c:\odoo\tutorials\odoo_env\Scripts\python.exe C:\odoo\odoo\odoo-bin scaffold nursery C:\odoo\tutorials\addons_extra
