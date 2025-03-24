@@ -8308,3 +8308,9 @@ FileNotFoundError: [Errno 2] No such file or directory: b'c:\\usr\\share\\geoip\
 2025-03-24 10:04:05,812 27392 INFO odoo werkzeug: 127.0.0.1 - - [24/Mar/2025 10:04:05] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.005
 2025-03-24 10:04:38,493 27392 DEBUG ? odoo.service.server: cron0 polling for jobs 
 2025-03-24 10:04:41,107 27392 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-24 10:05:38,498 27392 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-24 10:05:42,122 27392 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-24 10:06:38,504 27392 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-24 10:06:43,150 27392 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-03-24 10:07:38,515 27392 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-03-24 10:07:44,167 27392 DEBUG ? odoo.service.server: cron1 polling for jobs 
