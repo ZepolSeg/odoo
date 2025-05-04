@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-10 13:24+0000\n"
+"POT-Creation-Date: 2025-03-19 20:37+0000\n"
 "PO-Revision-Date: 2024-09-25 09:41+0000\n"
 "Last-Translator: Junko Augias, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/odoo/teams/41243/ja/)\n"
@@ -32,6 +32,12 @@ msgid ""
 "%s is not available anymore, it has thus been removed from your order. "
 "Please review your order and validate it again."
 msgstr "%s は利用できなくなりました。そのため、オーダから削除されました。オーダ内容を再度ご確認下さい。"
+
+#. module: pos_self_order
+#. odoo-python
+#: code:addons/pos_self_order/models/pos_config.py:0
+msgid "(require Odoo Enterprise)"
+msgstr "(Odoo企業版が必要です)"
 
 #. module: pos_self_order
 #. odoo-javascript
@@ -64,7 +70,7 @@ msgstr "このユーザのアクセス権は、セッションが開かれてい
 #. module: pos_self_order
 #: model:ir.model.fields.selection,name:pos_self_order.selection__pos_config__status__active
 msgid "Active"
-msgstr "有効化"
+msgstr "アクティブ"
 
 #. module: pos_self_order
 #: model_terms:ir.ui.view,arch_db:pos_self_order.res_config_settings_view_form_menu
@@ -144,7 +150,7 @@ msgstr "利用可能終了時間:"
 #: code:addons/pos_self_order/static/src/overrides/components/product_info_popup/product_info_popup.xml:0
 #: model_terms:ir.ui.view,arch_db:pos_self_order.res_config_settings_view_form_menu
 msgid "Available"
-msgstr "処理可能"
+msgstr "利用可能"
 
 #. module: pos_self_order
 #: model:ir.model.fields,field_description:pos_self_order.field_pos_config__self_ordering_available_language_ids
@@ -699,7 +705,7 @@ msgstr "OK"
 #. odoo-python
 #: code:addons/pos_self_order/models/res_config_settings.py:0
 msgid "Only pay after each is available with kiosk mode."
-msgstr "キオスク・モードでは後払いのみです。"
+msgstr "キオスクモードでは後払いのみです。"
 
 #. module: pos_self_order
 #: model_terms:ir.ui.view,arch_db:pos_self_order.pos_self_order_menu_item

@@ -11,6 +11,7 @@ from odoo.fields import Command
 from odoo.tools import float_compare, mute_logger, test_reports
 from odoo.tests import Form
 from odoo.addons.point_of_sale.tests.common import TestPointOfSaleCommon
+from odoo.addons.point_of_sale.tests.common_setup_methods import setup_product_combo_items
 
 
 @odoo.tests.tagged('post_install', '-at_install')
@@ -2124,6 +2125,22 @@ class TestPointOfSaleFlow(TestPointOfSaleCommon):
         session_id.action_pos_session_closing_control(bank_payment_method_diffs={self.bank_payment_method.id: 5.00})
         self.assertEqual(session_id.state, 'closed')
 
+    def test_product_combo_creation(self):
+        setup_product_combo_items(self)
+        """We check that combo products are created without taxes."""
+        # Test product combo creation
+        product_form = Form(self.env['product.product'])
+        product_form.name = "Test Combo Product"
+        product_form.lst_price = 100
+        product_form.type = "combo"
+        product_form.combo_ids = self.desk_accessories_combo
+        product = product_form.save()
+        self.assertTrue(product.combo_ids)
+
+        product_form.type = "consu"
+        product = product_form.save()
+        self.assertFalse(product.combo_ids)
+
     def test_change_is_deducted_from_cash(self):
         self.pos_config.open_ui()
         pos_session = self.pos_config.current_session_id
@@ -2174,3 +2191,57 @@ class TestPointOfSaleFlow(TestPointOfSaleCommon):
         ])
         account_moves = self.env['account.move'].search([('pos_payment_ids', 'in', pos_order.payment_ids.ids)])
         self.assertEqual(sum(account_moves.mapped('amount_total')), pos_order.amount_total)
+
+    def test_refund_qty_refund_cancel(self):
+        """
+        Test the refunded qty of an order, when the refund order has been cancelled
+        """
+
+        product1 = self.env['product.product'].create({
+            'name': 'Test Product',
+            'categ_id': self.env.ref('product.product_category_all').id,
+            'lst_price': 100,
+            'type': 'consu',
+        })
+
+        self.pos_config.open_ui()
+        current_session = self.pos_config.current_session_id
+
+        pos_order_data = {
+            'amount_paid': 100,
+            'amount_return': 0,
+            'amount_tax': 0,
+            'amount_total': 100,
+            'date_order': fields.Datetime.to_string(fields.Datetime.now()),
+            'fiscal_position_id': False,
+            'lines': [(0, 0, {
+                'discount': 0,
+                'pack_lot_ids': [],
+                'price_unit': 100.0,
+                'product_id': product1.id,
+                'price_subtotal': 100.0,
+                'price_subtotal_incl': 100.0,
+                'qty': 1,
+                'tax_ids': []
+            })],
+            'name': 'Order 12345-123-1234',
+            'partner_id': False,
+            'session_id': current_session.id,
+            'sequence_number': 2,
+            'payment_ids': [(0, 0, {
+                'amount': 100,
+                'name': fields.Datetime.now(),
+                'payment_method_id': self.cash_payment_method.id
+            })],
+            'uuid': '12345-123-1234',
+            'last_order_preparation_change': '{}',
+            'user_id': self.env.uid
+        }
+
+        self.env['pos.order'].sync_from_ui([pos_order_data])
+        order = current_session.order_ids[0]
+        refund_action = order.refund()
+        refund = self.PosOrder.browse(refund_action['res_id'])
+        self.assertEqual(order.lines[0].refunded_qty, 1)
+        refund.action_pos_order_cancel()
+        self.assertEqual(order.lines[0].refunded_qty, 0)

@@ -3,15 +3,15 @@
 # 	* sale
 # 
 # Translators:
-# Wil Odoo, 2024
 # Daye Jeong, 2025
+# Wil Odoo, 2025
 # Sarah Park, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-27 13:04+0000\n"
+"POT-Creation-Date: 2025-04-07 20:37+0000\n"
 "PO-Revision-Date: 2024-09-25 09:41+0000\n"
 "Last-Translator: Sarah Park, 2025\n"
 "Language-Team: Korean (https://app.transifex.com/odoo/teams/41243/ko/)\n"
@@ -645,7 +645,7 @@ msgid ""
 "            amounting in <span style=\"font-weight: bold;\" t-out=\"format_amount(object.amount_total, object.currency_id) or ''\">$ 10.00</span> is available.\n"
 "        </t>\n"
 "        <t t-else=\"\">\n"
-"            <t t-out=\"doc_name or ''\">quotation</t> <span style=\"font-weight: bold;\" t-out=\"object.name or ''\"/>\n"
+"            <t t-out=\"doc_name or ''\">quotation</t> <span style=\"font-weight: bold;\" t-out=\"object.name or ''\">S00052</span>\n"
 "            <t t-if=\"object.origin\">\n"
 "                (with reference: <t t-out=\"object.origin or ''\">S00052</t> )\n"
 "            </t>\n"
@@ -685,30 +685,30 @@ msgstr ""
 "        <t t-set=\"doc_name\" t-value=\"'quotation' if object.state in ('draft', 'sent') else 'order'\"/>\n"
 "        안녕하세요,\n"
 "        <br/><br/>\n"
-"        고객님의\n"
+"        Your\n"
 "        <t t-if=\"ctx.get('proforma')\">\n"
-"            견적 송장 <t t-out=\"doc_name or ''\">견적서 번호</t> <span style=\"font-weight: bold;\" t-out=\"object.name or ''\">S00052</span>\n"
+"            견적용 청구서가 <t t-out=\"doc_name or ''\">견적서</t> <span style=\"font-weight: bold;\" t-out=\"object.name or ''\">S00052</span>\n"
 "            <t t-if=\"object.origin\">\n"
-"                (참조번호: <t t-out=\"object.origin or ''\"/> )\n"
+"                (참조 번호: <t t-out=\"object.origin or ''\"/> )\n"
 "            </t>\n"
-"            금액 <span style=\"font-weight: bold;\" t-out=\"format_amount(object.amount_total, object.currency_id) or ''\">$ 10.00</span>건이 발행되었습니다.\n"
+"            금액: <span style=\"font-weight: bold;\" t-out=\"format_amount(object.amount_total, object.currency_id) or ''\">$ 10.00</span> 관련하여 발행되었습니다.\n"
 "        </t>\n"
 "        <t t-else=\"\">\n"
-"            <t t-out=\"doc_name or ''\">견적서</t> <span style=\"font-weight: bold;\" t-out=\"object.name or ''\"/>\n"
+"            <t t-out=\"doc_name or ''\">견적서</t> <span style=\"font-weight: bold;\" t-out=\"object.name or ''\">S00052</span>\n"
 "            <t t-if=\"object.origin\">\n"
-"                (참조번호: <t t-out=\"object.origin or ''\">S00052</t> )\n"
+"                (참조 번호: <t t-out=\"object.origin or ''\">S00052</t> )\n"
 "            </t>\n"
-"            금액 <span style=\"font-weight: bold;\" t-out=\"format_amount(object.amount_total, object.currency_id) or ''\">$ 10.00</span>건을 확인하실 수 있습니다. \n"
+"            금엑: <span style=\"font-weight: bold;\" t-out=\"format_amount(object.amount_total, object.currency_id) or ''\">$ 10.00</span> 관련하여 준비되었습니다.\n"
 "        </t>\n"
 "        <br/>\n"
 "        <t t-set=\"documents\" t-value=\"object._get_product_documents()\"/>\n"
 "        <t t-if=\"documents\">\n"
 "            <br/> \n"
 "            <t t-if=\"len(documents)&gt;1\">\n"
-"                문의 사항이 있으시면 언제든지 연락주시기 바랍니다.\n"
+"                고객님께서 관심을 가지실 만한 다음의 문서도 확인해 보세요:\n"
 "            </t>\n"
 "            <t t-else=\"\">\n"
-"                다음은 고객님께서 읽어보시기 좋은 추가 문서입니다:\n"
+"                고객님께서 관심을 가지실 만한 다음의 문서도 확인해 보세요:\n"
 "            </t>\n"
 "            <ul style=\"margin-bottom: 0;\">\n"
 "                <t t-foreach=\"documents\" t-as=\"document\">\n"
@@ -1454,7 +1454,7 @@ msgstr "문서 참조 기준"
 #: model_terms:ir.actions.act_window,help:sale.action_quotations
 #: model_terms:ir.actions.act_window,help:sale.action_quotations_with_onboarding
 msgid "Beat competitors with stunning quotations!"
-msgstr "멋진 견적서로 경쟁사를 이겨보세요!"
+msgstr "경쟁사들과의 차별화되는 매력적인 견적서를 만들어보세요!"
 
 #. module: sale
 #: model:ir.model.fields.selection,name:sale.selection__product_template__sale_line_warn__block
@@ -1473,7 +1473,7 @@ msgstr "본문 내용은 서식과 동일합니다"
 msgid ""
 "Boost sales with online payments or signatures, upsells, and a great "
 "customer portal."
-msgstr "온라인 결제 또는 서명, 상향 판매 기회, 강력한 고객 포털을 통해 매출을 향상시키세요."
+msgstr "매출 증대와 직결되는 온라인 결제, 전자 서명, 업셀링 및 강력한 고객 포털을 활용해보세요."
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.res_config_settings_view_form
@@ -1576,13 +1576,13 @@ msgid ""
 msgstr ""
 "청구서를 생성할 수 없습니다. 청구서를 발행할 품목이 없습니다.\n"
 "\n"
-"문제 해결을 위해서는 다음을 확인하세요.\n"
-"   • 청구서 발행 전에 품목이 배송되었는지 확인하세요.\n"
-"   • 해당 품목에 대한 청구서 발행 정책이 올바르게 설정되었는지 확인하세요.\n"
+"문제 해결을 위해 다음을 확인하세요:\n"
+"   • 청구서 발행 전에 품목 출고 여부를 확인하세요.\n"
+"   • 해당 품목에 청구서 발행 정책이 정확하게 설정되었는지 확인하세요.\n"
 "\n"
-"대신 주문 수량 기준으로 청구서를 발행하려면 다음을 확인하세요.\n"
-"   • 소모품이나 보관 가능 품목의 경우에는, 품목을 열어서 '일반 정보' 탭으로 이동하여 '청구서 발행 정책'의 '납품 수량'을 '주문 수량'으로 변경하세요.\n"
-"   • 서비스 (및 기타 품목)의 경우에는, '청구서 발행 정책'을 '선불/고정 가격'으로 변경하세요.\n"
+"주문 수량을 기준으로 청구서를 다시 발행하려면 다음을 확인하세요:\n"
+"   • 소모품이나 보관 가능 품목의 경우, 품목 '일반 정보' 탭으로 이동하여 '청구서 발행 정책'의 '납품 수량'을 '주문 수량'으로 변경하세요.\n"
+"   • 서비스(및 기타 품목)의 경우, '청구서 발행 정책'을 '선불/고정 가격'으로 변경하세요.\n"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.view_order_form
@@ -3001,7 +3001,7 @@ msgstr "고객이 로그인하여 문서를 볼 수 있도록 허용합니다."
 #. odoo-javascript
 #: code:addons/sale/static/src/js/tours/sale.js:0
 msgid "Let’s create a beautiful quotation in a few clicks ."
-msgstr "몇 번의 클릭만으로 멋진 견적서를 생성해봅시다."
+msgstr "완벽한 견적서를 클릭 몇 번으로 완성해 보세요."
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order_line__linked_line_id
@@ -4463,12 +4463,12 @@ msgstr "매출 : 공급가액 합계"
 #: model_terms:ir.ui.view,arch_db:sale.view_sales_order_filter
 #: model_terms:ir.ui.view,arch_db:sale.view_sales_order_line_filter
 msgid "Salesperson"
-msgstr "영업사원"
+msgstr "영업 담당자"
 
 #. module: sale
 #: model:ir.ui.menu,name:sale.menu_reporting_salespeople
 msgid "Salespersons"
-msgstr "영업담당자"
+msgstr "영업 담당자"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.view_sales_order_filter
@@ -4792,6 +4792,11 @@ msgid ""
 msgstr "온라인 결제 양식을 통해 완료된 거래 중 '완료' 또는 '승인됨' 상태이며 이 주문과 연결된 거래의 총 금액입니다."
 
 #. module: sale
+#: model:ir.model,name:sale.model_ir_config_parameter
+msgid "System Parameter"
+msgstr "시스템 매개 변수"
+
+#. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order__tag_ids
 #: model:ir.ui.menu,name:sale.menu_tag_config
 msgid "Tags"
@@ -4814,9 +4819,19 @@ msgid "Tax Country"
 msgstr "세금 신고국"
 
 #. module: sale
+#: model_terms:ir.ui.view,arch_db:sale.view_order_form
+msgid "Tax Excl."
+msgstr "세금 별도."
+
+#. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
 msgid "Tax ID"
 msgstr "사업자등록번호"
+
+#. module: sale
+#: model_terms:ir.ui.view,arch_db:sale.view_order_form
+msgid "Tax Incl."
+msgstr "세금 포함."
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.sale_order_tree
@@ -5399,11 +5414,6 @@ msgid "Untaxed Total"
 msgstr "공급가액 합계"
 
 #. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.sale_order_line_wizard_form
-msgid "Untaxed discount"
-msgstr "면세 할인"
-
-#. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.view_order_form
 msgid "UoM"
 msgstr "단위"
@@ -5605,6 +5615,12 @@ msgid ""
 "You cannot change the type of a sale order line. Instead you should delete "
 "the current line and create a new line of the proper type."
 msgstr "판매주문서 내용 유형은 변경할 수 없습니다. 현재 내역을 삭제하고 알맞은 유형으로 새 줄을 생성하세요."
+
+#. module: sale
+#. odoo-python
+#: code:addons/sale/models/sale_order_line.py:0
+msgid "You cannot modify the product of this order line."
+msgstr "이 주문 내역에 있는 품목은 수정할 수 없습니다."
 
 #. module: sale
 #: model:ir.model.constraint,message:sale.constraint_res_company_check_quotation_validity_days

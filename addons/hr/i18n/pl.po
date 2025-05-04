@@ -4,14 +4,14 @@
 # 
 # Translators:
 # Interactive AV-IT, 2024
-# Wil Odoo, 2024
+# Wil Odoo, 2025
 # Marta Wacławek, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-10 13:23+0000\n"
+"POT-Creation-Date: 2025-03-19 20:36+0000\n"
 "PO-Revision-Date: 2024-09-25 09:41+0000\n"
 "Last-Translator: Marta Wacławek, 2025\n"
 "Language-Team: Polish (https://app.transifex.com/odoo/teams/41243/pl/)\n"
@@ -574,7 +574,7 @@ msgstr "Dostępny"
 #. module: hr
 #: model_terms:ir.ui.view,arch_db:hr.mail_activity_plan_view_form
 msgid "Available for all Departments"
-msgstr ""
+msgstr "Dostępność dla wszystkich działów"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__avatar_1920
@@ -2892,6 +2892,11 @@ msgid "Resource Calendar"
 msgstr "Kalendarz zasobu"
 
 #. module: hr
+#: model:ir.model,name:hr.model_resource_calendar
+msgid "Resource Working Time"
+msgstr "Czas pracy w zasobach"
+
+#. module: hr
 #: model:ir.model,name:hr.model_resource_resource
 msgid "Resources"
 msgstr "Zasoby"
@@ -3100,7 +3105,7 @@ msgstr ""
 #. module: hr
 #: model:hr.contract.type,name:hr.contract_type_statutaire
 msgid "Statutory"
-msgstr ""
+msgstr "Ustawowy"
 
 #. module: hr
 #: model_terms:ir.ui.view,arch_db:hr.res_users_view_form_profile
@@ -3308,7 +3313,7 @@ msgstr "Zezwolenie na pracę %(employee)s wygasa w dniu %(date)s."
 #. module: hr
 #: model:hr.contract.type,name:hr.contract_type_thesis
 msgid "Thesis"
-msgstr ""
+msgstr "Praca dyplomowa"
 
 #. module: hr
 #. odoo-python
@@ -3347,7 +3352,7 @@ msgstr "Ten blok ustawień jest używany do zarządzania wyglądem frontendu."
 #. odoo-python
 #: code:addons/hr/models/mail_activity_plan_template.py:0
 msgid "Those responsible types are limited to Employee plans."
-msgstr ""
+msgstr "Te typy odpowiedzialności są ograniczone do planów Pracowników."
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__tz

@@ -1,6 +1,7 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 from base64 import b64encode
+from collections import defaultdict
 from datetime import datetime
 import logging
 from lxml import etree
@@ -326,22 +327,17 @@ class AccountMove(models.Model):
                 it_values['prezzo_unitario'] = base_line['gross_price_subtotal'] / quantity
             else:
                 it_values['prezzo_unitario'] = 0.0
+            if base_line['currency_id'] != self.company_currency_id:
+                it_values['prezzo_unitario'] = base_line['currency_id']._convert(it_values['prezzo_unitario'], self.company_currency_id, date=self.date)
 
             # Discount.
-            discount_list = it_values['sconto_maggiorazione_list'] = []
-            delta_discount = base_line.get('discount_amount', 0.0) - base_line.get('discount_amount_before_dispatching', 0.0)
+            it_values['sconto_maggiorazione_list'] = []
             if discount:
-                discount_list.append({
+                it_values['sconto_maggiorazione_list'] = [{
                     'tipo': 'SC' if discount > 0 else 'MG',
                     'percentuale': abs(discount),
                     'importo': None,
-                })
-            if not base_line['currency_id'].is_zero(delta_discount):
-                discount_list.append({
-                    'tipo': 'SC',
-                    'percentuale': None,
-                    'importo': abs(delta_discount / (quantity or 1.0)),
-                })
+                }]
 
             # Tax rates.
             rates = it_values['aliquota_iva_list'] = []
@@ -520,11 +516,7 @@ class AccountMove(models.Model):
                     'quantity': -quantity,
                     'price_unit': -price_unit,
                 })
-        for downpayment_line in downpayment_lines:
-            base_lines.remove(downpayment_line)
 
-        dispatched_results = self.env['account.tax']._dispatch_negative_lines(base_lines)
-        base_lines = dispatched_results['result_lines'] + dispatched_results['nulled_candidate_lines'] + dispatched_results['orphan_negative_lines'] + downpayment_lines
         AccountTax._round_base_lines_tax_details(base_lines, self.company_id, tax_lines=tax_lines)
         base_lines_aggregated_values = AccountTax._aggregate_base_lines_tax_details(base_lines, self._l10n_it_edi_grouping_function_base_lines)
         self._l10n_it_edi_add_base_lines_xml_values(base_lines_aggregated_values, is_downpayment)
@@ -1403,7 +1395,7 @@ class AccountMove(models.Model):
                 message = _("The Origin Document Date cannot be in the future.")
                 errors['l10n_it_edi_move_future_origin_document_date'] = build_error(message=message, records=moves)
         if pa_moves := self.filtered(lambda move: len(move.commercial_partner_id.l10n_it_pa_index or '') == 7):
-            if moves := pa_moves.filtered(lambda move: not move.l10n_it_origin_document_type and move.l10n_it_cig and move.l10n_it_cup):
+            if moves := pa_moves.filtered(lambda move: not move.l10n_it_origin_document_type and (move.l10n_it_cig or move.l10n_it_cup)):
                 message = _("CIG/CUP fields of partner(s) are present, please fill out Origin Document Type field in the Electronic Invoicing tab.")
                 errors['move_missing_origin_document_field'] = build_error(message=message, records=moves)
         return errors
@@ -1549,14 +1541,12 @@ class AccountMove(models.Model):
         }
 
     def _l10n_it_edi_send(self, attachments_vals):
-        files_to_upload = []
+        self.env['res.company']._with_locked_records(self)
+        files_to_upload = defaultdict(lambda: (self.env['account.move'], []))
         filename_move = {}
 
         # Setup moves for sending
         for move in self:
-            attachment_vals = attachments_vals[move]
-            filename = attachment_vals['name']
-            content = b64encode(attachment_vals['raw']).decode()
             move.l10n_it_edi_header = False
             if move.commercial_partner_id._l10n_it_edi_is_public_administration():
                 move.l10n_it_edi_state = 'requires_user_signature'
@@ -1567,13 +1557,20 @@ class AccountMove(models.Model):
                     "through the 'Fatture e Corrispettivi' portal of the Tax Agency."
                 )))
             else:
+                attachment_vals = attachments_vals[move]
+                filename = attachment_vals['name']
+                content = b64encode(attachment_vals['raw']).decode()
                 move.l10n_it_edi_state = 'being_sent'
-                files_to_upload.append({'filename': filename, 'xml': content})
+                proxy_user = move.company_id.l10n_it_edi_proxy_user_id
+                moves, files = files_to_upload[proxy_user]
+                files_to_upload[proxy_user] = (moves | move, files + [{'filename': filename, 'xml': content}])
                 filename_move[filename] = move
 
         # Upload files
+        results = {}
         try:
-            results = self._l10n_it_edi_upload(files_to_upload)
+            for proxy_user, (moves, files) in files_to_upload.items():
+                results.update(moves._l10n_it_edi_upload(files))
         except AccountEdiProxyError as e:
             messages_to_log = []
             for filename in filename_move:

@@ -2561,7 +2561,7 @@ msgstr "德古拉"
 #. odoo-javascript
 #: code:addons/web/static/src/core/dropzone/dropzone.xml:0
 msgid "Drag Files Here"
-msgstr "拖曳檔案到這裡"
+msgstr "拖曳檔案至此處"
 
 #. module: web
 #. odoo-javascript
@@ -10150,13 +10150,13 @@ msgstr "炸薯條"
 #. odoo-javascript
 #: code:addons/web/static/src/core/emoji_picker/emoji_data.js:0
 msgid "chocolate"
-msgstr "巧克力"
+msgstr "朱古力"
 
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/core/emoji_picker/emoji_data.js:0
 msgid "chocolate bar"
-msgstr "巧克力棒"
+msgstr "朱古力棒"
 
 #. module: web
 #. odoo-javascript

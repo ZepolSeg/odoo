@@ -59,6 +59,27 @@ describe("should open a popover", () => {
         await animationFrame();
         expect(queryOne(".o-we-linkpopover").parentElement).toHaveAttribute("style", style);
     });
+    test("link popover should close when click on editable without url", async () => {
+        const { el } = await setupEditor(`<p>[<img src="${base64Img}">]</p>`);
+        await animationFrame();
+        // we create a link without href on img
+        await click("button[name='link']");
+        await waitFor(".o_we_href_input_link");
+        // we put selection out of editor
+        setSelection({
+            anchorNode: document.body,
+            anchorOffset: 0,
+        });
+        await animationFrame();
+        // Restore the selection in the editor. Setting the selection after the image
+        // will place it inside the `<a>` tag if not removed, causing a traceback.
+        setSelection({
+            anchorNode: el.querySelector("img").parentElement,
+            anchorOffset: 1,
+        });
+        await animationFrame();
+        expect(".o-we-linkpopover").toHaveCount(0);
+    });
 });
 
 describe("popover should switch UI depending on editing state", () => {
@@ -239,11 +260,9 @@ describe("Link creation", () => {
             await animationFrame();
             expect(".active .o-we-command-name").toHaveText("Link");
             await click(".o-we-command-name:first");
-            await waitFor(".o-we-linkpopover");
-            await fill("test.com");
-            await click(".o_we_apply_link");
+            await contains(".o-we-linkpopover input.o_we_href_input_link").fill("test.com");
             expect(cleanLinkArtifacts(getContent(el))).toBe(
-                '<p><a href="https://test.com">test.com[]</a></p>'
+                '<p><a href="http://test.com">test.com[]</a></p>'
             );
         });
 
@@ -709,6 +728,54 @@ describe("link preview", () => {
         await animationFrame();
         expect.verifySteps(["/html_editor/link_preview_internal"]);
         expect(".o_we_url_link").toHaveText("Task name | Project name");
+
+        const pNode = queryOne("p");
+        setSelection({
+            anchorNode: pNode,
+            anchorOffset: 1,
+            focusNode: pNode,
+            focusOffset: 1,
+        });
+        await waitForNone(".o-we-linkpopover", { timeout: 1500 });
+
+        const linkNode = queryOne("a");
+        setSelection({
+            anchorNode: linkNode,
+            anchorOffset: 1,
+            focusNode: linkNode,
+            focusOffset: 1,
+        });
+        await waitFor(".o-we-linkpopover");
+        expect.verifySteps([]);
+    });
+    test("should use cached metadata even if protocol changes", async () => {
+        onRpc("/html_editor/link_preview_internal", () => {
+            expect.step("/html_editor/link_preview_internal");
+            return {
+                description: markup("<p>Protocol Testing</p>"),
+                link_preview_name: "Internal Page | Test",
+            };
+        });
+
+        const currentProtocol = window.location.protocol;
+        onRpc("/odoo/cachetest/8", (mockRequest) => {
+            const urlProtocol = new URL(mockRequest.url).protocol;
+            expect(urlProtocol).toBe(currentProtocol);
+            return new Response("", { status: 200 });
+        });
+
+        const { editor } = await setupEditor(`<p>abc[]</p>`);
+        await insertText(editor, "/link");
+        await animationFrame();
+        await click(".o-we-command-name:first");
+
+        const wrongProtocol = currentProtocol === "https:" ? "http:" : "https:";
+        const testUrl = `${wrongProtocol}//${window.location.host}/odoo/cachetest/8`;
+
+        await contains(".o-we-linkpopover input.o_we_href_input_link").fill(testUrl);
+        await animationFrame();
+        expect.verifySteps(["/html_editor/link_preview_internal"]);
+        expect(".o_we_url_link").toHaveText("Internal Page | Test");
 
         const pNode = queryOne("p");
         setSelection({

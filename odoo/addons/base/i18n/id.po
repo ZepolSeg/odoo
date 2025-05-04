@@ -5,16 +5,16 @@
 # Translators:
 # Muftiara Syuhada <muftiara.syuhada@gmail.com>, 2024
 # Wil Odoo, 2025
-# Abe Manyo, 2025
 # arfa simoncelli, 2025
+# Abe Manyo, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-10 16:32+0000\n"
+"POT-Creation-Date: 2025-03-03 11:38+0000\n"
 "PO-Revision-Date: 2024-09-25 09:41+0000\n"
-"Last-Translator: arfa simoncelli, 2025\n"
+"Last-Translator: Abe Manyo, 2025\n"
 "Language-Team: Indonesian (https://app.transifex.com/odoo/teams/41243/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -168,11 +168,11 @@ msgstr ""
 "----------------------------------------------------------------------------------------------------------\n"
 "* Prospek/Peluang CRM\n"
 "* Klaim CRM\n"
-"* Masalah Proyek\n"
-"* Tugas Proyek\n"
+"* Masalah Project\n"
+"* Tugas Project\n"
 "* Rekrutmen HR (Pelamar)\n"
 "Cukup pasang aplikasi yang relevan, dan Anda dapat menetapkan salah satu dari jenis \n"
-"dokumen ini (Prospek, Masalah Proyek) ke akun email masuk anda. Email baru akan\n"
+"dokumen ini (Prospek, Masalah Project) ke akun email masuk anda. Email baru akan\n"
 "secara otomatis membuat dokumen baru dari jenis yang dipilih, jadi akan sangat mudah untuk membuat\n"
 "intergrasi kotak surat ke Odoo. Bahkan lebih baik lagi: dokumen-dokumen ini langsung bertindak sebagai\n"
 "percakapan mini yang disinkronisasi melalui email. Anda bisa menjawabnya di dalam Odoo, dan\n"
@@ -744,7 +744,7 @@ msgid ""
 "- Track timesheet for a task from a ticket\n"
 msgstr ""
 "\n"
-"- Izinkan untuk mengatur proyek untuk tim Staf Dukungan\n"
+"- Izinkan untuk mengatur project untuk tim Staf Dukungan\n"
 "- Lacak lembar waktu kerja untuk tugas dari tiket\n"
 
 #. module: base
@@ -1220,6 +1220,10 @@ msgid ""
 "=======================================================\n"
 "\n"
 msgstr ""
+"\n"
+"Accounting Data for Saudi Arabia Payroll Rules.\n"
+"=======================================================\n"
+"\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_ke_hr_payroll_account
@@ -1458,6 +1462,10 @@ msgid ""
 "============================================\n"
 "- Corporate tax report\n"
 msgstr ""
+"\n"
+"Accounting reports for Bangladesh\n"
+"============================================\n"
+"- Corporate tax report\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_be_reports
@@ -1769,6 +1777,8 @@ msgid ""
 "\n"
 "Accounting Reports for Pakistan (Profit and Loss report and Balance Sheet)\n"
 msgstr ""
+"\n"
+"Accounting Reports for Pakistan (Profit and Loss report and Balance Sheet)\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_pl_reports
@@ -3081,6 +3091,12 @@ msgid ""
 "- Income tax credits handling\n"
 "- Introduced the income tax slabs calculations\n"
 msgstr ""
+"\n"
+"Bangladesh Payroll Rules.\n"
+"=========================\n"
+"- Salary rules calculation\n"
+"- Income tax credits handling\n"
+"- Introduced the income tax slabs calculations\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_et
@@ -4667,6 +4683,8 @@ msgid ""
 "\n"
 "E-invoice implementation for Saudi Arabia; Integration with ZATCA (POS)\n"
 msgstr ""
+"\n"
+"E-invoice implementation for Saudi Arabia; Integration with ZATCA (POS)\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_hr_skills_slides
@@ -4962,6 +4980,16 @@ msgid ""
 "- Tax break calculations and deductions\n"
 "- Master payroll export\n"
 msgstr ""
+"\n"
+"Egypt Payroll and End of Service rules.\n"
+"=======================================\n"
+"- Basic calculation\n"
+"- End of service calculation\n"
+"- Other inputs (overtime, salary attachments, etc.)\n"
+"- Social insurance calculation\n"
+"- End of service provisions\n"
+"- Tax break calculations and deductions\n"
+"- Master payroll export\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_account_edi
@@ -6579,6 +6607,13 @@ msgid ""
 "- Tax income brackets\n"
 "- National contribution tax and social security\n"
 msgstr ""
+"\n"
+"Jordan Payroll and Tax Rules\n"
+"========================================\n"
+"\n"
+"- Supports basic calculation\n"
+"- Tax income brackets\n"
+"- National contribution tax and social security\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_sa_pos
@@ -6587,6 +6622,9 @@ msgid ""
 "Saudi Arabia POS Localization\n"
 "===========================================================\n"
 msgstr ""
+"\n"
+"Saudi Arabia POS Localization\n"
+"===========================================================\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_appointment_hr_recruitment
@@ -6650,6 +6688,17 @@ msgid ""
 "- WPS\n"
 "- Master Payroll Export\n"
 msgstr ""
+"\n"
+"Saudi Arabia Payroll and End of Service rules.\n"
+"===========================================================\n"
+"- Basic Calculation\n"
+"- End of Service Calculation\n"
+"- Other Input Rules (Overtime, Salary Attachments, etc.)\n"
+"- Split Structures for EOS and Monthly Salaries\n"
+"- GOSI Employee Deduction and company contributions\n"
+"- Unpaid leaves\n"
+"- WPS\n"
+"- Master Payroll Export\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_stock_landed_costs
@@ -6998,7 +7047,7 @@ msgstr ""
 "* Disetujui oleh manager mereka\n"
 "* Validasi oleh akuntan dan pembuatan entri akuntan\n"
 "\n"
-"Modul ini juga menggunakan akuntansi analitik dan kompatibel dengan faktur pada modul bagan lembar waktu sehingga Anda dapat secara otomatis mengeluarkan faktur untuk pengeluaran pelanggan Anda jika Anda bekerja berdasarkan proyek.\n"
+"Modul ini juga menggunakan akuntansi analitik dan kompatibel dengan faktur pada modul bagan lembar waktu sehingga Anda dapat secara otomatis mengeluarkan faktur untuk pengeluaran pelanggan Anda jika Anda bekerja berdasarkan project.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_sale_management
@@ -7938,6 +7987,18 @@ msgid ""
 "- Withholding Tax Report\n"
 "- Fiscal Positions\n"
 msgstr ""
+"\n"
+"Saudi Arabia Accounting Module\n"
+"===========================================================\n"
+"Saudi Arabia Accounting Basic Charts and Localization\n"
+"\n"
+"Activates:\n"
+"\n"
+"- Chart of Accounts\n"
+"- Taxes\n"
+"- Vat Filling Report\n"
+"- Withholding Tax Report\n"
+"- Fiscal Positions\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_web_enterprise
@@ -8164,6 +8225,11 @@ msgid ""
 "- Basic salaries calculations.\n"
 "- Tax bracket calculations/deductions\n"
 msgstr ""
+"\n"
+"Pakistan Payroll and End of Service rules\n"
+"=========================================\n"
+"- Basic salaries calculations.\n"
+"- Tax bracket calculations/deductions\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_pa
@@ -9712,6 +9778,20 @@ msgid ""
 "- Other Taxes Report\n"
 "- Fiscal Positions\n"
 msgstr ""
+"\n"
+"Egypt Accounting Module\n"
+"==============================================================================\n"
+"Egypt Accounting Basic Charts and Localization.\n"
+"\n"
+"Activates:\n"
+"\n"
+"- Chart of Accounts\n"
+"- Taxes\n"
+"- VAT Return\n"
+"- Withholding Tax Report\n"
+"- Schedule Tax Report\n"
+"- Other Taxes Report\n"
+"- Fiscal Positions\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_ee
@@ -10836,11 +10916,11 @@ msgstr ""
 "\n"
 "**Mengumumkan a mitra**\n"
 "\n"
-"Untuk mengumumkan mitra, tetapkan \"Tingkat\" pada formulir kontrak mereka (di bagian Partner Assignment) dan klik tombol \"Umumkan.\"\n"
+"Untuk mengumumkan mitra, tetapkan \"Tingkat\" pada formulir kontak mereka (di bagian Partner Assignment) dan klik tombol \"Umumkan.\"\n"
 "\n"
 "**Kirim Lead**\n"
 "\n"
-"Mengirim lead dapat dilakukan untuk satu atau lebih dari satu lead sekaligus. TIndakan ini tersedia di bagian *Assigned Partner* dari tampilan formulir lead/opportunity dan di menu *Action* pada tampilan daftar.\n"
+"Mengirim lead dapat dilakukan untuk satu atau lebih dari satu lead sekaligus. Tindakan ini tersedia di bagian *Assigned Partner* dari tampilan formulir lead/opportunity dan di menu *Action* pada tampilan daftar.\n"
 "\n"
 "Penetapan otomatis dikonfigurasikan dari bobot tingkat mitra dan geolokasi. Partner mendapatkan lead yang berada di sekitar mereka.\n"
 "\n"
@@ -11783,6 +11863,10 @@ msgid ""
 "==============================================================================\n"
 "Integrates with the ETA portal to automatically send and sign the Invoices to the Tax Authority.\n"
 msgstr ""
+"\n"
+"Egypt Tax Authority Invoice Integration\n"
+"==============================================================================\n"
+"Integrates with the ETA portal to automatically send and sign the Invoices to the Tax Authority.\n"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_l10n_eg_edi_eta
@@ -12300,14 +12384,14 @@ msgstr ""
 "\n"
 "Integrasi Transifex\n"
 "===================== \n"
-"Modul ini akan menambahkan tautan ke proyek Transifex dalam tampilan terjemahan.\n"
+"Modul ini akan menambahkan tautan ke project Transifex dalam tampilan terjemahan.\n"
 "Tujuan dari modul ini adalah untuk mempercepat terjemahan dari modul-modul utama.\n"
 "\n"
 "Untuk cara kerja, Odoo menggunakan file konfigurasi Transifex `.tx/config` untuk mendeteksi file\n"
-"sumber proyek. Modul khusus tidak akan diterjemahkan (karena tidak dipublikasikan pada\n"
-"proyek Transifex utama) .\n"
+"sumber project. Modul khusus tidak akan diterjemahkan (karena tidak dipublikasikan pada\n"
+"project Transifex utama) .\n"
 "\n"
-"Bahasa yang coba diterjemahkan oleh pengguna harus diaktifkan pada proyek\n"
+"Bahasa yang coba diterjemahkan oleh pengguna harus diaktifkan pada project\n"
 "Transifex\n"
 
 #. module: base
@@ -12377,6 +12461,10 @@ msgid ""
 "=======================================================\n"
 "Adds the Corporate Tax Report which can be accessed by going to Accounting > Reporting > Corporate Tax Report\n"
 msgstr ""
+"\n"
+"United Arab Emirates Corporate Tax Report\n"
+"=======================================================\n"
+"Adds the Corporate Tax Report which can be accessed by going to Accounting > Reporting > Corporate Tax Report\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_ae_hr_payroll
@@ -12398,6 +12486,22 @@ msgid ""
 "- Master payroll export\n"
 "- WPS\n"
 msgstr ""
+"\n"
+"United Arab Emirates Payroll and End of Service rules.\n"
+"=======================================================\n"
+"- Basic salary calculations\n"
+"- EOS calculations\n"
+"- Annual leaves provisions and EOS provisions\n"
+"- Social insurance rules for locals\n"
+"- Overtime rule for the other inputs case\n"
+"- Sick-leaves calculations\n"
+"- DEWS calculations\n"
+"- EOS calculations for free zones (DMCC)\n"
+"- Out of contract calculations\n"
+"- Calculation for unused leaves for EOS calculation\n"
+"- Additional other input rules for (bonus, commissions, arrears, etc.)\n"
+"- Master payroll export\n"
+"- WPS\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_ae
@@ -12414,6 +12518,17 @@ msgid ""
 "- Tax Report\n"
 "- Fiscal Positions\n"
 msgstr ""
+"\n"
+"United Arab Emirates Accounting Module\n"
+"=======================================================\n"
+"United Arab Emirates accounting basic charts and localization.\n"
+"\n"
+"Activates:\n"
+"\n"
+"- Chart of Accounts\n"
+"- Taxes\n"
+"- Tax Report\n"
+"- Fiscal Positions\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_us_hr_payroll
@@ -21934,12 +22049,12 @@ msgstr ""
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_logging__dbname
 msgid "Database Name"
-msgstr "Nama Basis Data"
+msgstr "Nama Database"
 
 #. module: base
 #: model:ir.ui.menu,name:base.next_id_9
 msgid "Database Structure"
-msgstr "Struktur Basis Data"
+msgstr "Struktur Database"
 
 #. module: base
 #. odoo-python
@@ -23291,7 +23406,7 @@ msgstr "Egypt - Payroll with Accounting"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_eg_edi_eta
 msgid "Egypt E-Invoicing"
-msgstr ""
+msgstr "Egypt E-Invoicing"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__eire
@@ -25412,11 +25527,6 @@ msgid "Footer text displayed at the bottom of all reports."
 msgstr "Teks footer yang ditampilkan pada bagian bawah semua laporan."
 
 #. module: base
-#: model:ir.module.module,summary:base.module_l10n_be_codabox
-msgid "For Accounting Firms"
-msgstr "Untuk Firma Akuntansi"
-
-#. module: base
 #: model:ir.model.fields,help:base.field_ir_actions_server__value
 #: model:ir.model.fields,help:base.field_ir_cron__value
 msgid ""
@@ -25839,7 +25949,7 @@ msgstr "Tamilan Gantt untuk Dashboard Cuti"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_gelato
 msgid "Gelato"
-msgstr ""
+msgstr "Gelato"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_gelato_stock
@@ -28784,12 +28894,12 @@ msgstr "K - KEGIATAN KEUANGAN DAN ASURANSI"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_sa_hr_payroll
 msgid "Saudi Arabia - Payroll"
-msgstr ""
+msgstr "Saudi Arabia - Payroll"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_sa_hr_payroll_account
 msgid "Saudi Arabia - Payroll with Accounting"
-msgstr ""
+msgstr "Saudi Arabia - Payroll with Accounting"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_digest
@@ -32799,9 +32909,9 @@ msgstr ""
 "Lacak waktu dan absensi\n"
 "--------------------------\n"
 "\n"
-"Lacak waktu yang digunakan berdasarkan proyek, klien atau tugas. Dengan mudah catat\n"
+"Lacak waktu yang digunakan berdasarkan project, klien atau tugas. Dengan mudah catat\n"
 "timesheet atau periksa kehadiran dari setiap karyawan. Dapatkan akuntansi analitik\n"
-"yang dipublikasikan secara otomatis berdasarkan waktu yang digunakan untuk setiap proyek.\n"
+"yang dipublikasikan secara otomatis berdasarkan waktu yang digunakan untuk setiap project.\n"
 "\n"
 "Manajemen Cuti\n"
 "-----------------\n"
@@ -36055,7 +36165,7 @@ msgstr "Poros"
 #. module: base
 #: model:ir.module.module,summary:base.module_sale_gelato
 msgid "Place orders through Gelato's print-on-demand service"
-msgstr ""
+msgstr "Pasang pesanan melalui layanan print-on-demand Gelato"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_project_forecast
@@ -36591,7 +36701,7 @@ msgstr "Kemajuan dari Action yang Dijadwalka"
 #: model:ir.module.category,name:base.module_category_services_project
 #: model:ir.module.module,shortdesc:base.module_project
 msgid "Project"
-msgstr "Proyek"
+msgstr "Project"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_project_account
@@ -36737,22 +36847,22 @@ msgid ""
 "accurate reports on your team's performance.\n"
 "\n"
 msgstr ""
-"Manajemen Proyek\n"
+"Manajemen Project\n"
 "------------------\n"
 "\n"
 "### Fleksibilitas tanpa batas. Sangat teramat gampang digunakan.\n"
 "\n"
 "\n"
-"<a href=\"https://www.odoo.com/app/project\">Manajemen proyek open source</a> Odoo yang kolaboratif dan real-time\n"
+"<a href=\"https://www.odoo.com/app/project\">Manajemen project open source</a> Odoo yang kolaboratif dan real-time\n"
 "membantu Tim Anda menyelesaikan tugas mereka. Lacak segala sesuatu, dari hal-hal besar\n"
 "sampai ke detil terkecil, dari kontrak pelanggan ke tagihan.\n"
 "\n"
 "Dirancang untuk Sesuai Dengan Proses Anda\n"
 "--------------------------------\n"
 "\n"
-"Atur proyek sesuai proses Anda sendiri. Kerjakan tugas dan masalah menggunakan\n"
+"Atur project sesuai proses Anda sendiri. Kerjakan tugas dan masalah menggunakan\n"
 "tampilan kanban, jadwalkan tugas menggunakan bagan gantt dan kendalikan deadline pada\n"
-"tampilan kalender. Semua proyek memiliki tahapannya sendiri, memungkinkan tim untuk\n"
+"tampilan kalender. Semua project memiliki tahapannya sendiri, memungkinkan tim untuk\n"
 "mengoptimalkan pekerjaan mereka.\n"
 "\n"
 "Gampang Digunakan\n"
@@ -36796,13 +36906,13 @@ msgstr ""
 "Timesheets, Kontrak & Faktur\n"
 "---------------------------------\n"
 "\n"
-"Proyek secara otomatis diintegrasi dengan kontrak pelanggan, memungkinkan Anda untuk\n"
+"Project secara otomatis diintegrasi dengan kontrak pelanggan, memungkinkan Anda untuk\n"
 "membuat faktur berdasarkan waktu & bahan dan mencacat timesheet dengan gampang.\n"
 "\n"
 "Masalah Pelacakan\n"
 "------------\n"
 "\n"
-"Fokus pada masalah yang muncul dari proyek agar mendapatkan fokus yang lebih baik dalam\n"
+"Fokus pada masalah yang muncul dari project agar mendapatkan fokus yang lebih baik dalam\n"
 "menyelesaikan masalah. Integrasikan interaksi pelanggan pada setiap masalah dan dapatkan\n"
 "laporan yang akurat pada performa tim Anda.\n"
 
@@ -36819,7 +36929,7 @@ msgstr "Akuntansi Payroll Project"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_project_forecast
 msgid "Project Planning"
-msgstr "Perencanaan Proyek"
+msgstr "Perencanaan Project"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_project_purchase
@@ -42312,6 +42422,16 @@ msgid ""
 "- Taxes\n"
 "- Tax report\n"
 msgstr ""
+"\n"
+"This is the base module to manage the accounting chart for Bangladesh in Odoo\n"
+"============================\n"
+"Bangladesh accounting basic charts and localization.\n"
+"\n"
+"Activates:\n"
+"\n"
+"- Chart of accounts\n"
+"- Taxes\n"
+"- Tax report\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_pk
@@ -42328,6 +42448,17 @@ msgid ""
 "- Tax Report\n"
 "- Withholding Tax Report\n"
 msgstr ""
+"\n"
+"Pakistan Accounting Module\n"
+"=======================================================\n"
+"Pakistan accounting basic charts and localization.\n"
+"\n"
+"Activates:\n"
+"\n"
+"- Chart of Accounts\n"
+"- Taxes\n"
+"- Tax Report\n"
+"- Withholding Tax Report\n"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_actions_report__attachment
@@ -42451,13 +42582,11 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_be_codabox
 msgid ""
-"This module allows Accounting Firms to connect to CodaBox\n"
-"and automatically import CODA and SODA statements for their clients in Odoo.\n"
-"The connection must be done by the Accounting Firm.\n"
+"This module allows connection to CodaBox and automatically imports CODA and "
+"SODA statements in Odoo."
 msgstr ""
-"Modul ini memungkinkan Firma Akuntansi untuk terhubung dengan CodaBox\n"
-"dan secara otomatis mengimpor laporan CODA dan SODA untuk klien mereka di Odoo.\n"
-"Koneksi ini harus dilakukan oleh Firma Akuntansi.\n"
+"Modul ini memungkinkan hubungan ke CodaBox dan secara otomatis mengimpor "
+"laporan CODA dan SODA di Odoo."
 
 #. module: base
 #: model:ir.module.module,description:base.module_account_online_payment
@@ -43423,12 +43552,12 @@ msgstr "U - KEGIATAN ORGANISASI DAN BADAN EKSTRATERRITORIAL"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_ae_hr_payroll
 msgid "United Arab Emirates - Payroll"
-msgstr ""
+msgstr "United Arab Emirates - Payroll"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_ae_hr_payroll_account
 msgid "United Arab Emirates - Payroll with Accounting"
-msgstr ""
+msgstr "United Arab Emirates - Payroll with Accounting"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_ae_corporate_tax_report

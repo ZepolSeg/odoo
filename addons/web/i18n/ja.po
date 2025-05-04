@@ -4,7 +4,6 @@
 # 
 # Translators:
 # Martin Trigaux, 2024
-# Yoshi Tashiro (Quartile) <tashiro@roomsfor.hk>, 2024
 # Wil Odoo, 2025
 # Junko Augias, 2025
 # 
@@ -869,7 +868,7 @@ msgstr "カスタムグループ追加"
 #. odoo-javascript
 #: code:addons/web/static/src/core/tree_editor/tree_editor.xml:0
 msgid "Add New Rule"
-msgstr "新しい規則を追加"
+msgstr "新しいルールを追加"
 
 #. module: web
 #. odoo-javascript
@@ -1244,7 +1243,7 @@ msgstr "自動保存"
 #. odoo-javascript
 #: code:addons/web/static/src/views/view_dialogs/export_data_dialog.xml:0
 msgid "Available fields"
-msgstr "利用可能な項目"
+msgstr "利用可能なフィールド"
 
 #. module: web
 #. odoo-javascript
@@ -1854,7 +1853,7 @@ msgstr "ドキュメントレイアウトを設定"
 #: code:addons/web/static/src/views/list/list_confirmation_dialog.xml:0
 #: code:addons/web/static/src/webclient/switch_company_menu/switch_company_menu.xml:0
 msgid "Confirm"
-msgstr "確認"
+msgstr "確定"
 
 #. module: web
 #. odoo-javascript
@@ -2162,7 +2161,7 @@ msgstr "データベース"
 #. module: web
 #: model_terms:ir.ui.view,arch_db:web.neutralize_banner
 msgid "Database neutralized for testing: no emails sent, etc."
-msgstr "テスト用にデータベースを無効化：電子メールの送信などを行わない"
+msgstr "テスト用にデータベースが安全化されました: メール送信などは無効です。"
 
 #. module: web
 #. odoo-javascript
@@ -3011,7 +3010,7 @@ msgid ""
 msgstr ""
 "Excel との互換性について、カラム数が 16384 を超える場合はデータをエクスポートできません。\n"
 "\n"
-"ヒント: 軸を反転させる、さらにフィルタリングする、または単位数を減らしてみて下さい。"
+"ヒント: 軸を反転させる、さらにフィルタリングする、または集計項目数を減らしてみて下さい。"
 
 #. module: web
 #. odoo-javascript
@@ -4083,7 +4082,7 @@ msgstr "F5キーを押してアプリケーションを再ロードすること�
 #. odoo-javascript
 #: code:addons/web/static/src/views/view_components/report_view_measures.xml:0
 msgid "Measures"
-msgstr "分析対象"
+msgstr "集計項目"
 
 #. module: web
 #. odoo-javascript
@@ -4421,7 +4420,7 @@ msgstr "新しいプロパティ"
 #. odoo-javascript
 #: code:addons/web/static/src/core/tree_editor/tree_editor.xml:0
 msgid "New Rule"
-msgstr "新しい規則"
+msgstr "新しいルール"
 
 #. module: web
 #. odoo-javascript
@@ -4748,7 +4747,7 @@ msgstr "Odooクライアントエラー"
 #. odoo-javascript
 #: code:addons/web/static/src/webclient/settings_form_view/fields/upgrade_dialog.xml:0
 msgid "Odoo Enterprise"
-msgstr "Odooエンタープライズ"
+msgstr "Odoo企業版"
 
 #. module: web
 #. odoo-javascript
@@ -8324,7 +8323,7 @@ msgstr "プリン"
 #. odoo-javascript
 #: code:addons/web/static/src/core/emoji_picker/emoji_data.js:0
 msgid "bakery"
-msgstr "製パン店"
+msgstr "ベーカリー"
 
 #. module: web
 #. odoo-javascript
@@ -10712,7 +10711,7 @@ msgstr "建設作業員"
 #. odoo-javascript
 #: code:addons/web/static/src/core/tree_editor/tree_editor_operator_editor.js:0
 msgid "contains"
-msgstr "が次を含む"
+msgstr "次を含む"
 
 #. module: web
 #. odoo-javascript
@@ -15505,7 +15504,7 @@ msgstr "が次の間である"
 #. odoo-javascript
 #: code:addons/web/static/src/core/tree_editor/tree_editor_operator_editor.js:0
 msgid "is in"
-msgstr "は以下内:"
+msgstr "次のいずれかに一致:"
 
 #. module: web
 #. odoo-javascript

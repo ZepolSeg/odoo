@@ -309,12 +309,12 @@ msgstr "Seriennummer"
 #. module: certificate
 #: model:ir.model.fields,help:certificate.field_certificate_certificate__active
 msgid "Set active to false to archive the certificate"
-msgstr "Setzen Sie Aktiv auf False, um das Zertifikat zu archivieren"
+msgstr "Setzen Sie Aktiv auf Falsch, um das Zertifikat zu archivieren"
 
 #. module: certificate
 #: model:ir.model.fields,help:certificate.field_certificate_key__active
 msgid "Set active to false to archive the key."
-msgstr "Setzen Sie Aktiv auf False, um den Schlüssel zu archivieren"
+msgstr "Setzen Sie Aktiv auf Falsch, um den Schlüssel zu archivieren"
 
 #. module: certificate
 #: model:ir.model.fields,field_description:certificate.field_certificate_certificate__subject_common_name
@@ -356,8 +356,22 @@ msgstr "Das Datum, ab dem das Zertifikat gültig ist (UTC)"
 #. module: certificate
 #. odoo-python
 #: code:addons/certificate/models/key.py:0
+msgid "The key size should be at least 512 bytes."
+msgstr "Die Größe des Schlüssels sollte mindestens 512 Bytes betragen."
+
+#. module: certificate
+#. odoo-python
+#: code:addons/certificate/models/key.py:0
 msgid "The private key could not be loaded."
 msgstr "Der private Schlüssel kann nicht geladen werden."
+
+#. module: certificate
+#. odoo-python
+#: code:addons/certificate/models/key.py:0
+msgid "The public exponent should be 65537 (or 3 for legacy purposes)."
+msgstr ""
+"Der öffentliche Exponent sollte 65537 lauten (oder 3 für Kompatibilität mit "
+"älteren Versionen)."
 
 #. module: certificate
 #. odoo-python
