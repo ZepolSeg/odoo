@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="hr_attendance_holidays_kiosk.RequestTimeOffDialog" owl="1">
+        <Dialog title="'Demander une absence'" modalRef="dialog">
+             <div class="container-fluid">
+                 <div class="row mb-3">
+                     <label for="leave_type" class="col-form-label col-md-4">Type d'absence:</label>
+                     <div class="col-md-8">
+                         <select id="leave_type" class="form-select" t-model="state.leaveTypeId" t-on-change="onChangeLeaveType">
+                             <option value="">Sélectionnez un type...</option>
+                             <t t-foreach="props.leaveTypes" t-as="leaveType" t-key="leaveType.id">
+                                 <option t-att-value="leaveType.id"
+                                         t-att-data-request-unit="leaveType.request_unit">
+                                     <t t-esc="leaveType.name"/>
+                                 </option>
+                             </t>
+                         </select>
+                     </div>
+                 </div>
+                 <div class="row mb-3">
+                    <label for="start_date" class="col-form-label col-md-4">Date de début:</label>
+                    <div class="col-md-8">
+                        <!-- Utiliser un DatePicker ou simplement des inputs date/time -->
+                        <input type="date" id="start_date" class="form-control" t-model="state.startDate" />
+                        <input t-if="state.requestUnit === 'hour'" type="time" class="form-control mt-1" t-model="state.startTime" />
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="end_date" class="col-form-label col-md-4">Date de fin:</label>
+                    <div class="col-md-8">
+                         <input type="date" id="end_date" class="form-control" t-model="state.endDate" />
+                         <input t-if="state.requestUnit === 'hour'" type="time" class="form-control mt-1" t-model="state.endTime" />
+                    </div>
+                </div>
+                 <div class="row mb-3">
+                     <label for="reason" class="col-form-label col-md-4">Raison (optionnel):</label>
+                     <div class="col-md-8">
+                         <textarea id="reason" class="form-control" rows="3" t-model="state.reason"></textarea>
+                     </div>
+                 </div>
+             </div>
+             <t t-set-slot="footer">
+                 <button class="btn btn-primary" t-on-click="confirm" disabled="!state.leaveTypeId || !state.startDate || !state.endDate">Confirmer</button>
+                 <button class="btn btn-secondary" t-on-click="cancel">Annuler</button>
+             </t>
+         </Dialog>
+    </t>
+
+</templates>

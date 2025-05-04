@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data> <!-- Ensure <data> tag -->
+        <!-- Form View (Inchangé) -->
+        <record id="view_planning_coverage_wizard_form" model="ir.ui.view">
+            <field name="name">planning.coverage.wizard.form</field>
+            <field name="model">planning.coverage.wizard</field>
+            <field name="arch" type="xml">
+                <!-- Contenu du Formulaire Wizard inchangé -->
+                <form string="Check Role Coverage">
+                    <p> Verify if the number of assigned employees per role meets the defined minimum/maximum requirements for the selected period. </p>
+                    <group><group string="Period &amp; Filters"><field name="date_from"/><field name="role_ids" widget="many2many_tags" options="{'color_field': 'color', 'no_create': True}" placeholder="All roles with limits"/></group><group string="Options"><field name="date_to"/><field name="include_drafts"/></group></group>
+                    <notebook><page string="Coverage Results"><field name="result_lines" nolabel="1"/></page></notebook>
+                    <footer><button string="Close" class="btn-secondary" special="cancel" data-hotkey="z"/></footer>
+                 </form>
+            </field>
+        </record>
+
+        <!-- Action to open the wizard (Changer list dans binding_view_types si besoin) -->
+        <record id="action_planning_check_coverage" model="ir.actions.act_window">
+            <field name="name">Check Role Coverage</field>
+            <field name="res_model">planning.coverage.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="binding_model_id" ref="model_planning_slot"/>
+             <!-- Remplacer list par list s'il y avait tree -->
+            <field name="binding_view_types">gantt,list,calendar</field>
+             <field name="help">Check daily role coverage against defined Min/Max requirements.</field>
+        </record>
+
+        <!-- Menu Item (Inchangé) -->
+         <menuitem id="menu_planning_check_coverage_report"
+            name="Role Coverage Check"
+            parent="custom_planning.menu_planning_root"
+            action="action_planning_check_coverage"
+            sequence="40"/>
+
+    </data> <!-- Ensure closing tag -->
+</odoo>

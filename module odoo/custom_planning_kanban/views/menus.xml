@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- App Root Menu -->
+    <menuitem
+        id="menu_planning_root"
+        name="Planning (Custom)"
+        web_icon="custom_planning,static/description/icon.png"
+        sequence="50" groups="base.group_user"/>
+
+    <!-- Primary Access to Schedule -->
+    <menuitem
+        id="menu_planning_shifts_main"
+        name="Schedule"
+        parent="menu_planning_root"
+        action="action_planning_slot"
+        sequence="10"/>
+
+    <!-- Reporting/Tools (Coverage check defined in its own view now) -->
+
+    <!-- Configuration Menu (Restricted) -->
+     <menuitem
+        id="menu_planning_config"
+        name="Configuration"
+        parent="menu_planning_root"
+        sequence="90"
+        groups="hr.group_hr_manager"/> <!-- Only HR Managers can configure -->
+
+    <!-- Configuration -> Roles -->
+    <menuitem
+        id="menu_planning_roles_config_item"
+        name="Planning Roles"
+        parent="menu_planning_config"
+        action="action_planning_role"
+        sequence="10"/>
+
+</odoo>

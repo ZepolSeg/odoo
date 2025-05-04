@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_planning_copy_wizard_form" model="ir.ui.view">
+        <field name="name">planning.copy.wizard.form.odoo18</field>
+        <field name="model">planning.copy.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Copy Planning Week">
+                <div class="alert alert-info" role="alert">
+                    Copy shifts from one week to another. This helps quickly replicate schedules. Be mindful of potential conflicts or time off in the target week, especially when setting copied shifts to 'Published'.
+                 </div>
+                 <group>
+                     <group id="source">
+                         <field name="source_date_start" help="Monday of the week to copy FROM"/>
+                         <field name="state_filter"/>
+                         <field name="employee_ids" widget="many2many_tags" placeholder="All Employees" options="{'no_create': True}"/>
+                         <field name="role_ids" widget="many2many_tags" placeholder="All Roles" options="{'color_field': 'color', 'no_create': True}"/>
+                    </group>
+                     <group id="target">
+                         <field name="target_date_start" help="Monday of the week to copy TO"/>
+                        <field name="target_state" help="'Published' will skip copying if conflicts/time off are detected in the target week."/>
+                         <field name="copy_assignments" help="Keep the original employee or make the copied shift unassigned?"/>
+                     </group>
+                </group>
+                 <footer>
+                     <button name="action_copy_week" string="Copy Week" type="object" class="btn-primary" data-hotkey="q"/>
+                     <button string="Cancel" class="btn-secondary" special="cancel" data-hotkey="z" />
+                 </footer>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action bound to planning.slot model (unchanged) -->
+     <record id="action_planning_copy_week" model="ir.actions.act_window">
+        <field name="name">Copy Week</field>
+        <field name="res_model">planning.copy.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="binding_model_id" ref="custom_planning.model_planning_slot"/>
+        <field name="binding_view_types">gantt,list,calendar</field>
+    </record>
+
+</odoo>

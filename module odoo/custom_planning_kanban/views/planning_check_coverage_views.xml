@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_planning_coverage_wizard_form" model="ir.ui.view">
+        <field name="name">planning.coverage.wizard.form.odoo18</field>
+        <field name="model">planning.coverage.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Check Role Coverage">
+                 <div class="alert alert-info" role="alert">
+                    Check if daily staffing levels for roles meet their defined minimum/maximum requirements based on assigned shifts (published or optionally draft).
+                 </div>
+                <group>
+                    <group string="Parameters">
+                        <field name="date_from"/>
+                        <field name="date_to"/>
+                        <field name="role_ids" widget="many2many_tags" placeholder="All Roles w/ Limits" options="{'color_field': 'color', 'no_create': True}"/>
+                        <field name="include_drafts"/>
+                    </group>
+                </group>
+                <group string="Coverage Analysis Results">
+                     <!-- Display the generated HTML (ensure Python builds safe HTML) -->
+                     <field name="result_display" nolabel="1"/>
+                </group>
+                <footer>
+                    <button string="Close" class="btn-secondary" special="cancel" data-hotkey="z" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action bound to planning.slot model (unchanged) -->
+     <record id="action_planning_check_coverage" model="ir.actions.act_window">
+        <field name="name">Check Role Coverage</field>
+        <field name="res_model">planning.coverage.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="binding_model_id" ref="custom_planning.model_planning_slot"/>
+        <field name="binding_view_types">gantt,list,calendar</field>
+    </record>
+
+     <!-- Separate Menu Item -->
+    <menuitem id="menu_planning_check_coverage_report_v18"
+        name="Check Role Coverage"
+        parent="custom_planning.menu_planning_root"
+        action="action_planning_check_coverage"
+        sequence="30"/>
+
+</odoo>

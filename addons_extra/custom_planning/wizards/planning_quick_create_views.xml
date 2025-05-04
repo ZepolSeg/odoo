@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_planning_quick_create_wizard_form" model="ir.ui.view">
+            <field name="name">planning.quick.create.wizard.form</field>
+            <field name="model">planning.quick.create.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Quick Create Planning Shifts">
+                    <group>
+                        <group>
+                            <field name="employee_id" options="{'no_create': True, 'no_open': True}"/>
+                            <!-- Domaine dynamique pour filtrer les rôles basé sur l'employé sélectionné -->
+                            <!-- Attention: employee_id n'est pas directement dans le contexte pour les domaines enfants dans les wizards simples -->
+                            <!-- On laisse tous les rôles ici pour simplifier, l'utilisateur doit choisir le bon -->
+                            <!-- Alternative: utiliser un onchange pour mettre à jour le domaine -->
+                            <field name="role_id" options="{'no_create': True, 'no_open': True}" context="{'active_test': True}"/>
+                        </group>
+                        <group>
+                            <field name="start_datetime"/>
+                            <field name="end_datetime"/>
+                        </group>
+                    </group>
+                    <group string="Repetition Options">
+                         <field name="repeat_type" widget="radio" nolabel="1"/>
+                         <!-- Utiliser invisible au lieu de attrs pour Odoo 18 -->
+                         <field name="repeat_count" invisible="repeat_type != 'n_weeks'"/>
+                    </group>
+                    <footer>
+                        <button name="action_create_slots" string="Create Shifts" type="object" class="btn-primary" data-hotkey="q"/>
+                        <button string="Cancel" class="btn-secondary" special="cancel" data-hotkey="z"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_planning_quick_create_wizard" model="ir.actions.act_window">
+            <field name="name">Quick Create Shifts</field>
+            <field name="res_model">planning.quick.create.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field> <!-- Ouvre en popup -->
+        </record>
+
+    </data>
+</odoo>

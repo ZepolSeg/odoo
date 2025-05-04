@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="kiosk_mode_add_holidays_button" inherit_id="hr_attendance.public_kiosk_mode">
+        <!-- Trouver l'endroit où ajouter le bouton.
+             Souvent dans la section des actions de l'employé sélectionné.
+             Utilisez XPath pour cibler précisément.
+             Exemple (peut nécessiter ajustement) : cibler le div contenant les boutons checkin/out -->
+        <xpath expr="//div[hasclass('o_hr_attendance_kiosk_actions')]" position="inside">
+             <button t-if="!attendance.check_out"
+                     class="btn btn-warning btn-lg o_hr_attendance_holidays_button"
+                     type="button">
+                 <i class="fa fa-calendar-times-o me-2" aria-hidden="true"></i> Déclarer Absence
+             </button>
+        </xpath>
+    </template>
+</odoo>

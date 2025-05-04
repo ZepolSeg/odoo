@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Tree View -->
+    <record id="view_planning_role_tree" model="ir.ui.view">
+        <field name="name">planning.role.tree</field>
+        <field name="model">planning.role</field>
+        <field name="arch" type="xml">
+            <tree string="Planning Roles" editable="top" multi_edit="1">
+                <field name="sequence" widget="handle"/>
+                <field name="name" required="1"/>
+                <field name="color" widget="color_picker"/>
+                <field name="min_required_daily" optional="show"/>
+                <field name="max_allowed_daily" optional="show"/>
+                <field name="active" widget="boolean_toggle"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_planning_role_form" model="ir.ui.view">
+        <field name="name">planning.role.form</field>
+        <field name="model">planning.role</field>
+        <field name="arch" type="xml">
+            <form string="Planning Role">
+                <sheet>
+                    <widget name="web_ribbon" title="Archived" bg_color="bg-danger" attrs="{'invisible': [('active', '=', True)]}"/>
+                    <field name="active" invisible="1"/>
+                    <div class="oe_title">
+                         <label for="name" class="oe_edit_only"/>
+                        <h1><field name="name" placeholder="e.g. Barista, Senior Developer"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                             <field name="color" widget="color_picker"/>
+                             <field name="sequence"/>
+                        </group>
+                        <group string="Coverage Requirements (per Day)">
+                             <field name="min_required_daily"/>
+                             <field name="max_allowed_daily"/>
+                        </group>
+                    </group>
+                     <notebook>
+                        <page string="Qualified Employees" name="employees_page">
+                             <field name="employee_ids" nolabel="1" widget="many2many" context="{'default_planning_role_ids': [active_id], 'grid_anchor': True}" placeholder="Assign employees who can perform this role...">
+                                <kanban quick_create="false" create="true" delete="true"> <!-- Allow add/remove from here -->
+                                    <field name="id"/>
+                                    <field name="name"/>
+                                    <field name="avatar_128"/>
+                                    <templates>
+                                        <t t-name="kanban-box">
+                                            <div class="oe_kanban_global_click o_kanban_record_has_image_fill">
+                                                <div class="o_kanban_image_fill_left d-none d-md-block" t-attf-style="background-image: url(#{kanban_image('hr.employee', 'avatar_128', record.id.raw_value)})" role="img"/>
+                                                <div class="o_kanban_image d-md-none">
+                                                    <img class="o_kanban_image_inner_pic" alt="Avatar" t-att-src="kanban_image('hr.employee', 'avatar_128', record.id.raw_value)"/>
+                                                </div>
+                                                <div class="oe_kanban_details">
+                                                    <strong class="o_kanban_record_title"><field name="name"/></strong>
+                                                    <!-- Add other employee details if needed -->
+                                                    <!-- <div t-if="record.job_title.raw_value"><field name="job_title"/></div> -->
+                                                </div>
+                                            </div>
+                                        </t>
+                                    </templates>
+                                </kanban>
+                             </field>
+                        </page>
+                     </notebook>
+                </sheet>
+                 <!-- Add chatter for communication on roles if needed -->
+                <!-- <div class="oe_chatter"> ... </div> -->
+            </form>
+        </field>
+    </record>
+
+    <!-- Search View -->
+     <record id="view_planning_role_search" model="ir.ui.view">
+         <field name="name">planning.role.search</field>
+         <field name="model">planning.role</field>
+         <field name="arch" type="xml">
+             <search string="Search Planning Roles">
+                 <field name="name" string="Role Name"/>
+                 <field name="employee_ids" string="Employee"/>
+                 <separator/>
+                 <filter string="Active" name="active" domain="[('active', '=', True)]" help="Show active roles only"/>
+                 <filter string="Archived" name="inactive" domain="[('active', '=', False)]" help="Show archived roles"/>
+                 <separator/>
+                 <filter string="Has Coverage Limits" name="has_limits" domain="['|', ('min_required_daily', '>', 0), ('max_allowed_daily', '>', 0)]"/>
+             </search>
+         </field>
+     </record>
+
+    <!-- Action -->
+    <record id="action_planning_role" model="ir.actions.act_window">
+        <field name="name">Planning Roles</field>
+        <field name="res_model">planning.role</field>
+        <field name="view_mode">tree,form,kanban</field> <!-- Added Kanban view -->
+        <field name="search_view_id" ref="view_planning_role_search"/>
+        <field name="context">{'search_default_active': 1}</field> <!-- Show active by default -->
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a Planning Role
+            </p><p>
+                Define the different roles required for your planning (e.g., Cashier, Engineer, Driver).
+                You can optionally set daily minimum/maximum staffing requirements for each role.
+                Assign qualified employees to roles from within the Role form or the Employee form.
+            </p>
+        </field>
+    </record>
+</odoo>

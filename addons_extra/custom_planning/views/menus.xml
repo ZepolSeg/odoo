@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Menu Racine (Top Level) -->
+        <menuitem
+            id="menu_planning_root"
+            name="Planning (Custom)"
+            web_icon="custom_planning,static/description/icon.png"
+            sequence="25"/>
+            <!-- Pas de groups ici pour qu'il soit visible par défaut si l'app est installée -->
+
+        <!-- Menu "Schedule" -->
+        <menuitem
+            id="menu_planning_shifts"
+            name="Schedule"
+            parent="menu_planning_root"
+            sequence="10"
+            action="custom_planning.action_planning_slot"></menuitem>  <!-- Important: Précisez le module custom_planning. -->
+            
+
+        <!-- Menu "Role Coverage Check" (Défini ailleurs mais vérifiez la référence parent) -->
+         <!--<menuitem id="menu_planning_check_coverage_report" name="Role Coverage Check" parent="custom_planning.menu_planning_root" action="custom_planning.action_planning_check_coverage" sequence="40"/>-->
+         <!-- Assurez-vous que le parent est bien "custom_planning.menu_planning_root" dans planning_check_coverage_views.xml -->
+        <!-- Menu pour le Wizard de Création Rapide -->
+        <menuitem
+            id="menu_planning_quick_create"
+            name="Quick Create Shifts"
+            parent="menu_planning_root"
+            action="action_planning_quick_create_wizard"
+            sequence="15"/> <!-- Juste après le planning principal -->
+
+        <!-- Menu Configuration (Caché par groups="hr.group_hr_manager" par défaut) -->
+         <menuitem
+            id="menu_planning_config"
+            name="Configuration"
+            parent="menu_planning_root"
+            sequence="100"
+            groups="hr.group_hr_manager"/> <!-- Visible seulement par les managers HR -->
+
+        <!-- Menu "Roles" (sous Configuration) -->
+        <menuitem
+            id="menu_planning_roles_config"
+            name="Roles"
+            parent="menu_planning_config"
+            sequence="10"
+            action="custom_planning.action_planning_role"></menuitem> <!-- Précisez custom_planning. -->
+            
+            <!-- Hérite des groupes du parent (hr.group_hr_manager) -->
+    </data>
+</odoo>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Use noupdate=0 during development to apply changes easily on module update -->
+    <!-- Change to noupdate=1 for production deployments if customizations should be kept -->
+    <data noupdate="0">
+
+        <record id="planning_email_template_publish" model="mail.template">
+            <field name="name">Planning: Shift Published Notification</field>
+            <field name="model_id" ref="custom_planning.model_planning_slot"/>
+            <field name="subject">Shift Scheduled: ${object.role_id.name or 'Shift'} on ${format_date(object.start_datetime, date_format='medium')}</field>
+            <field name="email_from">"${object.company_id.name | safe}" <${(object.company_id.email or user.company_id.email or user.email or 'noreply@yourcompany.com') | safe}></field>
+             <!-- Email TO: Employee's work email or related user's email -->
+             <field name="email_to">${object.employee_id.work_email or object.employee_id.user_id.partner_id.email or ''}</field>
+             <field name="partner_to">${object.employee_id.user_id.partner_id.id if object.employee_id.user_id else ''}</field> <!-- Link to partner if user exists -->
+            <field name="description">Sent to the employee when their shift is published.</field>
+            <field name="body_html" type="html">
+<div style="margin: 0px; padding: 0px; font-family: Helvetica, Arial, sans-serif; font-size: 14px;">
+    <p>Hello ${object.employee_id.name or 'Employee'},</p>
+    <p>
+        A shift has been scheduled ${object.employee_id and 'for you' or ''}:
+    </p>
+    <div style="margin: 16px 0px; padding: 12px; border-left: 3px solid #875A7B;">
+        <strong>Role:</strong> ${object.role_id.name or 'N/A'}<br/>
+        % set start_time = format_datetime(object.start_datetime, format='full', tz=object.employee_id.tz or 'UTC')
+        % set end_time = format_datetime(object.end_datetime, format='HH:mm', tz=object.employee_id.tz or 'UTC')
+        % set display_tz = object.employee_id.tz or 'UTC'
+        <strong>Time:</strong> ${start_time} - ${end_time} (${display_tz})
+         <br/>
+         <strong>Duration:</strong> ${'%.2f' % object.duration} hours
+    </div>
+    % if object.notes:
+        <p><strong>Notes from planner:</strong><br/>
+            <span style="color: #444;">${object.notes}</span>
+        </p>
+    % endif
+    <p style="margin-top: 24px;">
+        You can view your full schedule online. <!-- Add link if applicable -->
+        <!-- <a href="/my/planning" style="...">View My Schedule</a> -->
+    </p>
+    <p style="color: #888;">
+        Regards,<br/>
+        ${object.company_id.name or 'Your Planning Team'}
+    </p>
+</div>
+            </field>
+             <field name="lang">${object.employee_id.lang or object.env.user.lang or 'en_US'}</field> <!-- Use employee lang or system lang -->
+             <field name="auto_delete" eval="True"/> <!-- Automatically delete sent mail -->
+        </record>
+
+    </data>
+</odoo>

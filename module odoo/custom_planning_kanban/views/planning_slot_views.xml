@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Form View -->
+    <record id="view_planning_slot_form" model="ir.ui.view">
+        <field name="name">planning.slot.form.odoo18</field>
+        <field name="model">planning.slot</field>
+        <field name="arch" type="xml">
+            <form string="Planning Shift">
+                <header>
+                    <button name="action_publish" string="Publish" type="object" class="btn btn-primary" data-hotkey="p"
+                            invisible="state != 'draft'"
+                            confirm="This will publish the shift and notify the employee (if configured). Are you sure?"/>
+                    <button name="action_cancel" string="Cancel Shift" type="object" icon="fa-times-circle" data-hotkey="x"
+                            invisible="state != 'published'"
+                            confirm="Are you sure you want to cancel this published shift?"/>
+                    <button name="action_set_draft" string="Set to Draft" type="object" icon="fa-pencil" data-hotkey="d"
+                            invisible="state == 'draft'"
+                            help="Reset the shift to Draft state for modification."/>
+                    <button name="action_generate_recurrence" string="Generate" type="object" icon="fa-refresh text-success"
+                            invisible="not rrule or recurrence_id" data-hotkey="g"
+                            help="Generate future shifts based on the recurrence rule defined below."
+                            confirm="This will create new draft shifts based on the recurrence rule. Continue?"/>
+                    <button name="action_delete_recurrence" string="Delete Future" type="object" icon="fa-trash text-danger"
+                            invisible="not rrule or recurrence_id" data-hotkey="r" groups="hr.group_hr_manager"
+                            help="Delete all future draft/published occurrences generated from this template shift."
+                            confirm="WARNING: This will permanently delete all future occurrences of this shift pattern. Are you sure?"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,published"/>
+                </header>
+                <sheet>
+                     <!-- Put ribbons first visually -->
+                    <widget name="web_ribbon" title="Archived" bg_color="text-bg-danger" invisible="active"/>
+                    <widget name="web_ribbon" title="Cancelled" bg_color="text-bg-warning" invisible="state != 'cancelled'"/>
+                    <field name="active" invisible="1"/>
+
+                    <div class="oe_title mb-3">
+                        <h1><field name="name" placeholder="Shift Description (Auto-generated)"/></h1>
+                    </div>
+                     <group>
+                         <group id="left-group">
+                            <field name="role_id" required="1" placeholder="Select Role" options="{'no_open': True, 'no_create': True}" context="{'active_test': True}"/>
+                             <field name="employee_id" placeholder="Assign Employee" options="{'no_open': True}" domain="[('company_id', '=', company_id), ('active','=',True)]" context="{'active_test': True}"/>
+                             <!-- Conditional domain if roles selected -->
+                             <field name="employee_id" invisible="1" domain="[('planning_role_ids', 'in', role_id)]" attrs="{'required': [('state', '=', 'published')]}"/> <!-- Helps filter suggestion but might hide if role empty -->
+                        </group>
+                        <group id="right-group">
+                             <label for="start_datetime" string="Period"/>
+                             <div class="o_row">
+                                 <field name="start_datetime" nolabel="1" required="1"/>
+                                <span class="mx-1"> - </span>
+                                 <field name="end_datetime" nolabel="1" required="1"/>
+                             </div>
+                             <field name="duration" widget="float_time" readonly="1"/>
+                            <field name="company_id" required="1" groups="base.group_multi_company"/>
+                         </group>
+                     </group>
+
+                     <notebook>
+                        <page string="Details" name="details">
+                            <group>
+                                <group string="Internal Info">
+                                     <field name="notes" placeholder="Add notes for planner or employee..."/>
+                                 </group>
+                                 <group string="Status Info (Readonly)">
+                                      <field name="attendance_state" readonly="1"/>
+                                      <field name="has_conflict" readonly="1"/>
+                                  </group>
+                              </group>
+                        </page>
+                        <page string="Recurrence" name="recurrence">
+                            <group>
+                                <group>
+                                    <field name="recurrence_id" readonly="1" string="Base Shift" invisible="not recurrence_id"/>
+                                </group>
+                                <group>
+                                     <field name="rrule" placeholder="FREQ=WEEKLY;BYDAY=MO,FR;INTERVAL=1;UNTIL=..." invisible="bool(recurrence_id)"/>
+                                 </group>
+                             </group>
+                              <div class="oe_grey mt-2" invisible="bool(recurrence_id)">
+                                 Use <a href="https://icalendar.org/iCalendar-RFC-5545/3-8-5-3-recurrence-rule.html" target="_blank">RRULE format <i class="fa fa-external-link"/></a>.
+                                 Use <kbd data-hotkey="g"><i class="fa fa-refresh"/> Generate</kbd> or <kbd data-hotkey="r"><i class="fa fa-trash"/> Delete Future</kbd> buttons in the header.
+                              </div>
+                              <div class="oe_grey mt-2" invisible="not recurrence_id">
+                                 This shift is an occurrence of the base shift shown above. To change the pattern, edit the base shift.
+                              </div>
+                        </page>
+                    </notebook>
+                </sheet>
+                <!-- Chatter -->
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" groups="base.group_user"/>
+                    <field name="activity_ids" groups="base.group_user"/>
+                    <field name="message_ids" groups="base.group_user"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree/List View -->
+    <record id="view_planning_slot_tree" model="ir.ui.view">
+        <field name="name">planning.slot.tree.odoo18</field>
+        <field name="model">planning.slot</field>
+        <field name="arch" type="xml">
+            <tree string="Planning Shifts" default_order="start_datetime asc"
+                  decoration-muted="state == 'cancelled' or active == False"
+                  decoration-info="state == 'draft'"
+                  decoration-success="attendance_state == 'present'"
+                  decoration-warning="attendance_state in ('late', 'early_out') or has_conflict"
+                  decoration-danger="attendance_state == 'absent'"
+                  multi_edit="1"
+                 >
+                <field name="start_datetime" widget="datetime" optional="show"/>
+                <field name="end_datetime" widget="datetime" optional="hide"/>
+                 <field name="duration" widget="float_time" sum="Total Duration" string="Dur." optional="show"/>
+                 <field name="role_id" widget="many2one_avatar" options="{'no_open': True}"/>
+                <field name="employee_id" widget="many2one_avatar_employee" options="{'no_open': True}"/>
+                 <field name="attendance_state" optional="show" widget="badge" decoration-success="attendance_state == 'present'" decoration-info="attendance_state == 'leave'" decoration-warning="attendance_state in ('late', 'early_out') or attendance_state == 'conflicting'" decoration-danger="attendance_state == 'absent'"/>
+                 <field name="state" optional="show" widget="badge" decoration-success="state == 'published'" decoration-info="state == 'draft'" decoration-muted="state == 'cancelled'"/>
+                <field name="notes" optional="hide"/>
+                 <!-- Technical fields for filtering/grouping -->
+                 <field name="active" invisible="1"/>
+                 <field name="rrule" invisible="1"/>
+                 <field name="recurrence_id" invisible="1"/>
+                 <field name="has_conflict" invisible="1"/>
+                 <field name="company_id" groups="base.group_multi_company" optional="hide"/>
+             </tree>
+        </field>
+    </record>
+
+    <!-- Gantt View -->
+    <record id="view_planning_slot_gantt" model="ir.ui.view">
+        <field name="name">planning.slot.gantt.odoo18</field>
+        <field name="model">planning.slot</field>
+        <field name="arch" type="xml">
+             <!-- JS class could be added for advanced client-side tweaks -->
+            <gantt js_class="planning_gantt_view"
+                   string="Planning Schedule"
+                   date_start="start_datetime" date_stop="end_datetime"
+                   default_group_by="employee_id" # Single level default simpler to start
+                   color="color" # Use Role color by default
+                   # Note: Decorations require the field to be present in the view (usually invisible is fine)
+                   decoration-success="attendance_state == 'present'"
+                   decoration-info="attendance_state == 'leave'"
+                   decoration-warning="attendance_state in ('late', 'early_out') or has_conflict"
+                   decoration-danger="attendance_state == 'absent'"
+                   decoration-muted="state == 'cancelled' or not active"
+                   # --- Gantt Specific Parameters for Odoo 18 ---
+                   # --- (check official docs or source for exact/new v18 params if needed) ---
+                   precision="{'hour': 'hour:half', 'day': 'day' , 'week': 'day', 'month': 'day'}"
+                   round_dnd_dates="true" # Snap to precision on drag/drop
+                   total_row="true" # Show totals at group level (if applicable)
+                   collapse_first_level="false" # Expand groups by default
+                   # --- Linking other models for display ---
+                   # Use mapping="{'field_in_planning_slot': 'field_in_linked_model'}"
+                   # Example: Link approved Time Off visually
+                   # plan_field = "employee_id" <!-- Link on Employee -->
+                   # linked_models='[{"model": "hr.leave", "date_start_field": "date_from", "date_stop_field": "date_to", "domain": [["state", "=", "validate"]], "mapping": {"employee_id": "employee_id"}, "css_class":"o_gantt_leave_pill"}]'
+
+                   # Action for creating new pills directly (opens form view)
+                   # Create action in XML with id="action_planning_slot_form_create_gantt"
+                   # create_action="custom_planning.action_planning_slot_form_create_gantt"
+
+                    >
+                 <!-- Fields Needed for Logic/Display/Decorations -->
+                <field name="active"/>
+                <field name="state"/>
+                 <field name="attendance_state"/>
+                 <field name="has_conflict"/>
+                 <field name="role_id"/>
+                 <field name="employee_id"/>
+                 <field name="name"/> <!-- Display computed name in pill -->
+             </gantt>
+        </field>
+    </record>
+
+
+     <!-- Calendar View -->
+    <record id="view_planning_slot_calendar" model="ir.ui.view">
+        <field name="name">planning.slot.calendar.odoo18</field>
+        <field name="model">planning.slot</field>
+        <field name="arch" type="xml">
+             <!-- Use mode="month", "week", "day" -->
+            <calendar string="Planning Calendar" date_start="start_datetime" date_stop="end_datetime"
+                      color="role_id" # Color by Role
+                      mode="week" # Default view mode
+                      quick_add="false" # Disable simple quick-add
+                      event_limit="5" # Max events shown per day cell before '+ more'
+                      # --- Decorations (less visual than gantt/list) ---
+                      # decoration-danger="state=='cancelled'"
+                      # decoration-info="state=='draft'"
+                      >
+                 <field name="display_name" string="Description"/> <!-- Title of event -->
+                <field name="employee_id" avatar_field="avatar_128"/> <!-- Show avatar -->
+                 <field name="duration" string="Duration"/>
+                 <field name="role_id" string="Role"/>
+                <field name="state"/>
+            </calendar>
+         </field>
+    </record>
+
+    <!-- Search View (Refined filters/grouping) -->
+    <record id="view_planning_slot_search" model="ir.ui.view">
+        <field name="name">planning.slot.search.odoo18</field>
+        <field name="model">planning.slot</field>
+        <field name="arch" type="xml">
+            <search string="Search Planning Slots">
+                <!-- Search Fields -->
+                <field name="name" string="Description, Role or Employee" filter_domain="['|', ('name', 'ilike', self), '|', ('role_id', 'ilike', self), ('employee_id', 'ilike', self)]"/>
+                <field name="role_id"/>
+                <field name="employee_id"/>
+                <field name="notes"/>
+                 <!-- Filters -->
+                <separator/>
+                 <filter name="my_shifts" string="My Shifts" domain="[('employee_id.user_id', '=', uid)]"/>
+                 <filter name="unassigned" string="Unassigned" domain="[('employee_id', '=', False)]" help="Shifts with no assigned employee"/>
+                 <separator/>
+                 <filter name="state_draft" string="Draft" domain="[('state', '=', 'draft')]"/>
+                 <filter name="state_published" string="Published" domain="[('state', '=', 'published')]"/>
+                 <filter name="state_cancelled" string="Cancelled" domain="[('state', '=', 'cancelled')]"/>
+                 <separator/>
+                <filter name="templates" string="Templates" domain="[('rrule', '!=', False), ('recurrence_id', '=', False)]" help="Shifts acting as recurrence templates"/>
+                 <filter name="occurrences" string="Occurrences" domain="[('recurrence_id', '!=', False)]" help="Shifts generated from a recurrence"/>
+                 <separator/>
+                 <filter name="conflict" string="Conflicts Detected" domain="[('has_conflict', '=', True)]" help="Based on computed check (may not be real-time)"/>
+                 <filter name="leave" string="On Time Off" domain="[('attendance_state', '=', 'leave')]" help="Based on computed check (may not be real-time)"/>
+                 <separator/>
+                 <filter name="archived" string="Archived" domain="[('active', '=', False)]"/>
+                 <!-- Date Filters -->
+                 <separator/>
+                 <filter string="Date" name="filter_date" date="start_datetime"/> <!-- Generic date range selector -->
+                 <!-- Default date periods (relative) -->
+                 <filter name="today" string="Today" domain="[('start_datetime', '>=', context_today().strftime('%Y-%m-%d 00:00:00')), ('start_datetime', '<=', context_today().strftime('%Y-%m-%d 23:59:59'))]"/>
+                 <filter name="this_week" string="This Week" domain="[('start_datetime', '>=', (context_today() - relativedelta(days=context_today().weekday())).strftime('%Y-%m-%d 00:00:00')), ('start_datetime', '<', (context_today() - relativedelta(days=context_today().weekday()) + relativedelta(weeks=1)).strftime('%Y-%m-%d 00:00:00'))]"/>
+                 <filter name="this_month" string="This Month" domain="[('start_datetime', '>=', context_today().strftime('%Y-%m-01 00:00:00')), ('start_datetime', '<', (context_today() + relativedelta(months=1)).strftime('%Y-%m-01 00:00:00'))]"/>
+
+                <!-- Grouping Options -->
+                 <group expand="0" string="Group By">
+                    <filter string="Employee" name="groupby_employee" domain="[]" context="{'group_by':'employee_id'}"/>
+                    <filter string="Role" name="groupby_role" domain="[]" context="{'group_by':'role_id'}"/>
+                     <filter string="Status" name="groupby_state" domain="[]" context="{'group_by':'state'}"/>
+                    <filter string="Company" name="groupby_company" domain="[]" context="{'group_by':'company_id'}" groups="base.group_multi_company"/>
+                    <separator/>
+                     <filter string="Start Day" name="groupby_start_day" domain="[]" context="{'group_by':'start_datetime:day'}"/>
+                    <filter string="Start Week" name="groupby_start_week" domain="[]" context="{'group_by':'start_datetime:week'}"/>
+                     <filter string="Start Month" name="groupby_start_month" domain="[]" context="{'group_by':'start_datetime:month'}"/>
+                     <separator/>
+                    <filter string="Recurrence Base" name="group_by_recurrence" domain="[('recurrence_id', '!=', False)]" context="{'group_by':'recurrence_id'}" help="Group generated shifts by their template"/>
+                 </group>
+            </search>
+         </field>
+     </record>
+
+    <!-- Action to open Form View as Popup -->
+     <record id="action_planning_slot_form_popup" model="ir.actions.act_window">
+        <field name="name">Planning Shift Details</field>
+         <field name="res_model">planning.slot</field>
+        <field name="view_mode">form</field>
+         <field name="view_id" ref="view_planning_slot_form"/>
+         <field name="target">new</field> <!-- Important for popup -->
+        <field name="context">{'default_company_id': allowed_company_ids[0]}</field>
+     </record>
+
+     <!-- Main Planning Action -->
+    <record id="action_planning_slot" model="ir.actions.act_window">
+        <field name="name">Planning Schedule</field>
+        <field name="res_model">planning.slot</field>
+        <field name="view_mode">gantt,calendar,tree,form,pivot,graph</field> <!-- Gantt & Calendar first -->
+         <!-- Ensure view refs use module name: custom_planning.view_id -->
+         <field name="view_ids" eval="[(5, 0, 0),
+            (0, 0, {'view_mode': 'gantt', 'view_id': ref('custom_planning.view_planning_slot_gantt')}),
+            (0, 0, {'view_mode': 'calendar', 'view_id': ref('custom_planning.view_planning_slot_calendar')}),
+            (0, 0, {'view_mode': 'tree', 'view_id': ref('custom_planning.view_planning_slot_tree')}),
+            (0, 0, {'view_mode': 'form', 'view_id': ref('custom_planning.view_planning_slot_form')}),
+             (0, 0, {'view_mode': 'pivot', 'view_id': ref('custom_planning.view_planning_slot_pivot')}),
+            (0, 0, {'view_mode': 'graph', 'view_id': ref('custom_planning.view_planning_slot_graph')}),
+            ]"/>
+        <field name="search_view_id" ref="custom_planning.view_planning_slot_search"/>
+         <field name="context">{
+            'search_default_this_week': 1, # Show current week by default
+            'search_default_state_published': 1, # Show published shifts by default
+             # 'search_default_groupby_employee': 1, # Group by employee by default
+             # Pass company context if multi-company
+            'allowed_company_ids': [company_id]
+            }</field>
+         <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No shifts planned yet!
+            </p><p>
+                Click 'Create' to schedule a new shift, or use the Gantt/Calendar views for visual planning. Assign roles and employees to time slots.
+                Remember to publish shifts to confirm them. Use recurrence options for regular scheduling and check role coverage via the dedicated action.
+            </p>
+         </field>
+    </record>
+
+</odoo>

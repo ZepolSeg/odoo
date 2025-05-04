@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_planning_role_user,planning.role.user,model_planning_role,,1,0,0,0
+access_planning_role_manager,planning.role.manager,model_planning_role,hr.group_hr_manager,1,1,1,1
+access_planning_slot_user,planning.slot.user,model_planning_slot,,1,0,0,0
+access_planning_slot_manager,planning.slot.manager,model_planning_slot,hr.group_hr_manager,1,1,1,1
+access_planning_copy_wizard_user,planning.copy.wizard.user,model_planning_copy_wizard,,1,1,1,1
+access_planning_coverage_wizard_user,planning.coverage.wizard.user,model_planning_coverage_wizard,,1,1,1,1
+access_planning_quick_create_wizard_user,planning.quick.create.wizard.user,model_planning_quick_create_wizard,base.group_user,1,1,1,1
